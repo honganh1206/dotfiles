@@ -1,0 +1,117 @@
+{
+  "choices": [],
+  "macros": [
+    {
+      "name": "Add Goal",
+      "id": "275c6f03-77b5-46b9-ad07-e20157f64884",
+      "commands": [
+        {
+          "name": "Create Goal Note",
+          "type": "NestedChoice",
+          "id": "b73c13e1-98ff-4eda-84ca-5ac3557f33bf",
+          "choice": {
+            "id": "0bcf1fff-0f8f-455c-86d2-dfa3c0fc0100",
+            "name": "Create Goal Note",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Misc/goal_item_template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{DATE}} - {{VALUE:Goal}}"
+            },
+            "folder": {
+              "enabled": false,
+              "folders": [],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "146b8e6c-0fdd-4df1-94ee-393aba5c0064",
+          "time": 200
+        },
+        {
+          "name": "Send to Kanban board",
+          "type": "NestedChoice",
+          "id": "a7552660-5763-45b2-b73d-f2399e0c0032",
+          "choice": {
+            "id": "3fc5bf90-bb66-4124-8c77-27e62113ad8e",
+            "name": "Send to Kanban board",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": false,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "[[{{DATE}} - {{VALUE:Goal}}|{{VALUE:Goal}}]]"
+            },
+            "insertAfter": {
+              "enabled": true,
+              "after": "## {{VALUE:Professional, Physical, Knowledge, Wealth, Life}}",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": true,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Add Project",
+      "id": "0dff2463-7afd-4b53-a326-5911a899d9a5",
+      "commands": [],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false,
+  "templateFolderPath": "",
+  "announceUpdates": true,
+  "version": "1.6.0",
+  "disableOnlineFeatures": true,
+  "ai": {
+    "OpenAIApiKey": "",
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true
+  }
+}
