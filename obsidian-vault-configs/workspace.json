@@ -20,30 +20,13 @@
             }
           },
           {
-            "id": "8b692dd9c2a361a7",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Azure_Certs/AZ900/AZ-900.canvas",
-                "viewState": {
-                  "x": 69.58896734113193,
-                  "y": 3.9143087440977524,
-                  "zoom": 1.1102230246251565e-16
-                }
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "27c57753675bc7c5",
+            "id": "47631c645cad84cb",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Misc/Useful Links.md",
+                "file": "Weekly Summary/Week 46 - 2023-11-13 to 2023-11-19.md",
                 "mode": "source",
                 "source": false
               },
@@ -51,47 +34,19 @@
             }
           },
           {
-            "id": "2d2ed93f731179cc",
+            "id": "adb65eb637200ce6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weekly Summary/2023-11-13 to 2023-11-19.md",
+                "file": "Weekly Summary/Week 47 - 2023-11-20 to 2023-11-26.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "bb11ecb05c798809",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Azure_Certs/AZ900/Udemy_Courses/Azure management and governance.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "b7b9196527405cff",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algo_DataStruct/Grokking_Algo/Chapter8/Greedy Algorithm.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -120,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"Azure Log Analytics\"",
+                "query": "DevTest",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -165,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weekly Summary/2023-11-13 to 2023-11-19.md",
+                "file": "Weekly Summary/Week 47 - 2023-11-20 to 2023-11-26.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weekly Summary/2023-11-13 to 2023-11-19.md",
+                "file": "Weekly Summary/Week 47 - 2023-11-20 to 2023-11-26.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weekly Summary/2023-11-13 to 2023-11-19.md"
+                "file": "Weekly Summary/Week 47 - 2023-11-20 to 2023-11-26.md"
               }
             }
           },
@@ -265,55 +220,55 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "2d2ed93f731179cc",
+  "active": "adb65eb637200ce6",
   "lastOpenFiles": [
-    "Weekly Summary/2023-11-05 to 2023-11-12.md",
-    "Weekly Summary/2023-11-13 to 2023-11-19.md",
-    "Misc/Weekly Study Review Template.md",
-    "Misc/Useful Links.md",
-    "Azure_Certs/AZ900/Udemy_Courses/Azure management and governance.md",
+    "Misc/obsidian-vault-settings/themes/Things/theme (2).css",
+    "Misc/obsidian-vault-settings/themes/Things/manifest (2).json",
+    "Misc/obsidian-vault-settings/themes/Shimmering Focus/theme (2).css",
+    "Misc/obsidian-vault-settings/themes/Shimmering Focus/manifest (2).json",
+    "Misc/obsidian-vault-settings/themes/Obsidian Nord/theme (2).css",
+    "Misc/obsidian-vault-settings/themes/Obsidian Nord/manifest (2).json",
+    "Misc/obsidian-vault-settings/themes/Minimal/theme (2).css",
+    "Misc/obsidian-vault-settings/themes/Minimal/manifest (2).json",
+    "Misc/obsidian-vault-settings/themes/Clair de Lune/theme (2).css",
+    "Misc/obsidian-vault-settings/themes/Clair de Lune/manifest (2).json",
+    "Misc/obsidian-vault-settings/themes/Atom/theme (2).css",
+    "Weekly Summary/Week 46 - 2023-11-13 to 2023-11-19.md",
+    "Weekly Summary/Week 47 - 2023-11-20 to 2023-11-26.md",
     "TODOs.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Cloud_Concepts/Pasted image 20230628212751.png",
+    "Azure_Certs/AZ900/Microsoft_Learn/Storage_Services/Pasted image 20231022215422.png",
+    "Azure_Certs/AZ900/Microsoft_Learn/Computing_Networking_Services/Pasted image 20230720105711.png",
+    "Azure_Certs/AZ900/Microsoft_Learn/Storage_Services/Pasted image 20230722112137.png",
+    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Pasted image 20230809153950.png",
+    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Pasted image 20230809153402.png",
+    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Pasted image 20230712234722.png",
+    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Pasted image 20230712232837.png",
+    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Monitoring tools.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Features and tools for managing and deploying Azure resources.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Cloud_Concepts/Describe cloud computing.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Cloud_Concepts/Cloud service types.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Cloud_Concepts/Benefits of cloud computing.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Cost management in Azure.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Pasted image 20230809144819.png",
+    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Core architectural components of Azure.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Azure management and governance.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Storage_Services/Pasted image 20230802211413.png",
+    "Azure_Certs/AZ900/Microsoft_Learn/Storage_Services/Azure Storage Services.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Identity_Access_Security/Azure identity, access, and security.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Computing_Networking_Services/Networking services.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Computing_Networking_Services/Computing services.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Azure_Computing_Networking_Services/Networking services.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Azure_Computing_Networking_Services/Computing services.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Azure_Computing_Networking_Services/Azure compute and networking services 1.md",
     "Algo_DataStruct/Grokking_Algo/Chapter8/Greedy Algorithm.md",
-    "Test_Obsidian/projects/Project Board.md",
-    "Algo_DataStruct/Grokking_Algo/Chapter7/Dijkstra's Algorithm.md",
-    "Azure_Certs/Azure Roadmap.md",
-    "Test_Obsidian/views/Dashboard.md",
-    "Test_Obsidian/goals/Goals.md",
-    "Test_Obsidian/views",
-    "Weekly Summary/2023-11-13 to 2023-11-20.md",
-    "Test_Obsidian/projects",
-    "Test_Obsidian/goals",
-    "Test_Obsidian",
-    "Weekly Summary",
-    "Misc/Weekly Review.md",
-    "2023-11-12.md",
     "Azure_Certs/AZ900/AZ-900.canvas",
-    "Useful_Links_And_Configs/Untitled",
-    "Beginner_To_Advanced_Java/SetupSeleGrid.pdf",
-    "Useful_Links_And_Configs/README.md",
-    "Algo_DataStruct/Grokking_Algo/Chapter6/Breadth-first Search aka 1st Graph algorithm.md",
-    "Algo_DataStruct/Grokking_Algo/Chapter8/Pasted image 20231110172151.png",
-    "Algo_DataStruct/Grokking_Algo/Chapter8",
-    "Azure_Certs/AZ900/Microsoft_Learn/Azure management and governance.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Features and tools for managing and deploying Azure resources.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Monitoring tools.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/Scenario questions from practice tests.md",
     "Azure_Certs/AZ900/Udemy_Courses/Azure architecture and services.md",
-    "Azure_Certs/AZ900/Adam_Marczak_Resources/Ep19/19 - Azure Tools.md",
-    "Azure_Certs/AZ900/Adam_Marczak_Resources/Ep29/29 - Azure Resource Locks.md",
-    "Azure_Certs/AZ900/Adam_Marczak_Resources/Ep20/20 - Azure Advisor.md",
-    "Azure_Certs/AZ900/Adam_Marczak_Resources/Ep26/26 - Azure Security Center.md",
-    "Azure_Certs/AZ900/Adam_Marczak_Resources/Ep28/28 - Azure Role-based Access Control (RBAC).md",
-    "Algo_DataStruct/Grokking_Algo/Chapter7/Pasted image 20231108154242.png",
-    "Algo_DataStruct/Grokking_Algo/Chapter7/dijkstra_algo.py",
-    "Algo_DataStruct/Grokking_Algo/Chapter7/Pasted image 20231104185311.png",
-    "Algo_DataStruct/Grokking_Algo/Chapter7/Pasted image 20231104184449.png",
-    "Algo_DataStruct/Grokking_Algo/Chapter7/Pasted image 20231104150455.png",
-    "Algo_DataStruct/Grokking_Algo/Chapter7/Pasted image 20231104125605.png",
-    "Algo_DataStruct/Grokking_Algo/Chapter7/Pasted image 20231104123801.png",
-    "Algo_DataStruct/Grokking_Algo/Chapter7/Pasted image 20231104123701.png",
-    "Algo_DataStruct/Grokking_Algo/Chapter7/Pasted image 20231104122449.png",
-    "Algo_DataStruct/Grokking_Algo/Chapter7/Pasted image 20231104122431.png",
-    "Algo_DataStruct/Grokking_Algo/Chapter7",
+    "Azure_Certs/AZ900/Microsoft_Learn/Azure_Computing_Networking_Services/Azure compute and networking services.md",
+    "Azure_Certs/Azure_Certs/AZ900/Udemy_Courses/Azure architecture and services.md",
+    "Azure_Certs/AZ900/Adam_Marczak_Resources/Ep23/23 - Azure Firewall.md",
+    "Azure_Certs/AZ900/Microsoft_Learn/More from taking practice tests.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Note_TAU-main/Technical Canvas.canvas"

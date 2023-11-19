@@ -19,5 +19,7 @@
   "obsidian-code-block-enhancer",
   "obsidian-html-tags-autocomplete",
   "terminal",
-  "obsidian-tasks-plugin"
+  "obsidian-tasks-plugin",
+  "obsidian-latex-suite",
+  "nldates-obsidian"
 ]
