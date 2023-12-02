@@ -1,4 +1,19 @@
+# Push a project onto GitLab on master branch as the default
+
+1. Create a remote repo WITHOUT README.md
+2. Initialize a git repo `git init`
+3. Add remote repo `git remote add origin .../remote-repo.git`
+4. Add and commit the project `git add . && git commit -m "Commit message"`
+5. Push the project `git push -u -f origin master`
+
+```ad-warning
+Legacy Git repositories create a _master_ branch by default, while newer ones use _main_. Use the branch name that matches your local Git repository by using `git show-ref` to check if the local branch name is `refs/heads/master` or `refs/heads/main`
+
+```
+
+
 # Courses
+
 1. [List of courses for Blazor](https://awesomeopensource.com/project/AdrienTorris/awesome-blazor#tutorials)
 2. [Push an existing project to GitLab under MASTER (not main) branch](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-add-and-push-an-existing-project-to-GitLab)
 3. [Teach yourself CS](https://teachyourselfcs.com/)
@@ -62,4 +77,4 @@
 
 3. [Commands for EF Core](https://www.entityframeworktutorial.net/efcore/cli-commands-for-ef-core-migration.aspx)
 4. [Create a README in local repo](https://www.ge.com/digital/documentation/edge-software/t_Create_Readme_and_Commit_to_Local_Repo.html)
-5. [Kill hibernation files to free up space](https://www.reddit.com/r/Windows10/comments/11m88cc/c_drive_is_basically_full_how_can_i_free_up_more/jbhth4v/?context=3)
+5. [Kill hibernation files to free up space with `powercfg -h off`](https://www.reddit.com/r/Windows10/comments/11m88cc/c_drive_is_basically_full_how_can_i_free_up_more/jbhth4v/?context=3)
