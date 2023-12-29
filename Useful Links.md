@@ -6,11 +6,14 @@
 4. Add and commit the project `git add . && git commit -m "Commit message"`
 5. Push the project `git push -u -f origin master`
 
-```ad-warning
+>[!warning]
 Legacy Git repositories create a _master_ branch by default, while newer ones use _main_. Use the branch name that matches your local Git repository by using `git show-ref` to check if the local branch name is `refs/heads/master` or `refs/heads/main`
 
-```
 
+# Tools
+
+1. Fine Code Coverage - VS 2022 extension
+2. StyleCop
 
 # Courses
 

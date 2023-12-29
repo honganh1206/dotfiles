@@ -1,19 +1,19 @@
 {
-  "obsidian-admonition:insert-admonition": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "A"
-    }
-  ],
   "editor:toggle-code": [
     {
       "modifiers": [
         "Mod"
       ],
       "key": "M"
+    }
+  ],
+  "obsidian-admonition:insert-callout": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
     }
   ]
 }

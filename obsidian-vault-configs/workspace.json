@@ -20,13 +20,13 @@
             }
           },
           {
-            "id": "47631c645cad84cb",
+            "id": "a224e6d9f78fb9de",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weekly Summary/Week 46 - 2023-11-13 to 2023-11-19.md",
+                "file": "Weekly Summary/Week 52 - 2023-12-25 to 2023-12-31.md",
                 "mode": "source",
                 "source": false
               },
@@ -34,19 +34,71 @@
             }
           },
           {
-            "id": "adb65eb637200ce6",
+            "id": "3c70ced28b10873f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Weekly Summary/Weekly Study Review Template.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "033bee14fb2cf3bd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weekly Summary/Week 47 - 2023-11-20 to 2023-11-26.md",
+                "file": "DotNet/CSharp/CSharp Syntax.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "a2e23cfe7716a849",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DotNet/Unit_Testing/Unit testing course note.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f37d02c638f39b04",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DotNet/SignalR/Chapter 8/Securing your SignalR application.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dca1ad6c61fa8923",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Misc/Useful Links.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -75,7 +127,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "DevTest",
+                "query": "useful Links",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -120,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weekly Summary/Week 47 - 2023-11-20 to 2023-11-26.md",
+                "file": "Misc/Useful Links.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +189,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weekly Summary/Week 47 - 2023-11-20 to 2023-11-26.md",
+                "file": "Misc/Useful Links.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +212,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weekly Summary/Week 47 - 2023-11-20 to 2023-11-26.md"
+                "file": "Misc/Useful Links.md"
               }
             }
           },
@@ -186,7 +238,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           },
@@ -220,55 +274,55 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "adb65eb637200ce6",
+  "active": "dca1ad6c61fa8923",
   "lastOpenFiles": [
-    "Misc/obsidian-vault-settings/themes/Things/theme (2).css",
-    "Misc/obsidian-vault-settings/themes/Things/manifest (2).json",
-    "Misc/obsidian-vault-settings/themes/Shimmering Focus/theme (2).css",
-    "Misc/obsidian-vault-settings/themes/Shimmering Focus/manifest (2).json",
-    "Misc/obsidian-vault-settings/themes/Obsidian Nord/theme (2).css",
-    "Misc/obsidian-vault-settings/themes/Obsidian Nord/manifest (2).json",
-    "Misc/obsidian-vault-settings/themes/Minimal/theme (2).css",
-    "Misc/obsidian-vault-settings/themes/Minimal/manifest (2).json",
-    "Misc/obsidian-vault-settings/themes/Clair de Lune/theme (2).css",
-    "Misc/obsidian-vault-settings/themes/Clair de Lune/manifest (2).json",
-    "Misc/obsidian-vault-settings/themes/Atom/theme (2).css",
-    "Weekly Summary/Week 46 - 2023-11-13 to 2023-11-19.md",
-    "Weekly Summary/Week 47 - 2023-11-20 to 2023-11-26.md",
-    "TODOs.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Cloud_Concepts/Pasted image 20230628212751.png",
-    "Azure_Certs/AZ900/Microsoft_Learn/Storage_Services/Pasted image 20231022215422.png",
-    "Azure_Certs/AZ900/Microsoft_Learn/Computing_Networking_Services/Pasted image 20230720105711.png",
-    "Azure_Certs/AZ900/Microsoft_Learn/Storage_Services/Pasted image 20230722112137.png",
-    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Pasted image 20230809153950.png",
-    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Pasted image 20230809153402.png",
-    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Pasted image 20230712234722.png",
-    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Pasted image 20230712232837.png",
-    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Monitoring tools.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Features and tools for managing and deploying Azure resources.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Cloud_Concepts/Describe cloud computing.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Cloud_Concepts/Cloud service types.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Cloud_Concepts/Benefits of cloud computing.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Cost management in Azure.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Pasted image 20230809144819.png",
-    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Core architectural components of Azure.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Management_Governance/Azure management and governance.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Storage_Services/Pasted image 20230802211413.png",
-    "Azure_Certs/AZ900/Microsoft_Learn/Storage_Services/Azure Storage Services.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Identity_Access_Security/Azure identity, access, and security.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Computing_Networking_Services/Networking services.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Computing_Networking_Services/Computing services.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Azure_Computing_Networking_Services/Networking services.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Azure_Computing_Networking_Services/Computing services.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Azure_Computing_Networking_Services/Azure compute and networking services 1.md",
-    "Algo_DataStruct/Grokking_Algo/Chapter8/Greedy Algorithm.md",
+    "Weekly Summary/Week 52 - 2023-12-25 to 2023-12-31.md",
+    "DotNet/PoeSetup.exe",
+    "DotNet/Unconfirmed 194396.crdownload",
+    "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/Pasted image 20231227214357.png",
+    "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/Pasted image 20231227214022.png",
+    "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/Why DS Matter.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/Untitled.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1",
+    "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Untitled",
+    "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Preface.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Untitled.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Untitled",
+    "Algo_DataStruct/Algorithm_Study_Notes/Materials/A Common-Sense Guide to Data Structur... (Z-Library).pdf",
+    "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231220172159.png",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231222165927.png",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Where to go next.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231222165759.png",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231222165504.png",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231222165424.png",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231220212624.png",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231220212614.png",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231220172620.png",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter10/k-nearest neighbors.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter10",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter9/Dynamic Programming.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter9",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter8/Greedy Algorithm.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter7/Dijkstra's Algorithm.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter6/Breadth-first Search aka 1st Graph algorithm.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter5/Hash Tables.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter4/Quicksort.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter3/Recursion.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter2/Selection sort.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter1/Introduction to Algorithms.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Chapter2/Selection sort.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Chapter9/Dynamic Programming.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Chapter8/Greedy Algorithm.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Chapter7/Dijkstra's Algorithm.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Chapter4/Quicksort.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Chapter6/Breadth-first Search aka 1st Graph algorithm.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Chapter5/Hash Tables.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Chapter3/Recursion.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Chapter11/Where to go next.md",
+    "Algo_DataStruct/Algorithm_Study_Notes/Chapter10/k-nearest neighbors.md",
     "Azure_Certs/AZ900/AZ-900.canvas",
-    "Azure_Certs/AZ900/Microsoft_Learn/Scenario questions from practice tests.md",
-    "Azure_Certs/AZ900/Udemy_Courses/Azure architecture and services.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/Azure_Computing_Networking_Services/Azure compute and networking services.md",
-    "Azure_Certs/Azure_Certs/AZ900/Udemy_Courses/Azure architecture and services.md",
-    "Azure_Certs/AZ900/Adam_Marczak_Resources/Ep23/23 - Azure Firewall.md",
-    "Azure_Certs/AZ900/Microsoft_Learn/More from taking practice tests.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Note_TAU-main/Technical Canvas.canvas"
