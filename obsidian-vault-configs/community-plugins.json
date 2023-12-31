@@ -21,5 +21,11 @@
   "terminal",
   "obsidian-tasks-plugin",
   "obsidian-latex-suite",
-  "nldates-obsidian"
+  "nldates-obsidian",
+  "cm-editor-syntax-highlight-obsidian",
+  "execute-code",
+  "obsidian-excalidraw-plugin",
+  "obsidian-minimal-settings",
+  "obsidian-icon-folder",
+  "omnisearch"
 ]

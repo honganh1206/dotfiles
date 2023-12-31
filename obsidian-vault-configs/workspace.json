@@ -4,101 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "ed06741f0e5b86a2",
+        "id": "fb241c9a8a5e0981",
         "type": "tabs",
         "children": [
           {
-            "id": "9f007045a37b00ff",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "TODOs.md"
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "a224e6d9f78fb9de",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Weekly Summary/Week 52 - 2023-12-25 to 2023-12-31.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "3c70ced28b10873f",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Weekly Summary/Weekly Study Review Template.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "033bee14fb2cf3bd",
+            "id": "7f390b861254bfa0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DotNet/CSharp/CSharp Syntax.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a2e23cfe7716a849",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DotNet/Unit_Testing/Unit testing course note.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f37d02c638f39b04",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DotNet/SignalR/Chapter 8/Securing your SignalR application.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dca1ad6c61fa8923",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Misc/Useful Links.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
+              "type": "empty",
+              "state": {}
             }
           }
         ],
-        "currentTab": 6
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -127,7 +45,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "useful Links",
+                "query": "\"Online Service Terms",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -172,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Misc/Useful Links.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Misc/Useful Links.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Misc/Useful Links.md"
-              }
+              "state": {}
             }
           },
           {
@@ -271,25 +185,42 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "templater-obsidian:Templater": false,
-      "terminal:Open terminal": false
+      "terminal:Open terminal": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "dca1ad6c61fa8923",
+  "active": "7f390b861254bfa0",
   "lastOpenFiles": [
-    "Weekly Summary/Week 52 - 2023-12-25 to 2023-12-31.md",
-    "DotNet/PoeSetup.exe",
-    "DotNet/Unconfirmed 194396.crdownload",
+    "Misc/Useful Links.md",
+    "DotNet/Unit_Testing/2- Core testing technique.md",
+    "DotNet/SignalR/Chapter 8/Securing your SignalR application.md",
+    "DotNet/CSharp/CSharp Syntax.md",
+    "DotNet/Unit_Testing/1- Overview.md",
+    "Weekly Summary/2023/Week 52 - 2023-12-25 to 2023-12-31.md",
+    "Weekly Summary/2024/Week 1 - 2024-01-01 to 2023-01-07.md",
+    "Maths/Commons/latexcheatsheet.pdf",
+    "Maths/Commons/latexcheatsheet.pdf.crdownload",
+    "Maths/Commons",
+    "Maths/Untitled",
+    "Maths/Math_Better_Explained/Chapter 1/Pasted image 20231230211522.png",
+    "Azure_Certs/AZ-204",
+    "Azure_Certs/Untitled",
+    "Azure_Certs/AZ900/Adam_Marczak_Resources/Ep34/34 - Core tenets of Security, Privacy, Compliance.md",
+    "Weekly Summary/2024",
+    "Weekly Summary/2023",
+    "Weekly Summary/Weekly Study Review Template.md",
+    "Maths/Math_Better_Explained/Chapter 1/Pasted image 20231229115748.png",
+    "Maths/Math_Better_Explained/Chapter 1/Developing Math Intuition.md",
+    "Maths/Math_Better_Explained/Chapter 1/Untitled.md",
+    "Maths/Math_Better_Explained/Chapter 1",
+    "Maths/Math_Better_Explained/Untitled",
     "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/Pasted image 20231227214357.png",
     "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/Pasted image 20231227214022.png",
     "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/Why DS Matter.md",
     "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/Untitled.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1",
-    "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Untitled",
     "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Preface.md",
     "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Untitled.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Untitled",
-    "Algo_DataStruct/Algorithm_Study_Notes/Materials/A Common-Sense Guide to Data Structur... (Z-Library).pdf",
-    "Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo",
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231220172159.png",
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231222165927.png",
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Where to go next.md",
@@ -297,13 +228,8 @@
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231222165504.png",
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231222165424.png",
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231220212624.png",
-    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231220212614.png",
-    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11/Pasted image 20231220172620.png",
-    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter11",
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter10/k-nearest neighbors.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter10",
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter9/Dynamic Programming.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter9",
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter8/Greedy Algorithm.md",
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter7/Dijkstra's Algorithm.md",
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter6/Breadth-first Search aka 1st Graph algorithm.md",
@@ -312,16 +238,6 @@
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter3/Recursion.md",
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter2/Selection sort.md",
     "Algo_DataStruct/Algorithm_Study_Notes/Grokking_Algo/Chapter1/Introduction to Algorithms.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Chapter2/Selection sort.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Chapter9/Dynamic Programming.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Chapter8/Greedy Algorithm.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Chapter7/Dijkstra's Algorithm.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Chapter4/Quicksort.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Chapter6/Breadth-first Search aka 1st Graph algorithm.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Chapter5/Hash Tables.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Chapter3/Recursion.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Chapter11/Where to go next.md",
-    "Algo_DataStruct/Algorithm_Study_Notes/Chapter10/k-nearest neighbors.md",
     "Azure_Certs/AZ900/AZ-900.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas",
