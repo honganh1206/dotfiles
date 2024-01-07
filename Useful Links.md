@@ -9,12 +9,22 @@
 >[!warning]
 Legacy Git repositories create a _master_ branch by default, while newer ones use _main_. Use the branch name that matches your local Git repository by using `git show-ref` to check if the local branch name is `refs/heads/master` or `refs/heads/main`
 
+# [Install Docker on WSL without Docker Desktop](https://dev.to/bowmanjd/install-docker-on-windows-wsl-without-docker-desktop-34m9)
 
 # Tools
 
 1. Fine Code Coverage - VS 2022 extension
 2. StyleCop
+3. [RustDesk and how to configure it for self-hosting](https://www.youtube.com/watch?v=SYM6M5Fiuyc)
+	1. [Headless linux support](https://github.com/rustdesk/rustdesk/wiki/Headless-Linux-Support)
 
+> [!tip] Install deb package
+> 
+> ```bash
+> sudo apt install /path/to/file.deb
+> ```
+
+4. [Win11 Clean Installation/Debloater](https://christitus.com/windows-tool/)
 # Courses
 
 1. [List of courses for Blazor](https://awesomeopensource.com/project/AdrienTorris/awesome-blazor#tutorials)
@@ -27,7 +37,7 @@ Legacy Git repositories create a _master_ branch by default, while newer ones 
 8. [Weekly template for Obsidian P2 (Advanced)](https://bagerbach.com/blog/weekly-review-obsidian#weekly-review-template)
 # Configs
 
- 1. [Add and configure StyleCop for the whole solution](https://bytedev.medium.com/quickly-setup-stylecop-for-new-net-solutions-275fc755b69e)
+1. [Add and configure StyleCop for the whole solution](https://bytedev.medium.com/quickly-setup-stylecop-for-new-net-solutions-275fc755b69e)
 2.  [Configure Serilog for ASP.NET Core (The right and shortest way)](https://github.com/serilog/serilog-aspnetcore)
 
 ```json
