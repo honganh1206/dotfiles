@@ -11,6 +11,9 @@ Legacy Git repositories create a _master_ branch by default, while newer ones 
 
 # [Install Docker on WSL without Docker Desktop](https://dev.to/bowmanjd/install-docker-on-windows-wsl-without-docker-desktop-34m9)
 
+
+
+# [Visual Studio shortcuts](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022#bkmk_refactor-popular-shortcuts)
 # Tools
 
 1. Fine Code Coverage - VS 2022 extension

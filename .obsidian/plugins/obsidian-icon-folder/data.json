@@ -1,0 +1,111 @@
+{
+  "settings": {
+    "migrated": 4,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "FabMicrosoft",
+      "FabAws",
+      "FabDocker",
+      "FabReact",
+      "FabHtml5"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [
+      {
+        "icon": "FabMicrosoft",
+        "rule": "Azure_Certs/AZ-104/Scott_Duffy/Azure Concepts.md\\/[\\w\\d\\s]+\\.(?:\\w+\\.)*\\w+",
+        "for": "files",
+        "order": 0,
+        "useFilePath": true
+      },
+      {
+        "icon": "FabMicrosoft",
+        "rule": "DotNet\\/[\\w\\d\\s]+\\.(?:\\w+\\.)*\\w+",
+        "for": "files",
+        "order": 1,
+        "useFilePath": true
+      },
+      {
+        "icon": "FabDocker",
+        "rule": "Docker\\/[\\w\\d\\s]+\\.(?:\\w+\\.)*\\w+",
+        "for": "files",
+        "order": 2,
+        "useFilePath": true
+      },
+      {
+        "icon": "FabReact",
+        "rule": "Javascript_Typescript/React\\/[\\w\\d\\s]+\\.(?:\\w+\\.)*\\w+",
+        "for": "files",
+        "order": 3,
+        "useFilePath": true
+      },
+      {
+        "icon": "FabHtml5",
+        "rule": "HTML_CSS\\/[\\w\\d\\s]+\\.(?:\\w+\\.)*\\w+",
+        "for": "files",
+        "order": 4,
+        "useFilePath": true
+      },
+      {
+        "icon": "FarNoteSticky",
+        "rule": "Weekly Summary\\/[\\w\\d\\s]+\\.(?:\\w+\\.)*\\w+",
+        "for": "files",
+        "order": 5,
+        "useFilePath": true
+      },
+      {
+        "icon": "RiJavascriptLine",
+        "rule": "Javascript_Typescript\\/[\\w\\d\\s]+\\.(?:\\w+\\.)*\\w+",
+        "for": "files",
+        "order": 6,
+        "useFilePath": true
+      },
+      {
+        "icon": "FabGolang",
+        "rule": "Golang\\/[\\w\\d\\s]+\\.(?:\\w+\\.)*\\w+",
+        "for": "files",
+        "order": 7,
+        "useFilePath": true
+      },
+      {
+        "icon": "FabMicrosoft",
+        "rule": "Azure_Certs\\/[\\w\\d\\s]+\\.(?:\\w+\\.)*\\w+",
+        "for": "files",
+        "order": 8,
+        "useFilePath": true
+      },
+      {
+        "icon": "RiTestTubeLine",
+        "rule": "DotNet/Unit_Testing\\/[\\w\\d\\s]+\\.(?:\\w+\\.)*\\w+",
+        "for": "files",
+        "order": 9,
+        "useFilePath": true
+      }
+    ],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": false,
+    "iconInFrontmatterEnabled": false,
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconIdentifier": ":"
+  },
+  "AWS_Certs": "FabAws",
+  "DotNet/Unit_Testing": "RiTestTubeLine",
+  "Azure_Certs": "FabMicrosoft",
+  "Golang": "FabGolang",
+  "Javascript_Typescript": "RiJavascriptLine",
+  "Weekly Summary": "FarNoteSticky",
+  "HTML_CSS": "FabHtml5",
+  "Javascript_Typescript/React": "FabReact",
+  "Docker": "FabDocker",
+  "DotNet": "FabMicrosoft"
+}
