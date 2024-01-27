@@ -105,6 +105,12 @@
         "rgba(144, 224, 239,0.025)"
     ],
     "typescript.updateImportsOnFileMove.enabled": "always",
+    // "gitlens.ai.experimental.provider": "openai",
+    // "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+    // "sqltools.useNodeRuntime": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "csharp.debug.console": "externalTerminal",
+    "workbench.editor.enablePreview": false,
 
     /**
      * Workbench UI
@@ -313,14 +319,7 @@
     /** Breadcrumbs */
     "breadcrumbs.enabled": true,
     "breadcrumbs.filePath": "on",
-    "breadcrumbs.symbolPath": "off",
-
-    // "gitlens.ai.experimental.provider": "openai",
-    // "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
-    // "sqltools.useNodeRuntime": true,
-    "liveServer.settings.donotVerifyTags": true,
-    "csharp.debug.console": "externalTerminal",
-    "workbench.editor.enablePreview": false
+    "breadcrumbs.symbolPath": "off"
     /**
      * Silence The Noise
      */
