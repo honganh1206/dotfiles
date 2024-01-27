@@ -127,7 +127,6 @@
     "workbench.editor.preventPinnedEditorClose": "keyboard",
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.tabActionCloseVisibility": false,
-    "workbench.editor.enablePreview": false,
 
     /** Workbench */
     "workbench.layoutControl.enabled": false,
@@ -304,8 +303,8 @@
 
     /** Terminal */
     "terminal.integrated.smoothScrolling": true,
-    "terminal.integrated.fontFamily": "FiraMono Nerd Font Mono",
-    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontFamily": "iosevka custom, iosevkaterm nerd font",
+    "terminal.integrated.fontSize": 15,
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.enableMultiLinePasteWarning": false,
@@ -320,7 +319,8 @@
     // "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
     // "sqltools.useNodeRuntime": true,
     "liveServer.settings.donotVerifyTags": true,
-    "csharp.debug.console": "externalTerminal"
+    "csharp.debug.console": "externalTerminal",
+    "workbench.editor.enablePreview": false
     /**
      * Silence The Noise
      */

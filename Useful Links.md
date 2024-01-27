@@ -12,6 +12,11 @@ Legacy Git repositories create a _master_ branch by default, while newer ones 
 # [Install Docker on WSL without Docker Desktop](https://dev.to/bowmanjd/install-docker-on-windows-wsl-without-docker-desktop-34m9)
 
 
+# VS Code thingy
+
+- Install Iosevka font from [this repo](https://github.com/nomosstorge/vscode-setup)
+- Apply the `vscode-settings.json` to the user `settings.json` of VS Code 
+
 
 # [Visual Studio shortcuts](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022#bkmk_refactor-popular-shortcuts)
 # Tools
