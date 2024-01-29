@@ -79,8 +79,6 @@
     /** Extensions */
     "codemetrics.basics.CodeLensEnabled": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "javascript.inlayHints.parameterNames.enabled": "all",
     "liveServer.settings.donotShowInfoMsg": true,
     "gruvboxMaterial.darkContrast": "hard",
     "gruvboxMaterial.darkPalette": "original",
@@ -90,7 +88,6 @@
     "prettier.tabWidth": 4,
     "prettier.endOfLine": "auto",
     "todo-tree.tree.disableCompactFolders": true,
-    "typescript.inlayHints.enumMemberValues.enabled": true,
     "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
     "indentRainbow.colors": [
         "rgba(3, 4, 94,0.15)",
@@ -104,13 +101,45 @@
         "rgba(144, 224, 239,0.05)",
         "rgba(144, 224, 239,0.025)"
     ],
-    "typescript.updateImportsOnFileMove.enabled": "always",
     // "gitlens.ai.experimental.provider": "openai",
     // "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
     // "sqltools.useNodeRuntime": true,
     "liveServer.settings.donotVerifyTags": true,
-    "csharp.debug.console": "externalTerminal",
     "workbench.editor.enablePreview": false,
+
+    /** Prettier configs per file types */
+    // JSON
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // HTML
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    /** Configs per language */
+
+    // Python
+    "python.defaultInterpreterPath": "python3",
+    "python.experiments.enabled": false,
+    "notebook.formatOnSave.enabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+
+    // JS
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.inlayHints.parameterNames.enabled": "all",
+
+    // TS
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+
+    // C#
+    "csharp.debug.console": "externalTerminal",
 
     /**
      * Workbench UI
@@ -139,26 +168,6 @@
     "workbench.tips.enabled": false,
     "workbench.tree.enableStickyScroll": false,
     "workbench.colorCustomizations": {
-        // "terminal.background":"#282C34",
-        // "terminal.foreground":"#ABB2BF",
-        // "terminalCursor.background":"#ABB2BF",
-        // "terminalCursor.foreground":"#ABB2BF",
-        // "terminal.ansiBlack":"#282C34",
-        // "terminal.ansiBlue":"#61AFEF",
-        // "terminal.ansiBrightBlack":"#545862",
-        // "terminal.ansiBrightBlue":"#61AFEF",
-        // "terminal.ansiBrightCyan":"#56B6C2",
-        // "terminal.ansiBrightGreen":"#98C379",
-        // "terminal.ansiBrightMagenta":"#C678DD",
-        // "terminal.ansiBrightRed":"#E06C75",
-        // "terminal.ansiBrightWhite":"#C8CCD4",
-        // "terminal.ansiBrightYellow":"#E5C07B",
-        // "terminal.ansiCyan":"#56B6C2",
-        // "terminal.ansiGreen":"#98C379",
-        // "terminal.ansiMagenta":"#C678DD",
-        // "terminal.ansiRed":"#E06C75",
-        // "terminal.ansiWhite":"#ABB2BF",
-        // "terminal.ansiYellow":"#E5C07B"
         "tree.indentGuidesStroke": "#4E4B5C",
         "activityBar.activeBorder": "#dbd7caed"
     },
@@ -307,6 +316,13 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
 
+    /** Minimal Mode */
+    "zenMode.centerLayout": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.silentNotifications": false,
+
     /** Terminal */
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.fontFamily": "iosevka custom, iosevkaterm nerd font",
@@ -320,29 +336,4 @@
     "breadcrumbs.enabled": true,
     "breadcrumbs.filePath": "on",
     "breadcrumbs.symbolPath": "off"
-    /**
-     * Silence The Noise
-     */
-    // "breadcrumbs.enabled": false,
-    // "scm.diffDecorations": "none",
-    // "editor.hover.enabled": false,
-    // "editor.matchBrackets": "never",
-    // "workbench.tips.enabled": false,
-    // "editor.colorDecorators": false,
-    // "git.decorations.enabled": false,
-    // "workbench.startupEditor": "none",
-    // "editor.lightbulb.enabled": false,
-    // "editor.selectionHighlight": false,
-    // "editor.overviewRulerBorder": false,
-    // "editor.renderLineHighlight": "none",
-    // "editor.occurrencesHighlight": false,
-    // "problems.decorations.enabled": false,
-    // "editor.renderControlCharacters": false,
-    // "editor.hideCursorInOverviewRuler": true,
-    // "editor.gotoLocation.multipleReferences": "goto",
-    // "editor.gotoLocation.multipleDefinitions": "goto",
-    // "editor.gotoLocation.multipleDeclarations": "goto",
-    // "workbench.editor.enablePreviewFromQuickOpen": false,
-    // "editor.gotoLocation.multipleImplementations": "goto",
-    // "editor.gotoLocation.multipleTypeDefinitions": "goto"
 }
