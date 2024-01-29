@@ -177,7 +177,7 @@
     "editor.fontLigatures": true,
     "editor.fontWeight": 400,
     "editor.lineHeight": 22,
-    "editor.fontSize": 13,
+    "editor.fontSize": 12.5,
     /** Editor Scroll */
     "editor.smoothScrolling": true,
     "editor.scrollbar.verticalScrollbarSize": 10,
@@ -298,6 +298,9 @@
     "diffEditor.renderSideBySide": false,
     "multiDiffEditor.experimental.enabled": true,
     /** Files */
+    "files.associations": {
+        "*.json": "json"
+    },
     "files.enableTrash": true,
     "files.restoreUndoStack": true,
     "files.exclude": {
@@ -311,6 +314,7 @@
         "**/bin": true,
         "**/obj": true
     },
+    "files.defaultLanguage": "${activeEditorLanguage}",
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
