@@ -9,9 +9,17 @@
 >[!warning]
 Legacy Git repositories create a _master_ branch by default, while newer ones use _main_. Use the branch name that matches your local Git repository by using `git show-ref` to check if the local branch name is `refs/heads/master` or `refs/heads/main`
 
-# [Install Docker on WSL without Docker Desktop](https://dev.to/bowmanjd/install-docker-on-windows-wsl-without-docker-desktop-34m9)
+# Install Docker on WSL2 without Docker Desktop
 
+```bash
+# Apply to Ubuntu 20.04 and higher
+sudo apt install docker.io
+```
 
+- [A longer way](https://nickjanetakis.com/blog/install-docker-in-wsl-2-without-docker-desktop)
+- [Deal with "Temporary failure resolving 'archive.ubuntu.com'" by making /etc/resolv.conf changes permanent in WSL 2  ](https://askubuntu.com/questions/1450120/windows-subsystem-for-linux-2-temporary-failure-resolving-archive-ubuntu-com)
+
+	
 # VS Code thingy
 
 - Install Iosevka font from [this repo](https://github.com/nomosstorge/vscode-setup)
