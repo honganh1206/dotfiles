@@ -17,14 +17,15 @@ sudo apt install docker.io
 ```
 
 - [A longer way](https://nickjanetakis.com/blog/install-docker-in-wsl-2-without-docker-desktop)
-- [Deal with "Temporary failure resolving 'archive.ubuntu.com'" by making /etc/resolv.conf changes permanent in WSL 2  ](https://askubuntu.com/questions/1450120/windows-subsystem-for-linux-2-temporary-failure-resolving-archive-ubuntu-com)
+- Common issues to deal with:
+	- [Windows Subsystem for Linux 2: Temporary failure resolving 'archive.ubuntu.com'  => Also make Ubuntu on WSL2 much faster somehow](https://askubuntu.com/questions/1450120/windows-subsystem-for-linux-2-temporary-failure-resolving-archive-ubuntu-com)
+	- [System has not been booted with systemd as init system (PID 1). Can't operate](https://askubuntu.com/questions/1379425/system-has-not-been-booted-with-systemd-as-init-system-pid-1-cant-operate)
 
-	
 # VS Code thingy
 
 - Install Iosevka font from [this repo](https://github.com/nomosstorge/vscode-setup)
 - Apply the `vscode-settings.json` to the user `settings.json` of VS Code 
-
+- [Export VS Code extension list](https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list)
 
 # [Visual Studio shortcuts](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022#bkmk_refactor-popular-shortcuts)
 # Tools
