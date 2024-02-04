@@ -1,6 +1,9 @@
-# Push a project onto GitLab on master branch as the default
 
-1. Create a remote repo WITHOUT README.md
+# Gitlab
+
+## Push a project onto GitLab on master branch as the default
+
+1. Create a remote repo WITHOUT README.md (to avoid setting `main` as the default branch)
 2. Initialize a git repo `git init`
 3. Add remote repo `git remote add origin .../remote-repo.git`
 4. Add and commit the project `git add . && git commit -m "Commit message"`
@@ -9,7 +12,10 @@
 >[!warning]
 Legacy Git repositories create a _master_ branch by default, while newer ones use _main_. Use the branch name that matches your local Git repository by using `git show-ref` to check if the local branch name is `refs/heads/master` or `refs/heads/main`
 
-# Install Docker on WSL2 without Docker Desktop
+
+# Docker
+
+## Install Docker on WSL2 without Docker Desktop
 
 ```bash
 # Apply to Ubuntu 20.04 and higher
@@ -21,14 +27,18 @@ sudo apt install docker.io
 	- [Windows Subsystem for Linux 2: Temporary failure resolving 'archive.ubuntu.com'  => Also make Ubuntu on WSL2 much faster somehow](https://askubuntu.com/questions/1450120/windows-subsystem-for-linux-2-temporary-failure-resolving-archive-ubuntu-com)
 	- [System has not been booted with systemd as init system (PID 1). Can't operate](https://askubuntu.com/questions/1379425/system-has-not-been-booted-with-systemd-as-init-system-pid-1-cant-operate)
 
-# VS Code thingy
+# VS Code
 
-- Install Iosevka font from [this repo](https://github.com/nomosstorge/vscode-setup)
+- Install `Iosevka` font from [this repo](https://github.com/nomosstorge/vscode-setup)
 - Apply the `vscode-settings.json` to the user `settings.json` of VS Code 
 - [Export VS Code extension list](https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list)
 
-# [Visual Studio shortcuts](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022#bkmk_refactor-popular-shortcuts)
-# Tools
+# Visual Studio
+
+## [Shortcuts](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022#bkmk_refactor-popular-shortcuts)
+
+
+# Other tools
 
 1. Fine Code Coverage - VS 2022 extension
 2. StyleCop
@@ -42,6 +52,11 @@ sudo apt install docker.io
 > ```
 
 4. [Win11 Clean Installation/Debloater](https://christitus.com/windows-tool/)
+5. Tmux (Terminal multiplexers for Linux distro/WSL)
+	- [Cheatsheet](https://tmuxcheatsheet.com/)
+	- [Overview](https://arcolinux.com/everthing-you-need-to-know-about-tmux-panes/#:~:text=A%20Session%20holds%20one%20or,commands%20(good%20when%20scripting).)
+
+---
 # Courses
 
 1. [List of courses for Blazor](https://awesomeopensource.com/project/AdrienTorris/awesome-blazor#tutorials)
@@ -56,55 +71,6 @@ sudo apt install docker.io
 
 1. [Add and configure StyleCop for the whole solution](https://bytedev.medium.com/quickly-setup-stylecop-for-new-net-solutions-275fc755b69e)
 2.  [Configure Serilog for ASP.NET Core (The right and shortest way)](https://github.com/serilog/serilog-aspnetcore)
-
-```json
-// logsettings.json
-{
-  "Serilog": {
-    "Using": [
-      "Serilog.Sinks.File",
-      "Serilog.Sinks.Console"
-    ],
-    "MinimumLevel": {
-      "Default": "Debug",
-      "Override": {
-        "Microsoft.AspNetCore": "Warning"
-      }
-    },
-    "Enrich": [ "FromLogContext", "WithMachineName", "WithProcessId", "WithThreadId" ],
-    "WriteTo": [
-      {
-        "Name": "File",
-        "Args": {
-          "path": "logs/log.json",
-          "rollingInterval": "Day",
-          "formatter": "Serilog.Formatting.Compact.CompactJsonFormatter, Serilog.Formatting.Compact"
-        }
-      },
-      {
-        "Name": "Console",
-        "Args": {
-          "theme": "Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme::Code, Serilog.Sinks.Console",
-          "outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}"
-        }
-      }
-    ]
-  },
-  "Serilog.Sinks.Console": {
-    "theme": {
-      "ansiTheme": {
-        "fatal": "red,bold",
-        "error": "red",
-        "warning": "yellow",
-        "information": "green",
-        "debug": "cyan",
-        "verbose": "gray"
-      }
-    }
-  }
-}
-```
-
 3. [Commands for EF Core](https://www.entityframeworktutorial.net/efcore/cli-commands-for-ef-core-migration.aspx)
 4. [Create a README in local repo](https://www.ge.com/digital/documentation/edge-software/t_Create_Readme_and_Commit_to_Local_Repo.html)
 5. [Kill hibernation files to free up space with `powercfg -h off`](https://www.reddit.com/r/Windows10/comments/11m88cc/c_drive_is_basically_full_how_can_i_free_up_more/jbhth4v/?context=3)

@@ -1,6 +1,7 @@
 # What for?
 
 - Sync Obsidian settings (Plugins, Configs, etc.) between vaults MANUALLY
+- Store `settings.json` and `keybindings.json` configs for VS Code (to sync with laptops I cannot log in with my personal Microsoft account)
 - Also to store useful links + templates
 
 # How?
