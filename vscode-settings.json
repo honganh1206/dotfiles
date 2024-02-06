@@ -7,8 +7,8 @@
     "window.titleBarStyle": "custom",
 
     /** Extension: Apc */
-    "apc.font.family": "iosevka custom",
-    "apc.monospace.font.family": "iosevka custom",
+    "apc.font.family": "JetBrainsMono Nerd Font Mono",
+    "apc.monospace.font.family": "JetBrainsMono Nerd Font Mono",
 
     "apc.electron": {
         "titleBarStyle": "hiddenInset",
@@ -139,6 +139,9 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
 
     // C#
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
     "csharp.debug.console": "externalTerminal",
 
     /**
@@ -173,7 +176,7 @@
     },
     "workbench.iconTheme": "material-icon-theme",
     /** Editor Font */
-    "editor.fontFamily": "Iosevka Custom",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontLigatures": true,
     "editor.fontWeight": 400,
     "editor.lineHeight": 22,
@@ -217,7 +220,7 @@
     "editor.linkedEditing": true,
     /** Editor Inline Hints */
     "editor.inlayHints.enabled": "off",
-    "editor.inlayHints.fontFamily": "iosevka custom",
+    "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
     "editor.inlayHints.fontSize": 12,
     /** Editor */
     "editor.experimental.asyncTokenization": true,
@@ -234,7 +237,7 @@
     "editor.minimap.enabled": false,
     "editor.tabSize": 2,
     "editor.renderWhitespace": "trailing",
-    "editor.lightbulb.enabled": false,
+    "editor.lightbulb.enabled": "off",
     "editor.copyWithSyntaxHighlighting": false,
     "editor.emptySelectionClipboard": false,
     "editor.snippetSuggestions": "top",
@@ -329,8 +332,8 @@
 
     /** Terminal */
     "terminal.integrated.smoothScrolling": true,
-    "terminal.integrated.fontFamily": "iosevka custom, iosevkaterm nerd font",
-    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono, JetBrainsMono Nerd Font",
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.enableMultiLinePasteWarning": false,
@@ -339,5 +342,16 @@
     /** Breadcrumbs */
     "breadcrumbs.enabled": true,
     "breadcrumbs.filePath": "on",
-    "breadcrumbs.symbolPath": "off"
+    "breadcrumbs.symbolPath": "off",
+    "sqltools.useNodeRuntime": true,
+    "pgsql.connections": [
+        {
+            "host": "localhost",
+            "dbname": "",
+            "user": "admin",
+            "password": "",
+            "emptyPasswordInput": false,
+            "port": "5432"
+        }
+    ]
 }
