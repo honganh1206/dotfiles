@@ -19,8 +19,8 @@
 
 - Shared runner: Configure in Settings > CI/CD > Runners > Instance runners
 - Project runner:
-    - Docker version: Follow [this guide with the Docker volume mounts version](https://docs.gitlab.com/runner/install/docker.html) 
-    - Binary version:
+    - Docker version: Follow [this guide with the local volume mounts version](https://docs.gitlab.com/runner/install/docker.html) 
+    - Binary version (Not recommended as there might be a need for .yml configuration):
 
 ```bash
 # Download the binary for your system
@@ -40,8 +40,11 @@ sudo gitlab-runner start
 
 #### Registration
 
-- [Follow this guide with the Docker volume mounts version](https://docs.gitlab.com/runner/register/index.html?tab=Docker)
-
+- [Follow this guide with the Docker/local volume mounts version](https://docs.gitlab.com/runner/register/index.html?tab=Docker)
+- Common issues:
+	- [Install nano inside docker exec shell](https://stackoverflow.com/questions/30853247/how-do-i-edit-a-file-after-i-shell-to-a-docker-container)
+	- [Resolve "Cannot connect to Docker dameon on Gitlab"](https://stackoverflow.com/questions/61105333/cannot-connect-to-the-docker-daemon-at-tcp-localhost2375-is-the-docker-daem)
+	- Change `privileges` property inside `/etc/gitlab-runner/config.toml` to `true` and restart gitlab-runner container
 
 
 >[!warning]
