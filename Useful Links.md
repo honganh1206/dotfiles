@@ -50,6 +50,37 @@ sudo gitlab-runner start
 >[!warning]
 Legacy Git repositories create a _master_ branch by default, while newer ones use _main_. Use the branch name that matches your local Git repository by using `git show-ref` to check if the local branch name is `refs/heads/master` or `refs/heads/main`
 
+
+### Docker
+
+
+### Install Docker Engine on Ubuntu/WSL2 (without Docker Desktop)
+
+- [Script to install](https://gitlab.com/bmcgonag/docker_installs)
+- Install Docker Engine on WSL2 based on the [Docker docs on installation on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+- Common issues to deal with when installing:
+
+    - [Windows Subsystem for Linux 2: Temporary failure resolving 'archive.ubuntu.com'](https://askubuntu.com/questions/1450120/windows-subsystem-for-linux-2-temporary-failure-resolving-archive-ubuntu-com)
+    - [System has not been booted with systemd as init system (PID 1). Can't operate](https://askubuntu.com/questions/1379425/system-has-not-been-booted-with-systemd-as-init-system-pid-1-cant-operate)
+    - [Cannot connect to docker daemon/Start docker whenver Ubuntu WSL2 is run](https://stackoverflow.com/questions/44678725/cannot-connect-to-the-docker-daemon-at-unix-var-run-docker-sock-is-the-docker)
+
+- (OPTIONAL) Install [Portainer Server](https://docs.portainer.io/start/install-ce/server/docker/wsl) and [Portainer Agent (TLDR: The messenger between Portainer and Docker)](https://docs.portainer.io/admin/environments/add/docker/agent) as a GUI container management platform
+- Update docker-related packages from the [official installation](https://docs.docker.com/engine/install/ubuntu/)
+- Get docker to run as root user (from this [link](https://github.com/rancher-sandbox/rancher-desktop/issues/1156#issuecomment-1017042882))
+
+```bash
+sudo addgroup --system docker
+sudo adduser $USER docker
+# Run docker without sudo
+sudo chown root:docker /var/run/docker.sock
+sudo chmod g+w /var/run/docker.sock
+sudo gpasswd -a $USER docker
+sudo systemctl start docker
+```
+
+- Access WSL Ubuntu File System by [mapping network drive](https://dev.to/miftahafina/accessing-wsl2-files-from-windows-file-explorer-308o) with `\\wsl.localhost\Ubuntu` under `U:` drive
+
+
 ## Git
 
 - [Remove + Ignore a file after it has been committed](https://www.heybooster.ai/insights/how-to-gitignore-after-commit)
@@ -94,6 +125,7 @@ Legacy Git repositories create a _master_ branch by default, while newer ones 
 6. [Get to know Obsidian](https://www.dontblockme.org/browse.php/0PLh3T9c/j0ADvpTO/hZ3KnOW_/2BqeLDmF/fhRiInej/LUssbs3I/vIOQ8u39/XA7S05EL/iBdc9PO0/b_2F7sd8/rcG0pHgm/G_2Frg9W/5qMFj0AA/GP5dUm8S/Nj1Jfkhw/KSrL_2FD/ca72mqlf/Y1yhUd5b/x6mn_2BV/lfXg_3D_/3D/b29/fnorefer)
 7. [Weekly template for Obsidian P1](https://bagerbach.com/blog/projects-and-goals-obsidian)
 8. [Weekly template for Obsidian P2 (Advanced)](https://bagerbach.com/blog/weekly-review-obsidian#weekly-review-template)
+9. https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/
 ## Configs
 
 1. [Add and configure StyleCop for the whole solution](https://bytedev.medium.com/quickly-setup-stylecop-for-new-net-solutions-275fc755b69e)
