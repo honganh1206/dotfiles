@@ -1,8 +1,23 @@
 {
   "accentColor": "",
-  "cssTheme": "Obsidian gruvbox",
+  "cssTheme": "Vanilla AMOLED",
   "baseFontSize": 15,
   "showViewHeader": true,
   "translucency": false,
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
+  "textFontFamily": "JetBrains Mono",
+  "interfaceFontFamily": "JetBrains Mono",
+  "enabledCssSnippets": [
+    "colored_sidebar_items",
+    "notebook_background",
+    "daily_note_themes",
+    "Daily Note Themes",
+    "Notebook Backgrounds",
+    "Colored Sidebar Items",
+    "CyanVoxel's General Tweaks",
+    "Minecraft",
+    "Japanese Font Support",
+    "Runescape"
+  ]
 }

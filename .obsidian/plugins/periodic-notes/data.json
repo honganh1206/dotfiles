@@ -1,17 +1,17 @@
 {
   "showGettingStartedBanner": true,
-  "hasMigratedDailyNoteSettings": false,
+  "hasMigratedDailyNoteSettings": true,
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
-    "format": "",
-    "template": "",
-    "folder": "",
-    "enabled": false
+    "format": "YYYYMMDD",
+    "folder": "06-Daily-Weekly/Daily_Summary",
+    "template": "99-Meta/01-Templates/(TEMPLATE) Daily.md",
+    "enabled": true
   },
   "weekly": {
     "format": "[W]ww",
-    "template": "Weekly Summary/Weekly Study Review Template.md",
-    "folder": "Weekly Summary/2024",
+    "template": "99-Meta/01-Templates/(TEMPLATE) Weekly.md",
+    "folder": "06-Daily-Weekly/Weekly_Summary/2024",
     "enabled": true
   },
   "monthly": {

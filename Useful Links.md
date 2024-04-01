@@ -114,6 +114,7 @@ sudo systemctl start docker
 5. Tmux (Terminal multiplexers for Linux distro/WSL)
 	- [Cheatsheet](https://tmuxcheatsheet.com/)
 	- [Overview](https://arcolinux.com/everthing-you-need-to-know-about-tmux-panes/#:~:text=A%20Session%20holds%20one%20or,commands%20(good%20when%20scripting).)
+6. [mkcert Installation and Configs](https://thriveread.com/mkcert-localhost-ssl-certificates/)
 
 ## Courses
 
@@ -133,3 +134,4 @@ sudo systemctl start docker
 3. [Commands for EF Core](https://www.entityframeworktutorial.net/efcore/cli-commands-for-ef-core-migration.aspx)
 4. [Create a README in local repo](https://www.ge.com/digital/documentation/edge-software/t_Create_Readme_and_Commit_to_Local_Repo.html)
 5. [Kill hibernation files to free up space with `powercfg -h off`](https://www.reddit.com/r/Windows10/comments/11m88cc/c_drive_is_basically_full_how_can_i_free_up_more/jbhth4v/?context=3)
+6. [Useful Obsidian vault configs](https://github.com/CyanVoxel/Obsidian-Vault-Template/tree/main) + [How to setup](https://www.youtube.com/watch?v=rAkerV8rlow)

@@ -1,5 +1,6 @@
 {
   "newFileLocation": "current",
   "attachmentFolderPath": "./",
-  "vimMode": false
+  "vimMode": false,
+  "showInlineTitle": true
 }
