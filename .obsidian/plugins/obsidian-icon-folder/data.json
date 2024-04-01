@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FasCalendar",
       "FasCircleNodes",
       "RiCodeSSlashLine",
       "FasPaperclip",
-      "FasLanguage",
-      "RiTodoFill"
+      "FasLanguage"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [
@@ -107,7 +107,6 @@
   "06-Daily-Weekly": "FasCalendar",
   "07-Archives": "FasBoxArchive",
   "99-Meta": "FasCircleNodes",
-  "06-Daily-Weekly/Weekly_Summary": "FarNoteSticky",
   "01-Projects/HomeLab_Management": "FasServer",
   "03-Resources/Course_Materials": "FasBook",
   "02-Areas/Algo_DataStruct": "FasDrawPolygon",
@@ -137,5 +136,7 @@
   "99-Meta/00-Misc": "FarFolder",
   "99-Meta/01-Templates": "FasPaperclip",
   "99-Meta/02-Preloaded Classes": "RiCodeSSlashLine",
-  "03-Resources/Algo": "FasCircleNodes"
+  "03-Resources/Algo": "FasCircleNodes",
+  "06-Daily-Weekly/Weekly": "FasCalendar",
+  "06-Daily-Weekly/Daily": "FasCalendar"
 }

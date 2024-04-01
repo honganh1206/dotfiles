@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "2024-04-01",
+      "path": "04-Permanent/2024-04-01.md"
+    },
+    {
+      "basename": "2024-04-01-13",
+      "path": "04-Permanent/2024-04-01-13.md"
+    },
+    {
       "basename": "Recursively Recurse with Recursion",
       "path": "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 10/Recursively Recurse with Recursion.md"
     },
@@ -21,10 +29,6 @@
       "path": "00-Map-Of-Content/TODOs.md"
     },
     {
-      "basename": "20240401",
-      "path": "04-Permanent/20240401.md"
-    },
-    {
       "basename": "(TEMPLATE) Daily (Vanilla)",
       "path": "99-Meta/01-Templates/(TEMPLATE) Daily (Vanilla).md"
     },
@@ -42,7 +46,7 @@
     },
     {
       "basename": "W14",
-      "path": "06-Daily-Weekly/Weekly_Summary/2024/W14.md"
+      "path": "06-Daily-Weekly/Weekly/2024/W14.md"
     },
     {
       "basename": "Useful Links",
@@ -54,7 +58,7 @@
     },
     {
       "basename": "W13",
-      "path": "06-Daily-Weekly/Weekly_Summary/2024/W13.md"
+      "path": "06-Daily-Weekly/Weekly/2024/W13.md"
     },
     {
       "basename": "Preserving values with `useState`",

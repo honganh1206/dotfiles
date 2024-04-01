@@ -63,5 +63,13 @@
   ],
   "obsidian-excalidraw-plugin:insert-link": [],
   "obsidian-excalidraw-plugin:save": [],
-  "quick-latex:addInlineMath": []
+  "quick-latex:addInlineMath": [],
+  "zk-prefixer": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "U"
+    }
+  ]
 }

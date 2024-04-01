@@ -3,15 +3,15 @@
   "hasMigratedDailyNoteSettings": true,
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
-    "format": "YYYYMMDD",
-    "folder": "06-Daily-Weekly/Daily_Summary",
-    "template": "99-Meta/01-Templates/(TEMPLATE) Daily.md",
+    "format": "YYYY-MM-DD",
+    "folder": "06-Daily-Weekly/Daily",
+    "template": "99-Meta/01-Templates/(TEMPLATE) Daily (Vanilla).md",
     "enabled": true
   },
   "weekly": {
-    "format": "[W]ww",
+    "format": "YYYY-[W]ww",
     "template": "99-Meta/01-Templates/(TEMPLATE) Weekly.md",
-    "folder": "06-Daily-Weekly/Weekly_Summary/2024",
+    "folder": "06-Daily-Weekly/Weekly",
     "enabled": true
   },
   "monthly": {

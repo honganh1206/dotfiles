@@ -1,6 +1,6 @@
 {
   "autorun": true,
-  "format": "YYYYMMDD",
+  "format": "YYYY-MM-DD",
   "folder": "04-Permanent",
   "template": "99-Meta/01-Templates/(TEMPLATE) Daily (Vanilla)"
 }

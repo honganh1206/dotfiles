@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 10/Recursively Recurse with Recursion.md",
+                "file": "04-Permanent/2024-04-01-13.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 10/Recursively Recurse with Recursion.md",
+                "file": "04-Permanent/2024-04-01-13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 10/Recursively Recurse with Recursion.md",
+                "file": "04-Permanent/2024-04-01-13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 10/Recursively Recurse with Recursion.md"
+                "file": "04-Permanent/2024-04-01-13.md"
               }
             }
           },
@@ -227,7 +227,11 @@
   },
   "active": "9c48d94e6baeb110",
   "lastOpenFiles": [
+    "04-Permanent/2024-04-01.md",
+    "04-Permanent/2024-04-01-13.md",
+    "06-Daily-Weekly/Daily",
     "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 10/Recursively Recurse with Recursion.md",
+    "04-Permanent/202404011318.md",
     "99-Meta/02-Preloaded Classes/202403091325 General Tweaks CSS Classes.md",
     "99-Meta/01-Templates/(TEMPLATE) Unique.md",
     "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 10",
@@ -235,25 +239,23 @@
     "00-Map-Of-Content/TODOs.md",
     "03-Resources/Algo",
     "03-Resources/Untitled.md",
-    "04-Permanent/20240401.md",
     "99-Meta/01-Templates/(TEMPLATE) Daily (Vanilla).md",
     "99-Meta/01-Templates/(TEMPLATE) Weekly.md",
     "06-Daily-Weekly/Daily_Summary/20240401.md",
     "99-Meta/02-Preloaded Classes/202401211512 Notebook CSS Classes.md",
     "99-Meta/01-Templates/(TEMPLATE) Daily.md",
-    "06-Daily-Weekly/Weekly_Summary/2024/W14.md",
+    "06-Daily-Weekly/Weekly/2024/W14.md",
     "99-Meta/01-Templates/Untitled.md",
     "99-Meta/00-Misc/Useful Links.md",
     "99-Meta/02-Preloaded Classes",
     "02-Areas/Cloud_Computing/Azure/AZ-204/AZ-204 Overview.md",
-    "06-Daily-Weekly/Weekly_Summary/2024/W13.md",
+    "06-Daily-Weekly/Weekly/2024/W13.md",
     "06-Daily-Weekly/Daily_Summary/20240331.md",
     "03-Resources/Course_Materials/Ultimate_ASPNET_Core_WebAPI/Bonus 6 - Security/Bonus 6 - Mastering ASP.NET Core Security.pdf",
     "03-Resources/Course_Materials/Ultimate_ASPNET_Core_WebAPI/Bonus 4 - Docker/Bonus 4 - Docker.pdf",
     "03-Resources/Course_Materials/Ultimate_ASPNET_Core_WebAPI/Marinko Spasojevic - Ultimate ASP.NET Core Web API - From Zero To Six-Figure Backend Developer (2nd edition).pdf",
     "02-Areas/Programming",
     "02-Areas/Programming/Frameworks",
-    "02-Areas/Computer",
     "99-Meta/00-Misc/README.md",
     "04-Permanent/Untitled.md",
     "Untitled.canvas",
@@ -271,8 +273,6 @@
     "03-Resources/Coursera_Courses/Algo_Princeton/Pasted image 20230303212340.png",
     "03-Resources/Coursera_Courses/Algo_Princeton/Pasted image 20230303215153.png",
     "03-Resources/Coursera_Courses/Algo_Princeton/Pasted image 20230304105937.png",
-    "03-Resources/Coursera_Courses/Algo_Princeton/Pasted image 20230227221224.png",
-    "03-Resources/Course_Materials/Ultimate_ASPNET_Core_WebAPI/Bonus 6 - Security/01-Setting up IS4 and UI/CompanyEmployees.IDP/wwwroot/lib/jquery/README.md",
-    "02-Areas/Cloud_Computing/Azure/AZ-900/Adam_Marczak_Resources/Ep1/01 - Cloud Computing, High Availability, Scalability, Elasticity, Agility, Fault Tolerance, and Disaster Recovery.md"
+    "03-Resources/Coursera_Courses/Algo_Princeton/Pasted image 20230227221224.png"
   ]
 }
