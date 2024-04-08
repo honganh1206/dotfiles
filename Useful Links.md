@@ -115,6 +115,8 @@ sudo systemctl start docker
 	- [Cheatsheet](https://tmuxcheatsheet.com/)
 	- [Overview](https://arcolinux.com/everthing-you-need-to-know-about-tmux-panes/#:~:text=A%20Session%20holds%20one%20or,commands%20(good%20when%20scripting).)
 6. [mkcert Installation and Configs](https://thriveread.com/mkcert-localhost-ssl-certificates/)
+7. [MailCatcher for SMTP server mail testing](https://mailcatcher.me/)
+8. [pgAdmin for interacting with Postgresql database](https://www.sqlshack.com/getting-started-with-postgresql-on-docker/)
 
 ## Courses
 

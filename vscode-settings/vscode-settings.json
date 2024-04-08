@@ -1,10 +1,10 @@
 {
     /** Window */
-    "window.menuBarVisibility": "classic",
-    "window.newWindowDimensions": "inherit",
+    "window.menuBarVisibility": "compact",
+    "window.newWindowDimensions": "offset",
     "window.restoreWindows": "preserve",
-    "window.commandCenter": true,
-    "window.titleBarStyle": "custom",
+    "window.commandCenter": false,
+    "window.titleBarStyle": "native",
 
     /** Extension: Apc */
     "apc.font.family": "JetBrainsMono Nerd Font Mono",
@@ -16,8 +16,8 @@
     },
 
     "apc.imports": [
-        "~/.custom-loaders/patch-vscode.js",
-        "~/.custom-loaders/patch-vscode.css"
+        "./.custom-loaders/patch-vscode.js",
+        "./.custom-loaders/patch-vscode.css"
     ],
 
     "apc.stylesheet": {
@@ -147,7 +147,6 @@
     **/
     "csharp.debug.console": "externalTerminal",
 
-
     /**
      * Workbench UI
      **/
@@ -178,13 +177,14 @@
         "tree.indentGuidesStroke": "#4E4B5C",
         "activityBar.activeBorder": "#dbd7caed"
     },
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vscode-seedling-icon-theme-plus",
+    "workbench.productIconTheme": "fluent-icons",
     /** Editor Font */
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontLigatures": true,
     "editor.fontWeight": 400,
     "editor.lineHeight": 22,
-    "editor.fontSize": 12,
+    "editor.fontSize": 11.5,
     /** Editor Scroll */
     "editor.smoothScrolling": true,
     "editor.scrollbar.verticalScrollbarSize": 10,
@@ -301,7 +301,6 @@
     /** Diff editor */
     "git.openRepositoryInParentFolders": "never",
     "diffEditor.codeLens": true,
-    "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": false,
     "multiDiffEditor.experimental.enabled": true,
     /** Files */
@@ -337,11 +336,12 @@
     /** Terminal */
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono, JetBrainsMono Nerd Font",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 12,
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.enableMultiLinePasteWarning": "auto",
     "terminal.integrated.scrollback": 10000,
+    "terminal.explorerKind": "external",
 
     /** Breadcrumbs */
     "breadcrumbs.enabled": true,
@@ -349,5 +349,6 @@
     "breadcrumbs.symbolPath": "off",
 
     "markdown-preview-enhanced.enablePreviewZenMode": true,
-    "markdown-preview-enhanced.previewTheme": "one-dark.css"
+    "markdown-preview-enhanced.previewTheme": "one-dark.css",
+    "debug.terminal.clearBeforeReusing": true
 }
