@@ -7,11 +7,15 @@
 
 ### Push a project onto GitLab on master branch as the default
 
-1. Create a remote repo WITHOUT README.md (to avoid setting `main` as the default branch)
-2. Initialize a git repo `git init`
+> [!tip] Use main instead of master
+> 
+> Use `git init --initial-branch=main` later on
+
+1. Create a remote repo WITHOUT README.md
+2. Initialize a git repo `git init --initial-branch=main`
 3. Add remote repo `git remote add origin .../remote-repo.git`
 4. Add and commit the project `git add . && git commit -m "Commit message"`
-5. Push the project `git push -u -f origin master`
+5. Push the project `git push --set-upstream origin main`
 
 ### Gitlab Runner
 
@@ -96,6 +100,11 @@ sudo systemctl start docker
 
 - [Shortcuts](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022#bkmk_refactor-popular-shortcuts)
 
+## Neovim
+
+- [Install nightly version with Bob](https://github.com/MordechaiHadad/bob)
+	- Install [rustup](https://rust-lang.github.io/rustup/installation/index.html) first
+	- [Fix linker cc not found error](https://stackoverflow.com/questions/52445961/how-do-i-fix-the-rust-error-linker-cc-not-found-for-debian-on-windows-10)
 
 ## Other tools
 
@@ -117,6 +126,7 @@ sudo systemctl start docker
 6. [mkcert Installation and Configs](https://thriveread.com/mkcert-localhost-ssl-certificates/)
 7. [MailCatcher for SMTP server mail testing](https://mailcatcher.me/)
 8. [pgAdmin for interacting with Postgresql database](https://www.sqlshack.com/getting-started-with-postgresql-on-docker/)
+9. [Clear up nuget packages](https://stackoverflow.com/questions/30933277/how-can-i-clear-the-nuget-package-cache-using-the-command-line)
 
 ## Courses
 
