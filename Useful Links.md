@@ -54,33 +54,86 @@ sudo gitlab-runner start
 >[!warning]
 Legacy Git repositories create a _master_ branch by default, while newer ones use _main_. Use the branch name that matches your local Git repository by using `git show-ref` to check if the local branch name is `refs/heads/master` or `refs/heads/main`
 
+## Ubuntu & Docker
 
-### Docker
+### Install Ubuntu & Configs
 
+```cmd
+wsl --list
+wsl --install
+```
 
-### Install Docker Engine on Ubuntu/WSL2 (without Docker Desktop)
-
-- [Script to install](https://gitlab.com/bmcgonag/docker_installs)
-- Install Docker Engine on WSL2 based on the [Docker docs on installation on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 - Common issues to deal with when installing:
 
     - [Windows Subsystem for Linux 2: Temporary failure resolving 'archive.ubuntu.com'](https://askubuntu.com/questions/1450120/windows-subsystem-for-linux-2-temporary-failure-resolving-archive-ubuntu-com)
     - [System has not been booted with systemd as init system (PID 1). Can't operate](https://askubuntu.com/questions/1379425/system-has-not-been-booted-with-systemd-as-init-system-pid-1-cant-operate)
     - [Cannot connect to docker daemon/Start docker whenver Ubuntu WSL2 is run](https://stackoverflow.com/questions/44678725/cannot-connect-to-the-docker-daemon-at-unix-var-run-docker-sock-is-the-docker)
 
-- (OPTIONAL) Install [Portainer Server](https://docs.portainer.io/start/install-ce/server/docker/wsl) and [Portainer Agent (TLDR: The messenger between Portainer and Docker)](https://docs.portainer.io/admin/environments/add/docker/agent) as a GUI container management platform
-- Update docker-related packages from the [official installation](https://docs.docker.com/engine/install/ubuntu/)
+```bash
+# Resolve archive ubuntu failure
+sudo rm /etc/resolv.conf
+sudo bash -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf'
+sudo bash -c 'echo "[network]" > /etc/wsl.conf'
+sudo bash -c 'echo "generateResolvConf = false" >> /etc/wsl.conf'
+sudo chattr +i /etc/resolv.conf
+
+# Integrate systemd
+sudo nano /etc/wsl.conf
+
+# Edit the file to this
+[boot]
+systemd=true
+```
+
+
+### Install Docker Engine on Ubuntu/WSL2 (without Docker Desktop)
+
+- [Script to install](https://gitlab.com/bmcgonag/docker_installs)
+- Install Docker Engine on WSL2 based on the [Docker docs on installation on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+
+
+```bash
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+
+
+# install packages
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
 - Get docker to run as root user (from this [link](https://github.com/rancher-sandbox/rancher-desktop/issues/1156#issuecomment-1017042882))
 
 ```bash
-sudo addgroup --system docker
-sudo adduser $USER docker
 # Run docker without sudo
 sudo chown root:docker /var/run/docker.sock
 sudo chmod g+w /var/run/docker.sock
 sudo gpasswd -a $USER docker
 sudo systemctl start docker
+
+# Then reload WSL2
 ```
+
+### Install Portainer
+
+- Install [Portainer Server](https://docs.portainer.io/start/install-ce/server/docker/wsl) and [Portainer Agent (TLDR: The messenger between Portainer and Docker)](https://docs.portainer.io/admin/environments/add/docker/agent) as a GUI container management platform
+
+```bash
+docker volume create portainer_data
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
+
+- Update docker-related packages from the [official installation](https://docs.docker.com/engine/install/ubuntu/)
 
 - Access WSL Ubuntu File System by [mapping network drive](https://dev.to/miftahafina/accessing-wsl2-files-from-windows-file-explorer-308o) with `\\wsl.localhost\Ubuntu` under `U:` drive
 
