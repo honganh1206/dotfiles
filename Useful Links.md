@@ -138,6 +138,8 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 - Access WSL Ubuntu File System by [mapping network drive](https://dev.to/miftahafina/accessing-wsl2-files-from-windows-file-explorer-308o) with `\\wsl.localhost\Ubuntu` under `U:` drive
 
 
+### [Move Docker data to another drive](https://stackoverflow.com/questions/62441307/how-can-i-change-the-location-of-docker-images-when-using-docker-desktop-on-wsl2)
+
 ## Git
 
 - [Remove + Ignore a file after it has been committed](https://www.heybooster.ai/insights/how-to-gitignore-after-commit)
