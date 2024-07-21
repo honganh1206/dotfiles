@@ -3,6 +3,13 @@
 
 - [To be a professional programmer](https://github.com/charlax/professional-programming?tab=readme-ov-file#search)
 
+## Sourcetree
+
+- [Switching between accounts](https://stackoverflow.com/questions/46363362/how-to-change-username-password-of-github-account-in-sourcetree-on-macos)
+
+- Add users: Tools > Options > Authenticaiton
+- Configure repo: Settings > Double click origin > Edit info
+- Change code pusher: Click on the avatar above the commit message input > type name and email
 ## Gitlab
 
 ### Push a project onto GitLab on master branch as the default
