@@ -9,7 +9,7 @@
 
 - Add users: Tools > Options > Authenticaiton
 - Configure repo: Settings > Double click origin > Edit info
-- Change code pusher: Click on the avatar above the commit message input > type name and email
+- Change code pusher: Settings > Advanced > User information > Uncheck “Use global user settings” > type username + email
 ## Gitlab
 
 ### Push a project onto GitLab on master branch as the default
