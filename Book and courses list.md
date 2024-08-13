@@ -1,5 +1,11 @@
-## Books to read & Courses to finish
+# Books to read & Courses to finish
 
+## [Teach yourself CS - MUST READ 🔺](https://teachyourselfcs.com/)
+
+## Courses
+
+
+## Books
 
 > [!info]
 > 
@@ -46,5 +52,13 @@
 - [ ] Essential Algorithm - Rod Stephens
 - [ ] The Algorithm Design Manual - Steven S. Skiena 🔺 (Program in C + Maths required)
 - [ ] Readings in Database Systems - Joseph M. Hellerstein and Michael Stonebraker 🔺 (Hard to absorb)
+
+### Distributed System
+
+- [ ] Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems 🔺
+
+### Computer Architecture
+
+- [ ] Computer Systems: A Programmer's Perspective - Randal E. Bryant and David R. O'Hallaron 🔺 
 
 ### Others
