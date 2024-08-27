@@ -31,6 +31,7 @@
 - [ ] Getting Started with Elastic Stack 8.0 - Asjad Athick
 - [ ] Lucence 4 Cookbook - Edwood Ng & Vineeth Mohan
 - [ ] How Linux works - Brian Ward
+- [ ] [Write your own VM in C (Other languages available too)](https://www.jmeiners.com/lc3-vm/#lc-3-architecturea)
 
 #### Designing
 
