@@ -18,7 +18,7 @@
 
 ### Programming
 
-#### Technicals & Tools
+#### Technnicals & Tools
 
 - [ ] Let’s Go - Alex Edwards ⏳ 🔼 
 - [ ] Let’s Go Further - Alex Edwards 🔼 
@@ -46,6 +46,23 @@
 	- [ ] [Statistics and probability](https://www.khanacademy.org/math/statistics-probability)
 	- [ ] [Precalculus](https://www.khanacademy.org/math/precalculus)
 
+#### Books (in to-learn order)
+
+[Suggestions](https://www.youtube.com/watch?v=pTnEG_WGd2Q&t=370s)
+
+- [ ] Discrete Mathematics with Applications by Susanna Epp (Logic) ⏫ ⏳
+- [ ] Mathematical Proofs: A Transition to Advanced Mathematics by Chartrand, Polimeni, and Zhang
+- [ ] AGS Pre-Algebra (Brush up your algebra knowledge)
+- [ ] College Algebra by Kaufmann (Go straight to this if you are familiar with pre-algebra)
+- [ ] A Graphical Approach to Algebra and Trigonometry by Hornsby, Lial, and Rockswold (A bit more challenging)
+- [ ] Calculus by James Stewart (For engineering people)
+- [ ] A First Course in Differential Equations by Zill
+- [ ] Elementary Linear Algebra by Howard Anton
+- [ ] Mathematical Statistics by Wackerly, Mendenhall, and Scheaffer
+- [ ] Fundamentals of Complex Analysis by Saff and Snider
+- [ ] Elements of Analysis by Ross
+- [ ] Analysis 1 and Analysis 2 by Terrance Tao (Super challenging, should be after linear algebra)
+- [ ] 
 ### Computer Science
 
 - [x] Grokking Algorithms - Aditya Y. Bhargava ✅ 2024-08-11 ⏫ 
@@ -60,6 +77,6 @@
 
 ### Computer Architecture
 
-- [ ] Computer Systems: A Programmer's Perspective - Randal E. Bryant and David R. O'Hallaron 🔺 
+- [ ] Computer Systems: A Programmer's Perspective - Randal E. Bryant and David R. O'Hallaron 🔺 ⏳
 
 ### Others
