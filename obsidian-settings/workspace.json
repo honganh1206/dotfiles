@@ -1,0 +1,254 @@
+{
+  "main": {
+    "id": "e046bfb3c44bdb3d",
+    "type": "split",
+    "children": [
+      {
+        "id": "cbf59c07a3d1b9ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3be15286bab19ffd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-Permanent/Useful links and apps.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a346423e6c39177c",
+    "type": "split",
+    "children": [
+      {
+        "id": "f4821f7547da9923",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "afa3d77767d2521a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "40fa1e09baa11b13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#content",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "08bb24a3de2c8b01",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "c15d37c32a6b0d7e",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 370.5
+  },
+  "right": {
+    "id": "96e43fe3b5924752",
+    "type": "split",
+    "children": [
+      {
+        "id": "69befa8e9726ac1d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "817b7a678ac66805",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a152a8a3481d4fa7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7745781e0947a3df",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "c0b052c883fb8012",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f5364572df08ce34",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "99-Meta/00-Misc/Useful Links.md"
+              }
+            }
+          },
+          {
+            "id": "694d7c518940cd9e",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "98c27d829ef74b10",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "2f225880eaed6b7e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 251.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "canvas:Create new canvas": false,
+      "zk-prefixer:Create new unique note": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "terminal:Open terminal": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "homepage:Open homepage": false,
+      "obsidian-importer:Open Importer": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "afa3d77767d2521a",
+  "lastOpenFiles": [
+    "04-Permanent/Useful links and apps.md",
+    "99-Meta/00-Misc/Useful Links.md",
+    "02-Areas/Programming/WebDev/CICD/GitLab/Overview.md",
+    "02-Areas/Programming/WebDev/CICD/GitLab/CICD/Runner.md",
+    "02-Areas/Computer/Linux/Useful links and apps.md",
+    "02-Areas/Programming/WebDev/CICD/GitLab/CICD/Jobs.md",
+    "02-Areas/Computer/Docker/Docker Overview.md",
+    "02-Areas/Computer/Docker/Pasted image 20240608105944.png",
+    "02-Areas/Computer/Docker/Docker Build.md",
+    "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/Why DS Matter.md",
+    "99-Meta/00-Misc/README.md",
+    "99-Meta/01-Templates/(TEMPLATE) Consume.md",
+    "99-Meta/00-Misc/obsidian-settings/icons/font-awesome-solid/PenNib.svg",
+    "99-Meta/00-Misc/obsidian-settings/themes/Vanilla AMOLED/theme.css",
+    "99-Meta/00-Misc/obsidian-settings/themes/Vanilla AMOLED/manifest.json",
+    "99-Meta/00-Misc/obsidian-settings/themes/Things/theme.css",
+    "99-Meta/00-Misc/obsidian-settings/themes/Things/manifest.json",
+    "99-Meta/00-Misc/obsidian-settings/themes/Shimmering Focus/theme.css",
+    "99-Meta/00-Misc/obsidian-settings/themes/Shimmering Focus/manifest.json",
+    "99-Meta/00-Misc/obsidian-settings/themes/Sanctum/theme.css",
+    "99-Meta/00-Misc/obsidian-settings/themes/Sanctum/manifest.json",
+    "99-Meta/00-Misc/obsidian-settings/themes/Obsidian Nord/theme.css",
+    "99-Meta/00-Misc/obsidian-settings/themes/Obsidian Nord/manifest.json",
+    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/TestTubeLine.svg",
+    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/SingleQuotesR.svg",
+    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/JavascriptLine.svg",
+    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/CpuLine.svg",
+    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/CommandLine.svg",
+    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/CodeSSlashLine.svg",
+    "99-Meta/00-Misc/obsidian-settings/icons/font-awesome-solid/Server.svg",
+    "99-Meta/00-Misc/obsidian-settings/icons/font-awesome-solid/Podcast.svg",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.4-Process Read and Interpret Instructions Stored in Memory.md",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.3-It pays to understand how compilation systems work.md",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.2-Programs are translated by other programs into different forms.md",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.1-Information Is Bits + Context.md",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.0-Index.md",
+    "99-Meta/01-Templates/(TEMPLATE) Study.md",
+    "99-Meta/01-Templates/(TEMPLATE) Weekly.md",
+    "06-Daily-Weekly/Weekly/2024-W37.md",
+    "99-Meta/00-Misc/ZettelkastenMethod/Zettelkasten Method.md",
+    "99-Meta/01-Templates/(TEMPLATE) Daily.md",
+    "99-Meta/01-Templates/(TEMPLATE) Unique.md",
+    "04-Permanent/UniqueNotes/2024-09-08-17-22-30.md",
+    "06-Daily-Weekly/Daily/2024-09-08.md",
+    "04-Permanent/List of random thoughts.md",
+    "00-Map-Of-Content/Untitled.md",
+    "Untitled.canvas"
+  ]
+}
