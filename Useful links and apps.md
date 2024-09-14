@@ -1,6 +1,6 @@
 ---
 tags:
-  - "#unique"
+  - "#Meta"
 ---
 # Links and apps that I found to be useful
 

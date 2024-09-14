@@ -99,7 +99,29 @@ cssclasses:
 
 - Unique notes will go to `04-Permanent/UniqueNotes`
 - Daily notes will go to `06-Daily-Weekly/Daily`
+- New notes created on the fly will go to `05-Fleeting`
 
 ### Creating a new note
 
 - Create a new untitled note in the destined folder > Choose `Insert Template` on the left sidebar > Choose the `Study` template
+
+
+> [!tip] Tips
+> - Create notes from **other notes**.
+> - Use a canvas to link your notes
+
+
+## Tags vs. Folders
+
+
+> [!tip]
+> Tags are to unite notes, while folders are to separate notes.
+
+
+
+> [!warning] 
+> Note-taking should NOT be a time-sink.
+
+
+
+
