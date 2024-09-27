@@ -12,14 +12,14 @@
 		{"id":"6984cc1ad8b0fb47","x":-1520,"y":80,"width":400,"height":400,"type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 2/The value of a library of chunks.md"},
 		{"id":"a86605899cbda318","x":-2200,"y":240,"width":400,"height":400,"type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 2/Two ways to solve problems.md"},
 		{"id":"6cce1553232fbeb2","x":-1472,"y":720,"width":400,"height":400,"type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 2/Generative AI unleashes the learning potential of metaphors.md"},
-		{"id":"7437614d7948c827","x":-1472,"y":-1240,"width":400,"height":400,"type":"file","file":"05-Fleeting/Overlearning, Choking, Einstellung, Chunking and Interleaving.md"},
+		{"id":"7437614d7948c827","x":-1472,"y":-1240,"width":400,"height":400,"type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 2/Overlearning, Choking, Einstellung, Chunking and Interleaving.md"},
 		{"id":"abe6ca5d3c3ecadc","x":-212,"y":-725,"width":250,"height":60,"color":"5","type":"text","text":"Learning How To Learn"},
 		{"id":"9aa560b7ca26a234","x":314,"y":-1381,"width":250,"height":60,"color":"1","type":"text","text":"Module 3"},
 		{"id":"890ff02b859f8ad9","x":-2160,"y":-359,"width":400,"height":400,"type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 2/The neuronmodulators and what they do.md"},
-		{"id":"65f85ba8b85b9891","x":-2040,"y":-1822,"width":400,"height":400,"type":"file","file":"05-Fleeting/Overlearning.md"},
-		{"id":"ca5371f5d1b5e020","x":-2720,"y":-2080,"width":400,"height":400,"type":"file","file":"05-Fleeting/Deliberate practice.md"},
-		{"id":"5c0f92b1888ba077","x":-2200,"y":-840,"width":400,"height":400,"type":"file","file":"05-Fleeting/Interleaving.md"},
-		{"id":"5224b000b4c6c285","x":-2240,"y":-1360,"width":400,"height":400,"type":"file","file":"05-Fleeting/Einstellung.md"}
+		{"id":"65f85ba8b85b9891","x":-2040,"y":-1822,"width":400,"height":400,"type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 2/Overlearning.md"},
+		{"id":"ca5371f5d1b5e020","x":-2720,"y":-2080,"width":400,"height":400,"type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 2/Deliberate practice.md"},
+		{"id":"5c0f92b1888ba077","x":-2200,"y":-840,"width":400,"height":400,"type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 2/Interleaving.md"},
+		{"id":"5224b000b4c6c285","x":-2240,"y":-1360,"width":400,"height":400,"type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 2/Einstellung.md"}
 	],
 	"edges":[
 		{"id":"e2af726fecaa5858","fromNode":"1c0e79426527f908","fromSide":"right","toNode":"31161f6bb59f2184","toSide":"left"},
