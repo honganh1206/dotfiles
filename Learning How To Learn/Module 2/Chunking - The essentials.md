@@ -7,6 +7,6 @@ cssclasses:
 ---
 [[Chunking]]
 
-[[Recall Technique]]
+[[Recall Technique 📞]]
 
 [[Illusions of competence]]
