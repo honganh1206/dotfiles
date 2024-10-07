@@ -11,4 +11,7 @@ Interleaving is when we *jump back and forth between problems and situations* th
 > [!tip]
 > It is important to learn how to **master and select different chunks for different scenarios**. We can do that by *learning how to mix up your learning* and *understand when to use different chunks.*
 
+Some ways to practice interleaving:
 
+🔥 Briefly repeat what you want to learn overall several days with Anki
+🔥 Extend the time between repetitions

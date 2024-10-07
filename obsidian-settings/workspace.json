@@ -4,23 +4,73 @@
     "type": "split",
     "children": [
       {
-        "id": "cbf59c07a3d1b9ba",
+        "id": "072bb0cf47b18962",
         "type": "tabs",
         "children": [
           {
-            "id": "3be15286bab19ffd",
+            "id": "7cd90d574befda8c",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter2/Chapter 2 - Representing and Manipulating Information - Canvas.canvas",
+                "viewState": {
+                  "x": 2088.4999049821226,
+                  "y": -1527.2445351073538,
+                  "zoom": -1.7680531984738768
+                }
+              }
+            }
+          },
+          {
+            "id": "9b605111fc7fe2b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-Permanent/Useful links and apps.md",
+                "file": "05-Fleeting/Basics of memory addreses.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a6d5e62061e8edd1",
+            "type": "leaf",
+            "state": {
+              "type": "home-tab-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "e02eeda9721273bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05-Fleeting/Three important representations of numbers.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d718c886673908f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05-Fleeting/Chapter 2 - Representing and Manipulating Information - How to read 💡.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -49,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#content",
+                "query": "transaction",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 370.5
+    "width": 297.5
   },
   "right": {
     "id": "96e43fe3b5924752",
@@ -100,17 +150,6 @@
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "a152a8a3481d4fa7",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
@@ -143,9 +182,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "99-Meta/00-Misc/Useful Links.md"
-              }
+              "state": {}
             }
           },
           {
@@ -157,7 +194,15 @@
             }
           },
           {
-            "id": "98c27d829ef74b10",
+            "id": "2f225880eaed6b7e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "5f2545a7d19128ae",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -165,19 +210,21 @@
             }
           },
           {
-            "id": "2f225880eaed6b7e",
+            "id": "8e94d3d5aea9b5ea",
             "type": "leaf",
             "state": {
-              "type": "calendar",
-              "state": {}
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 251.5
+    "width": 317.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,62 +240,69 @@
       "templater-obsidian:Templater": false,
       "terminal:Open terminal": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
       "omnisearch:Omnisearch": false,
       "obsidian-spaced-repetition:Review flashcards": false,
       "homepage:Open homepage": false,
-      "obsidian-importer:Open Importer": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "afa3d77767d2521a",
+  "active": "a6d5e62061e8edd1",
   "lastOpenFiles": [
-    "04-Permanent/Useful links and apps.md",
-    "99-Meta/00-Misc/Useful Links.md",
-    "02-Areas/Programming/WebDev/CICD/GitLab/Overview.md",
-    "02-Areas/Programming/WebDev/CICD/GitLab/CICD/Runner.md",
-    "02-Areas/Computer/Linux/Useful links and apps.md",
-    "02-Areas/Programming/WebDev/CICD/GitLab/CICD/Jobs.md",
-    "02-Areas/Computer/Docker/Docker Overview.md",
-    "02-Areas/Computer/Docker/Pasted image 20240608105944.png",
-    "02-Areas/Computer/Docker/Docker Build.md",
-    "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/Why DS Matter.md",
-    "99-Meta/00-Misc/README.md",
-    "99-Meta/01-Templates/(TEMPLATE) Consume.md",
-    "99-Meta/00-Misc/obsidian-settings/icons/font-awesome-solid/PenNib.svg",
-    "99-Meta/00-Misc/obsidian-settings/themes/Vanilla AMOLED/theme.css",
-    "99-Meta/00-Misc/obsidian-settings/themes/Vanilla AMOLED/manifest.json",
-    "99-Meta/00-Misc/obsidian-settings/themes/Things/theme.css",
-    "99-Meta/00-Misc/obsidian-settings/themes/Things/manifest.json",
-    "99-Meta/00-Misc/obsidian-settings/themes/Shimmering Focus/theme.css",
-    "99-Meta/00-Misc/obsidian-settings/themes/Shimmering Focus/manifest.json",
-    "99-Meta/00-Misc/obsidian-settings/themes/Sanctum/theme.css",
-    "99-Meta/00-Misc/obsidian-settings/themes/Sanctum/manifest.json",
-    "99-Meta/00-Misc/obsidian-settings/themes/Obsidian Nord/theme.css",
-    "99-Meta/00-Misc/obsidian-settings/themes/Obsidian Nord/manifest.json",
-    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/TestTubeLine.svg",
-    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/SingleQuotesR.svg",
-    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/JavascriptLine.svg",
-    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/CpuLine.svg",
-    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/CommandLine.svg",
-    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/CodeSSlashLine.svg",
-    "99-Meta/00-Misc/obsidian-settings/icons/font-awesome-solid/Server.svg",
-    "99-Meta/00-Misc/obsidian-settings/icons/font-awesome-solid/Podcast.svg",
-    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.4-Process Read and Interpret Instructions Stored in Memory.md",
-    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.3-It pays to understand how compilation systems work.md",
-    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.2-Programs are translated by other programs into different forms.md",
-    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.1-Information Is Bits + Context.md",
-    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.0-Index.md",
-    "99-Meta/01-Templates/(TEMPLATE) Study.md",
-    "99-Meta/01-Templates/(TEMPLATE) Weekly.md",
-    "06-Daily-Weekly/Weekly/2024-W37.md",
-    "99-Meta/00-Misc/ZettelkastenMethod/Zettelkasten Method.md",
-    "99-Meta/01-Templates/(TEMPLATE) Daily.md",
-    "99-Meta/01-Templates/(TEMPLATE) Unique.md",
-    "04-Permanent/UniqueNotes/2024-09-08-17-22-30.md",
-    "06-Daily-Weekly/Daily/2024-09-08.md",
-    "04-Permanent/List of random thoughts.md",
-    "00-Map-Of-Content/Untitled.md",
-    "Untitled.canvas"
+    "99-Meta/00-Misc/obsidian-settings/plugins/obsidian-banners/styles.css",
+    "99-Meta/00-Misc/obsidian-settings/plugins/obsidian-banners/manifest.json",
+    "99-Meta/00-Misc/obsidian-settings/plugins/obsidian-banners/main.js",
+    "99-Meta/00-Misc/obsidian-settings/plugins/obsidian-banners",
+    "99-Meta/00-Misc/obsidian-settings/plugins/obsidian-annotator/manifest.json",
+    "99-Meta/00-Misc/obsidian-settings/plugins/obsidian-annotator/main.js",
+    "99-Meta/00-Misc/obsidian-settings/plugins/obsidian-annotator",
+    "99-Meta/00-Misc/obsidian-settings/plugins/home-tab/styles.css",
+    "99-Meta/00-Misc/obsidian-settings/plugins/home-tab/manifest.json",
+    "99-Meta/00-Misc/obsidian-settings/plugins/home-tab/main.js",
+    "99-Meta/00-Misc/obsidian-settings/plugins/home-tab/data.json",
+    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/Link.svg",
+    "99-Meta/00-Misc/obsidian-settings/icons/remix-icons/EditBoxLine.svg",
+    "99-Meta/00-Misc/obsidian-settings/icons/font-awesome-solid/Rocket.svg",
+    "99-Meta/00-Misc/obsidian-settings/icons/font-awesome-solid/Blog.svg",
+    "99-Meta/00-Misc/obsidian-settings/icons/font-awesome-regular/Keyboard.svg",
+    "99-Meta/00-Misc/obsidian-settings/icons/font-awesome-brands/Readme.svg",
+    "05-Fleeting/Basics of memory addreses.md",
+    "05-Fleeting/2.1.Information Storage.md",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter2/Chapter 2 - Representing and Manipulating Information - Canvas.canvas",
+    "05-Fleeting/Chapter 2 - Representing and Manipulating Information - How to read 💡.md",
+    "04-Permanent/Random thoughts.md",
+    "05-Fleeting/Three important representations of numbers.md",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/Chapter 1 - A Tour of Computer Systems - Canvas.canvas",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter2/Chapter 2 - Representing and Manipulating Information.md",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/Preface Canvas.canvas",
+    "05-Fleeting/Bit overflow.md",
+    "05-Fleeting/What a group of bits can do.md",
+    "05-Fleeting/The benefits of studying number representations.md",
+    "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/What are sets.md",
+    "05-Fleeting/Floating-point arithmetic has different mathematical properties.md",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/Chapter 1 - A Tour of Computer Systems.md",
+    "05-Fleeting/2.1.1.Hexadecimal Notation.md",
+    "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 9/Queues.md",
+    "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 9/The importance of Constrained DS.md",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.1.Information Is Bits + Context/1.1.Information Is Bits + Context.md",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter2/Untitled.md",
+    "02-Areas/Programming/Concepts/CRDT/CRDT Canvas.canvas",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/Overview Canvas.canvas",
+    "02-Areas/Programming/Concepts/CRDT/5000x faster CRDTs An Adventure in Optimization.md",
+    "02-Areas/Programming/Concepts/CRDT/Improving the data structure of automerge.md",
+    "02-Areas/Programming/Concepts/CRDT/Implementing automerge.md",
+    "02-Areas/Programming/Frameworks/DotNet/CSharp/Conditional Compilation Symbols.md",
+    "02-Areas/Programming/Concepts/CRDT/Benchmarking automerge.md",
+    "02-Areas/Programming/Concepts/CRDT/Use a single flat list instead of a tree.md",
+    "02-Areas/Programming/Concepts/CRDT/CRDT implementation in 20 lines of code.md",
+    "99-Meta/00-Misc/Learning How To Learn/Learning how to learn Canvas.canvas",
+    "99-Meta/00-Misc/Learning How To Learn/Module 3/Juggling life and learning 🤹.md",
+    "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/A Common Sense To DS And Algorithms - Canvas.canvas",
+    "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 2/Why Algorithms Matter Canvas.canvas",
+    "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 20/Pasted image 20240831112017.png",
+    "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 20/Pasted image 20240831095740.png",
+    "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.9.Important themes/{24A4C9C7-7035-4F07-9176-75D3F55D8697}.png",
+    "99-Meta/00-Misc/Banners/UniversalUpscaler_f0ea8fb7-e9ac-422d-90a6-76b871dde68e.jpg",
+    "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/Why DS Mater Canvas.canvas",
+    "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/A Common Sense to DS and Algorithm Canvas.canvas"
   ]
 }

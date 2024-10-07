@@ -1,0 +1,38 @@
+{
+  "logoType": "default",
+  "logo": {
+    "lucideIcon": "",
+    "imagePath": "99-Meta/00-Misc/Banners/UniversalUpscaler_f0ea8fb7-e9ac-422d-90a6-76b871dde68e.jpg",
+    "imageLink": ""
+  },
+  "logoScale": 1,
+  "iconColorType": "default",
+  "wordmark": "Launchpad",
+  "customFont": "monospaceFont",
+  "fontSize": "3em",
+  "fontColorType": "accentColor",
+  "fontWeight": 600,
+  "maxResults": 5,
+  "showbookmarkedFiles": true,
+  "showRecentFiles": true,
+  "maxRecentFiles": 5,
+  "storeRecentFile": true,
+  "showPath": true,
+  "selectionHighlight": "accentColor",
+  "showShortcuts": true,
+  "markdownOnly": false,
+  "unresolvedLinks": false,
+  "recentFilesStore": [
+    {
+      "filepath": "05-Fleeting/Basics of memory addreses.md",
+      "timestamp": 1727880639205
+    }
+  ],
+  "bookmarkedFileStore": [],
+  "searchDelay": 0,
+  "replaceNewTabs": true,
+  "newTabOnStart": true,
+  "closePreviousSessionTabs": false,
+  "omnisearch": true,
+  "showOmnisearchExcerpt": true
+}

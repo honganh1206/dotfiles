@@ -1,5 +1,8 @@
 {
 	"nodes":[
+		{"id":"395eb8be43ef7479","type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 3/Use senses as a hook to recall the images 🪝.md","x":2418,"y":-2568,"width":400,"height":400},
+		{"id":"d8cc3138a3ab8a7e","type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 3/Diving deeper into memory 🤿.md","x":1720,"y":-2363,"width":400,"height":400},
+		{"id":"80235034b59b8729","type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 3/Memory 💭.md","x":943,"y":-2011,"width":400,"height":400},
 		{"id":"1c0e79426527f908","type":"text","text":"Module 2","x":-212,"y":-145,"width":250,"height":60,"color":"1"},
 		{"id":"abe6ca5d3c3ecadc","type":"text","text":"Learning How To Learn","x":-186,"y":-1240,"width":250,"height":60,"color":"5"},
 		{"id":"9aa560b7ca26a234","type":"text","text":"Module 3","x":340,"y":-1896,"width":250,"height":60,"color":"1"},
@@ -30,7 +33,9 @@
 		{"id":"4b4ef78dac581641","type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 3/Tackling procrastination 🥊.md","x":896,"y":-3675,"width":400,"height":400},
 		{"id":"c60892094c047543","type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 3/The hidden danger of procrastination.md","x":1515,"y":-3349,"width":400,"height":400},
 		{"id":"e664c3e989afd18b","type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 3/Harnessing your zombies to help you 🧟.md","x":896,"y":-3149,"width":400,"height":400},
-		{"id":"fbc9c041e08435c4","type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 3/Juggling life and learning 🤹.md","x":896,"y":-2662,"width":400,"height":400}
+		{"id":"fbc9c041e08435c4","type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 3/Juggling life and learning 🤹.md","x":896,"y":-2662,"width":400,"height":400},
+		{"id":"14c0be630eaa5bca","type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 3/Long-term memory 🧠.md","x":1720,"y":-1811,"width":400,"height":400},
+		{"id":"a652a9cac3f27457","x":1720,"y":-1280,"width":400,"height":400,"type":"file","file":"99-Meta/00-Misc/Learning How To Learn/Module 3/Creating meaningful groups 🫂 & The memory palace technique 🏰.md"}
 	],
 	"edges":[
 		{"id":"e2af726fecaa5858","fromNode":"1c0e79426527f908","fromSide":"right","toNode":"31161f6bb59f2184","toSide":"left"},
@@ -62,6 +67,11 @@
 		{"id":"04482cc10dcf7fc2","fromNode":"9545b9bb9b7fd1f4","fromSide":"top","toNode":"f6269440157f405b","toSide":"bottom"},
 		{"id":"f3573cb68b408abe","fromNode":"9545b9bb9b7fd1f4","fromSide":"top","toNode":"1c9bd0859324a599","toSide":"bottom"},
 		{"id":"bd1722197d955586","fromNode":"b58fab6f83655b6a","fromSide":"right","toNode":"e664c3e989afd18b","toSide":"left"},
-		{"id":"c9db70a3d9e56b24","fromNode":"b58fab6f83655b6a","fromSide":"right","toNode":"fbc9c041e08435c4","toSide":"left"}
+		{"id":"c9db70a3d9e56b24","fromNode":"b58fab6f83655b6a","fromSide":"right","toNode":"fbc9c041e08435c4","toSide":"left"},
+		{"id":"b1281df53b4e2fd1","fromNode":"9aa560b7ca26a234","fromSide":"right","toNode":"80235034b59b8729","toSide":"left"},
+		{"id":"abcb4adb5a02ea30","fromNode":"80235034b59b8729","fromSide":"right","toNode":"d8cc3138a3ab8a7e","toSide":"left"},
+		{"id":"17c7f784be3b9502","fromNode":"d8cc3138a3ab8a7e","fromSide":"right","toNode":"395eb8be43ef7479","toSide":"left"},
+		{"id":"ded18d1ad5d788bc","fromNode":"80235034b59b8729","fromSide":"right","toNode":"14c0be630eaa5bca","toSide":"left"},
+		{"id":"4a24fd2e6ef92f17","fromNode":"80235034b59b8729","fromSide":"right","toNode":"a652a9cac3f27457","toSide":"left"}
 	]
 }

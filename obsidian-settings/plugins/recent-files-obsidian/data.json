@@ -1,200 +1,204 @@
 {
   "recentFiles": [
     {
-      "basename": "Useful links and apps",
-      "path": "04-Permanent/Useful links and apps.md"
+      "basename": "Basics of memory addreses",
+      "path": "05-Fleeting/Basics of memory addreses.md"
     },
     {
-      "basename": "Overview",
-      "path": "02-Areas/Programming/WebDev/CICD/GitLab/Overview.md"
+      "basename": "2.1.Information Storage",
+      "path": "05-Fleeting/2.1.Information Storage.md"
     },
     {
-      "basename": "Runner",
-      "path": "02-Areas/Programming/WebDev/CICD/GitLab/CICD/Runner.md"
+      "basename": "Chapter 2 - Representing and Manipulating Information - Canvas",
+      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter2/Chapter 2 - Representing and Manipulating Information - Canvas.canvas"
     },
     {
-      "basename": "Useful links and apps",
-      "path": "02-Areas/Computer/Linux/Useful links and apps.md"
+      "basename": "Chapter 2 - Representing and Manipulating Information - How to read 💡",
+      "path": "05-Fleeting/Chapter 2 - Representing and Manipulating Information - How to read 💡.md"
     },
     {
-      "basename": "Jobs",
-      "path": "02-Areas/Programming/WebDev/CICD/GitLab/CICD/Jobs.md"
+      "basename": "Random thoughts",
+      "path": "04-Permanent/Random thoughts.md"
     },
     {
-      "basename": "Docker Overview",
-      "path": "02-Areas/Computer/Docker/Docker Overview.md"
+      "basename": "Three important representations of numbers",
+      "path": "05-Fleeting/Three important representations of numbers.md"
     },
     {
-      "basename": "Pasted image 20240608105944",
-      "path": "02-Areas/Computer/Docker/Pasted image 20240608105944.png"
+      "basename": "Chapter 1 - A Tour of Computer Systems - Canvas",
+      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/Chapter 1 - A Tour of Computer Systems - Canvas.canvas"
     },
     {
-      "basename": "Docker Build",
-      "path": "02-Areas/Computer/Docker/Docker Build.md"
+      "basename": "Chapter 2 - Representing and Manipulating Information",
+      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter2/Chapter 2 - Representing and Manipulating Information.md"
     },
     {
-      "basename": "Why DS Matter",
-      "path": "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/Why DS Matter.md"
+      "basename": "Bit overflow",
+      "path": "05-Fleeting/Bit overflow.md"
     },
     {
-      "basename": "README",
-      "path": "99-Meta/00-Misc/README.md"
+      "basename": "What a group of bits can do",
+      "path": "05-Fleeting/What a group of bits can do.md"
     },
     {
-      "basename": "(TEMPLATE) Consume",
-      "path": "99-Meta/01-Templates/(TEMPLATE) Consume.md"
+      "basename": "The benefits of studying number representations",
+      "path": "05-Fleeting/The benefits of studying number representations.md"
     },
     {
-      "basename": "1.4-Process Read and Interpret Instructions Stored in Memory",
-      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.4-Process Read and Interpret Instructions Stored in Memory.md"
+      "basename": "Floating-point arithmetic has different mathematical properties",
+      "path": "05-Fleeting/Floating-point arithmetic has different mathematical properties.md"
     },
     {
-      "basename": "1.3-It pays to understand how compilation systems work",
-      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.3-It pays to understand how compilation systems work.md"
+      "basename": "What are sets",
+      "path": "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 1/What are sets.md"
     },
     {
-      "basename": "1.2-Programs are translated by other programs into different forms",
-      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.2-Programs are translated by other programs into different forms.md"
+      "basename": "2.1.1.Hexadecimal Notation",
+      "path": "05-Fleeting/2.1.1.Hexadecimal Notation.md"
     },
     {
-      "basename": "1.1-Information Is Bits + Context",
-      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.1-Information Is Bits + Context.md"
+      "basename": "Chapter 1 - A Tour of Computer Systems",
+      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/Chapter 1 - A Tour of Computer Systems.md"
     },
     {
-      "basename": "1.0-Index",
-      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.0-Index.md"
+      "basename": "Queues",
+      "path": "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 9/Queues.md"
     },
     {
-      "basename": "(TEMPLATE) Study",
-      "path": "99-Meta/01-Templates/(TEMPLATE) Study.md"
+      "basename": "The importance of Constrained DS",
+      "path": "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 9/The importance of Constrained DS.md"
     },
     {
-      "basename": "(TEMPLATE) Weekly",
-      "path": "99-Meta/01-Templates/(TEMPLATE) Weekly.md"
+      "basename": "1.1.Information Is Bits + Context",
+      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.1.Information Is Bits + Context/1.1.Information Is Bits + Context.md"
     },
     {
-      "basename": "2024-W37",
-      "path": "06-Daily-Weekly/Weekly/2024-W37.md"
+      "basename": "Practice Problems",
+      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/1.9.Important themes/Practice Problems.md"
     },
     {
-      "basename": "Zettelkasten Method",
-      "path": "99-Meta/00-Misc/ZettelkastenMethod/Zettelkasten Method.md"
+      "basename": "CRDT Canvas",
+      "path": "02-Areas/Programming/Concepts/CRDT/CRDT Canvas.canvas"
     },
     {
-      "basename": "(TEMPLATE) Daily",
-      "path": "99-Meta/01-Templates/(TEMPLATE) Daily.md"
+      "basename": "Chapter 3",
+      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter3/Chapter 3.md"
     },
     {
-      "basename": "(TEMPLATE) Unique",
-      "path": "99-Meta/01-Templates/(TEMPLATE) Unique.md"
+      "basename": "About automerge",
+      "path": "02-Areas/Programming/Concepts/CRDT/About automerge.md"
     },
     {
-      "basename": "2024-09-08-17-22-30",
-      "path": "04-Permanent/UniqueNotes/2024-09-08-17-22-30.md"
+      "basename": "5000x faster CRDTs An Adventure in Optimization",
+      "path": "02-Areas/Programming/Concepts/CRDT/5000x faster CRDTs An Adventure in Optimization.md"
     },
     {
-      "basename": "2024-09-08",
-      "path": "06-Daily-Weekly/Daily/2024-09-08.md"
+      "basename": "Improving the data structure of automerge",
+      "path": "02-Areas/Programming/Concepts/CRDT/Improving the data structure of automerge.md"
     },
     {
-      "basename": "List of random thoughts",
-      "path": "04-Permanent/List of random thoughts.md"
+      "basename": "Implementing automerge",
+      "path": "02-Areas/Programming/Concepts/CRDT/Implementing automerge.md"
     },
     {
-      "basename": "Untitled",
-      "path": "00-Map-Of-Content/Untitled.md"
+      "basename": "Conditional Compilation Symbols",
+      "path": "02-Areas/Programming/Frameworks/DotNet/CSharp/Conditional Compilation Symbols.md"
     },
     {
-      "basename": "Placeholder",
-      "path": "00-Map-Of-Content/Placeholder.md"
+      "basename": "Benchmarking automerge",
+      "path": "02-Areas/Programming/Concepts/CRDT/Benchmarking automerge.md"
     },
     {
-      "basename": "Note",
-      "path": "02-Areas/Programming/Languages/HTML_CSS/Note.md"
+      "basename": "Use a single flat list instead of a tree",
+      "path": "02-Areas/Programming/Concepts/CRDT/Use a single flat list instead of a tree.md"
     },
     {
-      "basename": "Adding methods to call stack.excalidraw",
-      "path": "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 10/Adding methods to call stack.excalidraw.md"
+      "basename": "CRDT implementation in 20 lines of code",
+      "path": "02-Areas/Programming/Concepts/CRDT/CRDT implementation in 20 lines of code.md"
     },
     {
-      "basename": "React GG Course Overview",
-      "path": "02-Areas/Programming/Frameworks/React/ReactGG/React GG Course Overview.md"
+      "basename": "Learning how to learn Canvas",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Learning how to learn Canvas.canvas"
     },
     {
-      "basename": "README",
-      "path": "01-Projects/Carsties/src/frontend/web-app/node_modules/typescript/README.md"
+      "basename": "Juggling life and learning 🤹",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 3/Juggling life and learning 🤹.md"
     },
     {
-      "basename": "2024-W36",
-      "path": "06-Daily-Weekly/Weekly/2024-W36.md"
+      "basename": "Procrastination 🦥",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 3/Procrastination 🦥.md"
     },
     {
-      "basename": "Preface",
-      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/Preface.md"
+      "basename": "Surf it up! Process vs. Product 🏄‍♂️",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 3/Surf it up! Process vs. Product 🏄‍♂️.md"
     },
     {
-      "basename": "F1.4-Hardware organization of a typical system.drawio",
-      "path": "02-Areas/Computer/ComputerArchitecture/ComputerArchitectureProgrammerPerspective/notes/chapter1/F1.4-Hardware organization of a typical system.drawio.svg"
+      "basename": "Tackling procrastination 🥊",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 3/Tackling procrastination 🥊.md"
     },
     {
-      "basename": "On dealing with coding frustration",
-      "path": "04-Permanent/BlogsAndArticles/Misc/On dealing with coding frustration.md"
+      "basename": "What is a habit by the way 🤔",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 3/What is a habit by the way 🤔.md"
     },
     {
-      "basename": "01-Variables",
-      "path": "02-Areas/Maths/DiscreteMathsWithApplication/Chapter1/01-Variables.md"
+      "basename": "Harnessing your zombies to help you 🧟",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 3/Harnessing your zombies to help you 🧟.md"
     },
     {
-      "basename": "00-Speaking Mathematically",
-      "path": "02-Areas/Maths/DiscreteMathsWithApplication/Chapter1/00-Speaking Mathematically.md"
+      "basename": "Use mental tools and tricks to motivate yourself 🧠",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 3/Use mental tools and tricks to motivate yourself 🧠.md"
     },
     {
-      "basename": "99-1-Exercises",
-      "path": "02-Areas/Maths/DiscreteMathsWithApplication/Chapter1/99-1-Exercises.md"
+      "basename": "Zombies everywhere!🧟",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 3/Zombies everywhere!🧟.md"
     },
     {
-      "basename": "02-The Language of Sets",
-      "path": "02-Areas/Maths/DiscreteMathsWithApplication/Chapter1/02-The Language of Sets.md"
+      "basename": "Recall Technique 📞",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 2/Recall Technique 📞.md"
     },
     {
-      "basename": "Index",
-      "path": "02-Areas/Maths/DiscreteMathsWithApplication/Index.md"
+      "basename": "The neuronmodulators and what they do 🤯",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 2/The neuronmodulators and what they do 🤯.md"
     },
     {
-      "basename": "Book and courses list",
-      "path": "99-Meta/00-Misc/Book and courses list.md"
+      "basename": "Generative AI unleashes the learning potential of metaphors 🤖",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 2/Generative AI unleashes the learning potential of metaphors 🤖.md"
     },
     {
-      "basename": "00-Books to read",
-      "path": "04-Permanent/KindleBooks/00-Books to read.md"
+      "basename": "The value of a library of chunks 💵",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 2/The value of a library of chunks 💵.md"
     },
     {
-      "basename": "A Promised Land",
-      "path": "04-Permanent/KindleBooks/Biographies/A Promised Land.md"
+      "basename": "Seeing the bigger picture 🖼️",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 2/Seeing the bigger picture 🖼️.md"
     },
     {
-      "basename": "What to expect when you’re expecting",
-      "path": "04-Permanent/KindleBooks/SelfImprovement/What to expect when you’re expecting.md"
+      "basename": "What motivates you 📣",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 2/What motivates you 📣.md"
     },
     {
-      "basename": "Register Spill",
-      "path": "04-Permanent/BlogsAndArticles/Register Spill.md"
+      "basename": "The hidden danger of procrastination",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 3/The hidden danger of procrastination.md"
     },
     {
-      "basename": "Meditations",
-      "path": "04-Permanent/KindleBooks/ThoughtProvoking/Meditations.md"
+      "basename": "Relationship between learning and procrastinating",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 3/Relationship between learning and procrastinating.md"
     },
     {
-      "basename": "A Mind for Numbers",
-      "path": "04-Permanent/KindleBooks/WorkAndStudy/A Mind for Numbers.md"
+      "basename": "How are the zombies",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 3/How are the zombies.md"
     },
     {
-      "basename": "README",
-      "path": "01-Projects/Carsties/src/frontend/web-app/node_modules/isexe/README.md"
+      "basename": "Basic steps of forming a chunk",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 2/Basic steps of forming a chunk.md"
     },
     {
-      "basename": "README",
-      "path": "01-Projects/Carsties/src/frontend/web-app/node_modules/eslint-plugin-import/README.md"
+      "basename": "How to form a chunk",
+      "path": "99-Meta/00-Misc/Learning How To Learn/Module 2/How to form a chunk.md"
+    },
+    {
+      "basename": "Recursively Recurse with Recursion",
+      "path": "02-Areas/Algo_DataStruct/Algorithm_Study_Notes/A_Common_Sense_To_DS_And_Algo/Chapter 10/Recursively Recurse with Recursion.md"
     }
   ],
   "omittedPaths": [],

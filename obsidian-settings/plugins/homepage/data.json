@@ -2,14 +2,14 @@
   "version": 3,
   "homepages": {
     "Main Homepage": {
-      "value": "TODOs",
-      "kind": "Weekly Note",
+      "value": "99-Meta/01-Templates/Launchpad",
+      "kind": "Nothing",
       "openOnStartup": true,
       "openMode": "Replace all open notes",
       "manualOpenMode": "Keep open notes",
-      "view": "Default view",
+      "view": "Reading view",
       "revertView": true,
-      "openWhenEmpty": false,
+      "openWhenEmpty": true,
       "refreshDataview": false,
       "autoCreate": true,
       "autoScroll": false,

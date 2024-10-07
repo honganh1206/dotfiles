@@ -9,6 +9,8 @@ cssclasses:
 
 The location/time/how you feel/your reactions to a cue affects the cue itself => Shutting down your phone is a trick to change all these 4 factors
 
+Apply willpower at **your reaction to a procrastination cue**. Willpower is a valuable mental resource that you might not want to use it up quickly
+
 
 # 🔥 Trick #2: Change your routine by developing a plan
 
