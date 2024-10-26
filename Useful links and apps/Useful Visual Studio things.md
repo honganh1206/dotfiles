@@ -1,0 +1,3 @@
+- [Shortcuts](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022#bkmk_refactor-popular-shortcuts)
+- Fine Code Coverage - VS 2022 extension
+- StyleCop

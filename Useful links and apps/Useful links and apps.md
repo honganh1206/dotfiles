@@ -2,48 +2,32 @@
 tags:
   - "#Meta"
 ---
-# Links and apps that I found to be useful
+## [[Useful Sourcetree things]]
 
-## Tools
 
-## Sourcetree
+## [[Useful Git things]]
 
-- [Switching between accounts](https://stackoverflow.com/questions/46363362/how-to-change-username-password-of-github-account-in-sourcetree-on-macos)
-- Add users: Tools > Options > Authenticaiton
-- Configure repo: Settings > Double click origin > Edit info
-- Change code pusher: Settings > Advanced > User information > Uncheck “Use global user settings” > type username + email
-### Git
 
-- [Remove + Ignore a file after it has been committed](https://www.heybooster.ai/insights/how-to-gitignore-after-commit)
+## [[Useful VS Code things]]
 
-### VS Code
 
-- Install `Iosevka Custom` font from [this repo](https://github.com/nomosstorge/vscode-setup) or `JetBrainsMono Nerd Font Mono` from [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip)
-- Apply the `vscode-settings.json` to the user `settings.json` of VS Code 
-- [Export VS Code extension list](https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list)
 
-## Visual Studio
+## [[Useful MongoDB things]]
 
-- [Shortcuts](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022#bkmk_refactor-popular-shortcuts)
-- Fine Code Coverage - VS 2022 extension
-- StyleCop
 
-## Neovim
+## [[Useful Telegram things]]
 
-- [Install nightly version with Bob](https://github.com/MordechaiHadad/bob)
-	- Install [rustup](https://rust-lang.github.io/rustup/installation/index.html) first
-	- [Fix linker cc not found error](https://stackoverflow.com/questions/52445961/how-do-i-fix-the-rust-error-linker-cc-not-found-for-debian-on-windows-10)
 
-### Others
+## [[Useful Visual Studio things]]
+
+
+## [[Useful Neovim things]]
+
+
+## Uncategorized
 
 - [RustDesk and how to configure it for self-hosting](https://www.youtube.com/watch?v=SYM6M5Fiuyc)
 	- [Headless linux support](https://github.com/rustdesk/rustdesk/wiki/Headless-Linux-Support)
-
-> [!tip] Install deb package
-> 
-> ```bash
-> sudo apt install /path/to/file.deb
-> ```
 
 - [Win11 Clean Installation/Debloater](https://christitus.com/windows-tool/)
 - Tmux (Terminal multiplexers for Linux distro/WSL)
@@ -53,7 +37,6 @@ tags:
 - [MailCatcher for SMTP server mail testing](https://mailcatcher.me/
 - [pgAdmin for interacting with Postgresql database](https://www.sqlshack.com/getting-started-with-postgresql-on-docker/)
 - [Clear up nuget packages](https://stackoverflow.com/questions/30933277/how-can-i-clear-the-nuget-package-cache-using-the-command-line)
-
 
 ## Configs
 

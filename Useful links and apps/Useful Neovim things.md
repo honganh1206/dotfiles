@@ -1,0 +1,3 @@
+- [Install nightly version with Bob](https://github.com/MordechaiHadad/bob)
+	- Install [rustup](https://rust-lang.github.io/rustup/installation/index.html) first
+	- [Fix linker cc not found error](https://stackoverflow.com/questions/52445961/how-do-i-fix-the-rust-error-linker-cc-not-found-for-debian-on-windows-10)

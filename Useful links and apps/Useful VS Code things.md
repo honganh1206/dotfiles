@@ -1,0 +1,3 @@
+- Install `Iosevka Custom` font from [this repo](https://github.com/nomosstorge/vscode-setup) or `JetBrainsMono Nerd Font Mono` from [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip)
+- Apply the `vscode-settings.json` to the user `settings.json` of VS Code 
+- [Export VS Code extension list](https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list)

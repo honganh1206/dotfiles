@@ -1,0 +1,5 @@
+- [Switching between accounts](https://stackoverflow.com/questions/46363362/how-to-change-username-password-of-github-account-in-sourcetree-on-macos)
+- Add users: Tools > Options > Authenticaiton
+- Configure repo: Settings > Double click origin > Edit info
+- Change code pusher: Settings > Advanced > User information > Uncheck “Use global user settings” > type username + email
+- [Sometimes Sourcetree does not open and you need to delete the app data](https://community.atlassian.com/t5/Sourcetree-questions/Source-tree-not-starting-in-windows-10/qaq-p/1023302)
