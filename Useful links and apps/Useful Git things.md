@@ -3,23 +3,66 @@
 
 ![[Pasted image 20241024214540.png]]
 
+## Common commands
+
+### Switching between branches & Committing
+
 ```bash
+git branch -a # See all branch
+git checkout -b my-branch-name # Create a new branch
+
+git checkout my-branch-name # Switch to a Branch In Your Local Repo
 # Move to a feature branch
 git checkout feature-branch
+
+
+# Switch to a branch from a remote repo (When on main/master)
+git pull && git checkout --track origin/my-branch-name
+
+# Include new files then interactively stage changes from your working dir
+git add -A && git add -p && git commit
+
+
+```
+
+### Rebasing
+
+```bash
 # Rebase code from main brach to main
 git rebase main
 # After resolving merge conflicts, continue the rebase
 git rebase --continue
 git push -f
 
+```
+
+### Change credentials
+
+```bash
 # Change creds on a specifig git repo so that I can push code with my personal creds
 git config --local user.name "Different User Name" 
 git config --local user.email "different.email@example.com"
+```
 
-# Include new files then interactively stage changes from your working dir
-git add -A && git add -p && git commit
+
+### Update file permission
+
+```bash
+git update-index --chmod=+x mydeploy.sh # Add permission
+git ls-files --stage # you can check permissons
+git commit -m "Executable!"
 
 ```
+
+### Git config
+
+
+```bash
+// Show config files
+git config --list --show-origin --show-scope
+
+```
+
 
 
 ## Workflow

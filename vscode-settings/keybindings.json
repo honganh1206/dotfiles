@@ -219,5 +219,14 @@
         "key": "ctrl+k ctrl+enter",
         "command": "editor.action.goToDeclaration",
         "when": "editorTextFocus"
+    },
+    /**
+     * External terminal
+     **/
+
+    {
+        "key": "ctrl+;",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
     }
 ]
