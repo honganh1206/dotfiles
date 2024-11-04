@@ -11,7 +11,6 @@
 git branch -a # See all branch
 git checkout -b my-branch-name # Create a new branch
 
-git checkout my-branch-name # Switch to a Branch In Your Local Repo
 # Move to a feature branch
 git checkout feature-branch
 
