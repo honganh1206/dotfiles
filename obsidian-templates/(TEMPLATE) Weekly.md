@@ -1,8 +1,5 @@
----
-tags:
-  - Weekly
-cssclasses:
----
+Tags: #weekly
+
 ## 🗓️ Study schedule
 
 - Monday - Project
@@ -10,7 +7,7 @@ cssclasses:
 - Wednesday - Algo + Project
 - Thursday - Project
 - Friday - Certification
-- Saturday - Project + Film
+- Saturday - Rest
 - Sunday - Revision + HomeLab
 
 ## 🧑‍💻 Coding

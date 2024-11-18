@@ -1,6 +1,1 @@
----
-tags:
-  - "#study"
-cssclasses:
-  - center-images
----
+Tags: #review 

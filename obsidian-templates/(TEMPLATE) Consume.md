@@ -1,6 +1,1 @@
----
-tags:
-  - "#consume"
-cssclasses:
-  - center-images
----
+Tags: #consume 

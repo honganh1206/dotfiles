@@ -2,26 +2,26 @@
 tags:
   - "#Meta"
 ---
-## [[Useful Sourcetree things]]
+## [[Sourcetree]]
 
 
-## [[Useful Git things]]
+## [[Git]]
 
 
-## [[Useful VS Code things]]
+## [[VSCode]]
 
 
 
-## [[Useful MongoDB things]]
+## [[MongoDB]]
 
 
-## [[Useful Telegram things]]
+## [[Telegram]]
 
 
-## [[Useful Visual Studio things]]
+## [[Visual Studio]]
 
 
-## [[Useful Neovim things]]
+## [[Neovim]]
 
 
 ## Uncategorized
