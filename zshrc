@@ -142,21 +142,6 @@ alias cdr='cd $(git rev-parse --show-toplevel)' # cd to git root
 # Go
 alias got='go test ./...'
 
-# Functions
-# Provide information about the current git repo
-git_prompt_info() {
-  local dirstatus=" OK"
-  local dirty="%{$fg_bold[red]%} X%{$reset_color%}"
-
-  if [[ ! -z $(git status --porcelain 2> /dev/null | tail -n1) ]]; then
-    dirstatus=$dirty
-  fi
-
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || \
-  ref=$(git rev-parse --short HEAD 2> /dev/null) || return
-  echo " %{$fg_bold[green]%}${ref#refs/heads/}$dirstatus%{$reset_color%} "
-}
-
 # golang
 export GOROOT="/usr/local/go"
 export GOPATH="$HOME/.go"
@@ -195,4 +180,41 @@ compinit -C
 
 mkdircd() {
   mkdir -p $1 && cd $1
+}
+
+# PROMPT
+# Allow zsh to evaluate commands in PROMPT variable dynamically
+setopt prompt_subst
+
+# Provide information about the current git repo
+git_prompt_info() {
+  local dirstatus=" OK"
+  local dirty="%{$fg_bold[red]%} X%{$reset_color%}"
+
+  if [[ ! -z $(git status --porcelain 2> /dev/null | tail -n1) ]]; then
+    dirstatus=$dirty
+  fi
+
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || \
+  ref=$(git rev-parse --short HEAD 2> /dev/null) || return
+  echo " %{$fg_bold[green]%}${ref#refs/heads/}$dirstatus%{$reset_color%} "
+}
+
+local dir_info_color="%B"
+
+local dir_info_color_file="${HOME}/.zsh.d/dir_info_color"
+if [ -r ${dir_info_color_file} ]; then
+  source ${dir_info_color_file}
+fi
+
+# Display the cwd and shorten it if it is too long
+local dir_info="%{$dir_info_color%}%(5~|%-1~/.../%2~|%4~)%{$reset_color%}"
+local promptnormal="φ %{$reset_color%}"
+local promptjobs="%{$fg_bold[red]%}φ %{$reset_color%}"
+
+PROMPT='${dir_info}$(git_prompt_info) ${nix_prompt}%(1j.$promptjobs.$promptnormal)'
+
+simple_prompt() {
+  local prompt_color="%B"
+  export PROMPT="%{$prompt_color%}$promptnormal"
 }
