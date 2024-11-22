@@ -12,3 +12,4 @@
 3. Multi buffer with search: `g /` (Vim mode) > `Ctrl Shift L` to replace all
 4. Channels for pair programming
 5. Collaboration to share projects with people you trust
+6. Switching between multiple tabs: `Ctrl I/O`

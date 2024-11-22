@@ -1,14 +1,14 @@
 Tags: #weekly
 
-## 🗓️ Study schedule
+## 🗓️ Study 
 
-- Monday - Project
+- Monday - Book
 - Tuesday - Project
-- Wednesday - Algo + Project
+- Wednesday - Book
 - Thursday - Project
-- Friday - Certification
+- Friday - Book
 - Saturday - Rest
-- Sunday - Revision + HomeLab
+- Sunday - Revision 
 
 ## 🧑‍💻 Coding
 
@@ -17,41 +17,44 @@ Tags: #weekly
 		- [ ] Goal 1
 	- Project Name 2
 		- [ ] Goal 1
-
+- Book Name
+	- [ ] Goal 1
+	
 ## 📖 Reading
 
-- For Work
-	- Book Name
-		- [ ] Goal 1
+- Book Name
+	- [ ] Goal 1
 
 
 ## 💪 Workout
 
-### Monday
+### Sunday (Morning)
 
-- [ ] [Planking](https://www.hybridcalisthenics.com/elbowlevers) (3x30 secs - 1 min rest) ⏫ 
-- [ ] [Squats](https://www.hybridcalisthenics.com/squats) (2x20 + 1x10  - 2 mins rest) 🔺 
-- [ ] [Pull Ups](https://www.hybridcalisthenics.com/pullups) (3x5  - 2 mins rest) 🔺 
-- [ ] [Twists](https://www.hybridcalisthenics.com/twists)  (2 holds x 60 secs  - 1 min rest) 🔺 
+- [ ] Planking (3x30 secs - 1 min rest) ⏫ 
+- [ ] Squats (2x20 + 1x10  - 2 mins rest) 🔺 
+- [ ] Pull Ups (3x5  - 2 mins rest) 🔺 
+- [ ] Twists (2 holds x 60 secs  - 1 min rest) 🔺 
+
 ### Tuesday 
 
-- [ ] [Pushups](https://www.hybridcalisthenics.com/pushups) (2x20 + 1x10  - 2 mins rest) 🔺 
-- [ ] [Leg Raises](https://www.hybridcalisthenics.com/legraises) (2x20 + 1x10  - 2 mins rest) 🔺 
-- [ ] [Bridges](https://www.hybridcalisthenics.com/bridges) (2x20 + 1x10) 🔺 
+- [ ] Pushups (2x20 + 1x10  - 2 mins rest) 🔺
+- [ ] Leg Raises (2x20 + 1x10  - 2 mins rest) 🔺 
+- [ ] Bridges (2x20 + 1x10) 🔺 
 
 ### Wednesday
 
 - [ ] Cardio (4 kms) 🔺  
+
 ### Thursday 
 
-- [ ] [Pushups](https://www.hybridcalisthenics.com/pushups) (2x20 + 1x10  - 2 mins rest) 🔺 
-- [ ] [Leg Raises](https://www.hybridcalisthenics.com/legraises) (2x20 + 1x10  - 2 mins rest) 🔺 
-- [ ] [Bridges](https://www.hybridcalisthenics.com/bridges) (2x20 + 1x10) 🔺 
+- [ ] Pushups (2x20 + 1x10  - 2 mins rest) 🔺 
+- [ ] Leg Raises (2x20 + 1x10  - 2 mins rest) 🔺 
+- [ ] Bridges (2x20 + 1x10) 🔺 
 ### Friday
 
-- [ ] [Squats](https://www.hybridcalisthenics.com/squats) (2x20 + 1x10  - 2 mins rest) 🔺 
-- [ ] [Pull Ups](https://www.hybridcalisthenics.com/pullups) (3x5  - 2 mins rest) 🔺 
-- [ ] [Twists](https://www.hybridcalisthenics.com/twists)  (2 holds x 60 secs  - 1 min rest) 🔺 
+- [ ] Squats (2x20 + 1x10  - 2 mins rest) 🔺 
+- [ ] Pull Ups (3x5  - 2 mins rest) 🔺 
+- [ ] Twists  (2 holds x 60 secs  - 1 min rest) 🔺 
 ### Saturday
 
 - [ ] Cardio (5 kms)🔺 
