@@ -1,1 +1,1 @@
-/home/honganh/.zsh.d/aliases.Linux.sh
+alias ls="ls --color=auto"

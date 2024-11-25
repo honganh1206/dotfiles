@@ -5,4 +5,4 @@ A repository storing configurations for:
 - zed
 
 ## Tips:
-- Add sym link between files with `ln -s /path/to/file /path/to/symlink" to sync changes without using `cp`
+- Add sym link between files with `ln -s /path/to/file /path/to/symlink` to sync changes without using `cp`
