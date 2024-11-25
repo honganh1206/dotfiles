@@ -28,7 +28,7 @@ Tags: #weekly
 
 ## 💪 Workout
 
-### Sunday (Morning)
+###  Monday (Morning)
 
 - [ ] Planking (3x30 secs - 1 min rest) ⏫ 
 - [ ] Squats (2x20 + 1x10  - 2 mins rest) 🔺 
