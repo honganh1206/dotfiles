@@ -23,7 +23,6 @@ Tags: #weekly
 ## 📖 Reading
 
 - Book Name
-	- [ ] Goal 1
 
 
 ## 💪 Workout

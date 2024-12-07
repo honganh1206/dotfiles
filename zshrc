@@ -1,4 +1,5 @@
 # Basic setup
+# zmodload zsh/zprof
 typeset -U PATH
 autoload colors; colors;
 
@@ -124,3 +125,5 @@ simple_prompt() {
   local prompt_color="%B"
   export PROMPT="%{$prompt_color%}$promptnormal"
 }
+
+# zprof
