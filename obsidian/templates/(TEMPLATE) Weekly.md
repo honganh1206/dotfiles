@@ -20,40 +20,38 @@ Tags: #weekly
 - Book Name
 	- [ ] Goal 1
 	
-## 📖 Reading
-
-- Book Name
-
 
 ## 💪 Workout
 
-###  Monday (Morning)
+###  Monday
 
-- [ ] Planking (3x30 secs - 1 min rest) ⏫ 
-- [ ] Squats (2x20 + 1x10  - 2 mins rest) 🔺 
-- [ ] Pull Ups (3x5  - 2 mins rest) 🔺 
-- [ ] Twists (2 holds x 60 secs  - 1 min rest) 🔺 
+- [ ] Squats
+- [ ] Pull Ups
+- [ ] Twists
 
 ### Tuesday 
 
-- [ ] Pushups (2x20 + 1x10  - 2 mins rest) 🔺
-- [ ] Leg Raises (2x20 + 1x10  - 2 mins rest) 🔺 
-- [ ] Bridges (2x20 + 1x10) 🔺 
+- [ ] Pushups 
+- [ ] Leg Raises
+- [ ] Bridges
 
 ### Wednesday
 
-- [ ] Cardio (4 kms) 🔺  
+- [ ] Cardio (4 kms) 
 
 ### Thursday 
 
-- [ ] Pushups (2x20 + 1x10  - 2 mins rest) 🔺 
-- [ ] Leg Raises (2x20 + 1x10  - 2 mins rest) 🔺 
-- [ ] Bridges (2x20 + 1x10) 🔺 
+- [ ] Pushups 
+- [ ] Leg Raises
+- [ ] Bridges
+
 ### Friday
 
-- [ ] Squats (2x20 + 1x10  - 2 mins rest) 🔺 
-- [ ] Pull Ups (3x5  - 2 mins rest) 🔺 
-- [ ] Twists  (2 holds x 60 secs  - 1 min rest) 🔺 
+- [ ] Squats
+- [ ] Pull Ups
+- [ ] Twists
+
 ### Saturday
 
-- [ ] Cardio (5 kms)🔺 
+- [ ] Cardio (5 kms)
+

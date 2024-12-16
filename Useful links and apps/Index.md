@@ -2,43 +2,31 @@
 tags:
   - "#Meta"
 ---
-## [[Sourcetree]]
+## Apps
 
+ [[Sourcetree]]
 
-## [[Git]]
+ [[Git]]
 
+[[VSCode]]
 
-## [[VSCode]]
+ [[MongoDB]]
 
+ [[Telegram]]
 
+ [[Visual Studio]]
 
-## [[MongoDB]]
-
-
-## [[Telegram]]
-
-
-## [[Visual Studio]]
-
-
-## [[Neovim]]
-
-
-## Uncategorized
+ [[Neovim]]
 
 - [RustDesk and how to configure it for self-hosting](https://www.youtube.com/watch?v=SYM6M5Fiuyc)
-	- [Headless linux support](https://github.com/rustdesk/rustdesk/wiki/Headless-Linux-Support)
-
+- [Headless linux support](https://github.com/rustdesk/rustdesk/wiki/Headless-Linux-Support)
 - [Win11 Clean Installation/Debloater](https://christitus.com/windows-tool/)
-- Tmux (Terminal multiplexers for Linux distro/WSL)
-	- [Cheatsheet](https://tmuxcheatsheet.com/)
-	- [Overview](https://arcolinux.com/everthing-you-need-to-know-about-tmux-panes/#:~:text=A%20Session%20holds%20one%20or,commands%20(good%20when%20scripting).)
-- [mkcert Installation and Configs](https://thriveread.com/mkcert-localhost-ssl-certificates/)
-- [MailCatcher for SMTP server mail testing](https://mailcatcher.me/
+ - [mkcert Installation and Configs](https://thriveread.com/mkcert-localhost-ssl-certificates/)
+- [MailCatcher for SMTP server mail testing](https://mailcatcher.me/)
 - [pgAdmin for interacting with Postgresql database](https://www.sqlshack.com/getting-started-with-postgresql-on-docker/)
 - [Clear up nuget packages](https://stackoverflow.com/questions/30933277/how-can-i-clear-the-nuget-package-cache-using-the-command-line)
 
-## Configs
+## Links to some configuration settings
 
 1. [Add and configure StyleCop for the whole solution](https://bytedev.medium.com/quickly-setup-stylecop-for-new-net-solutions-275fc755b69e)
 2. [Configure Serilog for ASP.NET Core (The right and shortest way)](https://github.com/serilog/serilog-aspnetcore)

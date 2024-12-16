@@ -5,7 +5,7 @@ $(HOME)/.%: %
 	ln -sf $(DOTFILE_PATH)/$^ $@
 
 git: $(HOME)/.gitconfig $(HOME)/.githelpers $(HOME)/.gitignore
-psql: $(HOME)/.psqlrc
+# psql: $(HOME)/.psqlrc
 zsh: $(HOME)/.zshrc $(HOME)/.zsh.d
 #
 # $(HOME)/bin/tmux-sessionizer:
