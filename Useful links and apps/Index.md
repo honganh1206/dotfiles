@@ -25,6 +25,7 @@ tags:
 - [MailCatcher for SMTP server mail testing](https://mailcatcher.me/)
 - [pgAdmin for interacting with Postgresql database](https://www.sqlshack.com/getting-started-with-postgresql-on-docker/)
 - [Clear up nuget packages](https://stackoverflow.com/questions/30933277/how-can-i-clear-the-nuget-package-cache-using-the-command-line)
+- [Bruno to replace Postman](https://www.usebruno.com/)
 
 ## Links to some configuration settings
 
