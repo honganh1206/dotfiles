@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -61,6 +61,37 @@ if type fzf &> /dev/null && type rg &> /dev/null; then
   export FZF_CTRL_T_COMMAND='rg --files --hidden --follow --glob "!.git/*" --glob "!vendor/*"'
   export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
 fi
+
+# Use find + fzf + batcat to give a quickk preview of files in the dir in search
+searchdir() {
+    # Default to current directory if no argument provided
+    local dir="${1:-.}"
+    local ext="${2:-}"
+    
+    # Construct the find command with file extension support
+    if [ -n "$ext" ]; then
+        # If extension is provided, search for files with that extension
+        find "$dir" -type f \
+            ! -path '*/\.*git/*' \
+            ! -path '*/\node_modules/*' \
+            ! -path '*/\venv/*' \
+            -name "*.$ext" \
+        | fzf --preview 'batcat --style=numbers --color=always {} 2>/dev/null || cat {}' \
+            --preview-window=right:60% \
+            --bind 'ctrl-/:change-preview-window(down|hidden|)' \
+            --height=80%
+    else
+        # If no extension provided, search all files
+        find "$dir" -type f \
+            ! -path '*/\.*git/*' \
+            ! -path '*/\node_modules/*' \
+            ! -path '*/\venv/*' \
+        | fzf --preview 'batcat --style=numbers --color=always {} 2>/dev/null || cat {}' \
+            --preview-window=right:60% \
+            --bind 'ctrl-/:change-preview-window(down|hidden|)' \
+            --height=80%
+    fi
+}
 
 # tmux
 alias tma='tmux attach -t'
@@ -127,3 +158,8 @@ simple_prompt() {
 }
 
 # zprof
+
+. "$HOME/.atuin/bin/env"
+if type atuin &> /dev/null; then
+  eval "$(atuin init zsh)"
+fi

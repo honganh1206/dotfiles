@@ -19,7 +19,14 @@ Tags: #weekly
 		- [ ] Goal 1
 - Book Name
 	- [ ] Goal 1
-	
+
+## ✍️ Writing
+
+- [ ] 
+
+## ♟️ Chess
+
+- [ ]
 
 ## 💪 Workout
 
