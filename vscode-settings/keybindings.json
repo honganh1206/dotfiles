@@ -1,6 +1,55 @@
 // Place your key bindings in this file to override the defaults
 [
-{
+    {
+        "key": "ctrl+alt+e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "ctrl+alt+g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "workbench.view.debug"
+    },
+    {
+        "key": "ctrl+alt+x",
+        "command": "workbench.view.extensions"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "ctrl+alt+t",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "ctrl+b shift+5",
+        "command": "workbench.action.terminal.splitInActiveWorkspace"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
         "key": "ctrl+h",
         "command": "workbench.action.navigateLeft"
     },
@@ -17,29 +66,8 @@
         "command": "workbench.action.navigateDown"
     },
     {
-        "key": "ctrl+cmd+t",
+        "key": "ctrl+alt+t",
         "command": "workbench.action.terminal.focus",
         "when": "!terminalFocus"
-    },
-    {
-        "key": "ctrl+cmd+n",
-        "command": "workbench.action.terminal.focusNext"
-    },
-    {
-        "key": "ctrl+cmd+p",
-        "command": "workbench.action.terminal.focusPrevious"
-    },
-    {
-        "key": "ctrl+cmd+t",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+cmd+b",
-        "command": "workbench.action.toggleActivityBarVisibility"
-    },
-    {
-        "key": "ctrl+b shift+5",
-        "command": "workbench.action.terminal.splitInActiveWorkspace"
     }
 ]

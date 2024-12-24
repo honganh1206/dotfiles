@@ -75,10 +75,8 @@
         // "editor.defaultFormatter": "golang.go",
     },
 
-    /**
-     * Workbench UI
-     **/
-    "workbench.activityBar.location": "hidden",
+    /** Scm */
+    "scm.diffDecorations": "all",
     "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.sideBar.location": "right",
     "workbench.editor.showTabs": "multiple",
@@ -398,5 +396,6 @@
     "vim.foldfix": true,
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
-    }
+    },
+    "workbench.activityBar.location": "hidden"
 }
