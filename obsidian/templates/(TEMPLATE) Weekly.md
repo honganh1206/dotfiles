@@ -1,16 +1,18 @@
 Tags: #weekly
 
-## 🗓️ Study 
+## 🗓️ Days in a week
 
-- Monday - Book
-- Tuesday - Project
-- Wednesday - Book
-- Thursday - Project
-- Friday - Book
-- Saturday - Rest
-- Sunday - Revision 
+| Days      | Study   | Get up early? | Gym in the morning |
+| --------- | ------- | ------------- | ------------------ |
+| Monday    | Book    |               |                    |
+| Tuesday   | Project |               |                    |
+| Wednesday | Book    |               |                    |
+| Thursday  | Project |               |                    |
+| Friday    | Rest    |               |                    |
+| Saturday  | Book    |               |                    |
+| Sunday    | Project |               |                    |
 
-## 🧑‍💻 Coding
+## 🧑‍💻 Programming
 
 - Projects
 	- Project Name 1
@@ -20,13 +22,16 @@ Tags: #weekly
 - Book Name
 	- [ ] Goal 1
 
+## 📖 Reading
+
+- [ ] 
 ## ✍️ Writing
 
 - [ ] 
 
 ## ♟️ Chess
 
-- [ ]
+- [  ]
 
 ## 💪 Workout
 

@@ -61,6 +61,10 @@ if type fzf &> /dev/null && type rg &> /dev/null; then
   export FZF_CTRL_T_COMMAND='rg --files --hidden --follow --glob "!.git/*" --glob "!vendor/*"'
   export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
 fi
+# Find a file with fzf and pipe its output to nvim
+vf() {
+  nvim "$(fzf)"
+}
 
 # Use find + fzf + batcat to give a quickk preview of files in the dir in search
 searchdir() {
@@ -163,3 +167,7 @@ simple_prompt() {
 if type atuin &> /dev/null; then
   eval "$(atuin init zsh)"
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
