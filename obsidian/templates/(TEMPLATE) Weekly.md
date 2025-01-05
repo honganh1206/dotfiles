@@ -22,16 +22,17 @@ Tags: #weekly
 - Book Name
 	- [ ] Goal 1
 
+## ♟️ Research during free time/breaks
+
+- [  ]
+
 ## 📖 Reading
 
 - [ ] 
+
 ## ✍️ Writing
 
 - [ ] 
-
-## ♟️ Chess
-
-- [  ]
 
 ## 💪 Workout
 

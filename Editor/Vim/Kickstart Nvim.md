@@ -1,14 +1,27 @@
----
-tags:
-  - "#study"
-cssclasses:
-  - center-images
----
-[Kickstart nvim tutorial](https://www.youtube.com/watch?v=m8C0Cq9Uv9o)
+# Kickstart Nvim
 
-## Alpha dashboard
+## Plugins
 
-- Go back to dashboard from buffer: `:Alpha`
-- Find files inside buffer: `Telescope find_files` 
-- Find text in files shortcut: `<space>-<ft>`
+## Keymaps
+
+### General
+
+- Go back to dashboard from buffer: `<space>a`
+- Toggle terminal with `<space>td`
+- Find file shortcut: `<space>sf`
+- Check files in buffer: `<space>x2`
+- Write the current file: `<space>`
+- Split windows vertically `Ctrl + v` or horizontally `Ctrl + x`
+
+### Nvim Tree
+
+- Toggle explorer tree: `<space>e`
+- Find current file in tree: `<space>n`
+- Create new file: Navigate to the folder to create file -> `a` -> Type file
+name
+- Delete a file: Navigate to file -> `d`
+- Rename a file: Navigate to file -> `e`
+- Create a new folder: Type the folder name followed with `/' like `new-folder/`
+- Move file to a folder: Select the file -> `x` -> Move to destination folder ->
+  `p`
 

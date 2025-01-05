@@ -164,6 +164,7 @@ vim.opt.scrolloff = 10
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+vim.keymap.set('n', '<leader>w', ':w<CR>', { noremap = true, silent = true, desc = 'Write current file' })
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
@@ -324,7 +325,6 @@ require('lazy').setup({
       },
     },
   },
-
   -- NOTE: Plugins can specify dependencies.
   --
   -- The dependencies are proper plugin specifications as well - anything
@@ -674,7 +674,42 @@ require('lazy').setup({
       }
     end,
   },
-
+  -- Go specific plugins
+  {
+    'fatih/vim-go',
+    ft = 'go',
+    build = ':GoUpdateBinaries',
+  },
+  {
+    'ray-x/go.nvim',
+    dependencies = {
+      'ray-x/guihua.lua',
+      'neovim/nvim-lspconfig',
+    },
+    config = function()
+      require('go').setup {
+        -- Add your go.nvim configuration here
+        go = 'go', -- go command
+        goimport = 'gopls', -- goimport command
+        gofmt = 'gofumpt', -- gofmt cmd,
+        max_line_len = 120, -- max line length in goline format
+        tag_transform = false, -- tag_transfer  check gomodifytags for details
+        test_dir = '', -- dir to put test files ( relative to current file)
+        comment_placeholder = '', -- comment placeholder when generating tests
+        icons = { breakpoint = '🧘', currentpos = '🏃' },
+        verbose = false, -- output loginf in messages
+        lsp_cfg = true, -- true: apply go.nvim non-default gopls setup
+        lsp_gofumpt = true, -- true: set default gofmt in gopls format to gofumpt
+        lsp_on_attach = true, -- if you would like to run go.nvim non-default on_attach
+        lsp_codelens = true, -- set to false to disable codelens
+        gopls_remote_auto = true, -- add -remote=auto to gopls
+        fillstruct = 'gopls', -- can be nil (use fillstruct, slower) and gopls
+      }
+    end,
+    event = { 'CmdlineEnter' },
+    ft = { 'go', 'gomod' },
+    build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
+  },
   { -- Autoformat
     'stevearc/conform.nvim',
     event = { 'BufWritePre' },
@@ -785,7 +820,7 @@ require('lazy').setup({
           -- Accept ([y]es) the completion.
           --  This will auto-import if your LSP supports it.
           --  This will expand snippets if the LSP sent a snippet.
-          ['<C-y>'] = cmp.mapping.confirm { select = true },
+          ['<Tab>'] = cmp.mapping.confirm { select = true },
 
           -- If you prefer more traditional completion keymaps,
           -- you can uncomment the following lines
@@ -899,6 +934,8 @@ require('lazy').setup({
       vim.cmd [[
             autocmd FileType alpha setlocal nofoldenable
         ]]
+
+      vim.api.nvim_set_keymap('n', '<leader>a', ':Alpha<CR>', { noremap = true, silent = true, desc = 'Go to dashboard' })
     end,
   },
   { -- Collection of various small independent plugins/modules
@@ -936,6 +973,69 @@ require('lazy').setup({
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
+    end,
+  },
+  {
+    'nvim-tree/nvim-tree.lua',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }, -- for file icons
+    config = function()
+      require('nvim-tree').setup {
+        view = {
+          width = 30,
+          side = 'left',
+        },
+        update_focused_file = {
+          enable = true, -- Enable syncing with the current file
+          update_cwd = true, -- Change the tree root to the file's directory
+        },
+        filters = {
+          dotfiles = false, -- Change to `true` to hide dotfiles
+        },
+        git = {
+          enable = true,
+        },
+        sync_root_with_cwd = true, -- Sync the tree root with the current working directory
+        actions = {
+          open_file = {
+            quit_on_open = true, -- Closes the tree when a file is opened
+          },
+          window_picker = {
+            enable = true,
+          },
+        },
+      }
+
+      -- Keybinding for toggling nvim-tree
+      vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true, desc = 'Toggle Explorer Tree' })
+      vim.api.nvim_set_keymap('n', '<leader>n', ':NvimTreeFindFile<CR>', { noremap = true, silent = true, desc = 'Find current file in Nvim-Tree' })
+    end,
+  },
+  { -- Toggle terminal
+    'akinsho/toggleterm.nvim',
+    version = '*',
+    config = function()
+      require('toggleterm').setup {
+        -- Your toggleterm configuration here
+        size = function(term)
+          if term.direction == 'horizontal' then
+            return 15
+          elseif term.direction == 'vertical' then
+            return vim.o.columns * 0.4
+          end
+        end,
+        open_mapping = [[<c-\>]],
+        cwd = vim.fn.getcwd(), -- Set terminal CWD to the current Neovim working directory
+        start_in_insert = true, -- Start in insert mode
+        close_on_exit = true, -- Automatically close terminal on process exit
+        shell = vim.o.shell, -- Use the default shell
+        direction = 'float',
+        float_opts = {
+          border = 'curved',
+          width = math.floor(vim.o.columns * 0.8),
+          height = math.floor(vim.o.lines * 0.8),
+        },
+      }
+      vim.api.nvim_set_keymap('n', '<leader>td', ':ToggleTerm dir=%:p:h<CR>', { desc = 'Open terminal in the directory of the file' }) -- open terminal in the directory of the file
     end,
   },
   { -- Highlight, edit, and navigate code
@@ -1042,10 +1142,3 @@ require('lazy').setup {
 
 -- Set up the markdown configuration
 markdown_config.setup()
-
-local terminal_config = require 'custom.terminal'
-
-require('lazy').setup {
-  -- Your existing plugins
-  unpack(terminal_config.plugins),
-}

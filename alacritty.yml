@@ -1,0 +1,18 @@
+font:
+  family: "JetBrainsMono Nerd Font"
+  size: 9
+  weight: Regular
+window:
+  dimensions:
+    columns: 0    # Setting to 0 lets Alacritty calculate based on width/height
+    lines: 0
+  position:
+    x: 0         # Start from left edge
+    y: 0         # Start from top edge
+  padding:
+    x: 0
+    y: 0
+  # This makes the window take up 50% of your screen width
+  dimensions:
+    width: 70    # Percentage of screen width
+    height: 100  # Full screen height
