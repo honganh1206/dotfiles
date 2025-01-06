@@ -25,3 +25,21 @@ name
 - Move file to a folder: Select the file -> `x` -> Move to destination folder ->
   `p`
 
+### zk-nvim
+
+Useful keymaps:
+   - `<leader>zn` - Create new note
+   - `<leader>zo` - Open notes
+   - `<leader>zf` - Search notes
+   - `<leader>zt` - Search selected text
+   - `<leader>zd` - Create note in current directory
+   - `<leader>zb` - Show backlinks
+   - `<leader>zl` - Show links
+   - `<leader>zp` - Preview note
+
+Standard LSP keymaps:
+- `K` - Hover information
+- `gd` - Go to definition
+- `gr` - Find references
+- `<leader>zr` - Rename
+

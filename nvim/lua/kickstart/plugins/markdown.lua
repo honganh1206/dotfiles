@@ -1,123 +1,121 @@
--- Add this to your existing kickstart.nvim init.lua or create a new file in lua/custom/markdown.lua
-
--- Markdown-specific plugins
-local markdown_plugins = {
+return {
   -- Markdown preview
-  {
-    'iamcco/markdown-preview.nvim',
-    cmd = { 'MarkdownPreview', 'MarkdownPreviewToggle' },
-    build = function()
-      vim.fn['mkdp#util#install']()
-    end,
-    ft = { 'markdown' },
-  },
+  -- {
+  --   'iamcco/markdown-preview.nvim',
+  --   cmd = { 'MarkdownPreview', 'MarkdownPreviewToggle' },
+  --   build = function()
+  --     vim.fn['mkdp#util#install']()
+  --   end,
+  --   ft = { 'markdown' },
+  --   init = function()
+  --     vim.g.mkdp_auto_start = 0
+  --     vim.g.mkdp_auto_close = 1
+  --     vim.g.mkdp_refresh_slow = 0
+  --     vim.g.mkdp_command_for_global = 0
+  --     vim.g.mkdp_browser = ''
+  --   end,
+  -- },
+
   -- Better markdown syntax
   {
     'preservim/vim-markdown',
     ft = { 'markdown' },
     dependencies = { 'godlygeek/tabular' },
+    init = function()
+      vim.g.vim_markdown_folding_disabled = 1
+      vim.g.vim_markdown_frontmatter = 1
+      vim.g.vim_markdown_conceal = 2
+      vim.g.vim_markdown_fenced_languages = {
+        'lua',
+        'python',
+        'javascript',
+        'js=javascript',
+        'typescript',
+        'ts=typescript',
+        'bash',
+        'sh',
+      }
+    end,
   },
+
   -- Table mode for easy table editing
   {
     'dhruvasagar/vim-table-mode',
     ft = { 'markdown' },
+    init = function()
+      vim.g.table_mode_corner = '|'
+      vim.g.table_mode_auto_align = 1
+    end,
   },
+
   -- Bullets and checkboxes
   {
     'dkarter/bullets.vim',
     ft = { 'markdown' },
   },
+
+  -- Zettelkasten note-taking
+  {
+    'mickael-menu/zk-nvim',
+    dependencies = { 'nvim-telescope/telescope.nvim' },
+    ft = { 'markdown' },
+    cmd = {
+      'ZkNew',
+      'ZkNotes',
+      'ZkMatch',
+      'ZkBacklinks',
+      'ZkLinks',
+      'ZkPreview',
+    },
+    keys = {
+      { '<leader>zn', "<cmd>ZkNew { title = vim.fn.input('Title: ') }<cr>", desc = 'New note' },
+      { '<leader>zo', "<cmd>ZkNotes { sort = { 'modified' } }<cr>", desc = 'Open notes' },
+      { '<leader>zf', "<cmd>ZkNotes { sort = { 'modified' }, match = { vim.fn.input('Search: ') } }<cr>", desc = 'Search notes' },
+      { '<leader>zt', ":'<,'>ZkMatch<cr>", desc = 'Search word under cursor', mode = 'v' },
+      { '<leader>zb', '<cmd>ZkBacklinks<cr>', desc = 'Show backlinks' },
+      { '<leader>zl', '<cmd>ZkLinks<cr>', desc = 'Show links' },
+      { '<leader>zp', '<cmd>ZkPreview<cr>', desc = 'Preview note' },
+    },
+    config = function()
+      require('zk').setup {
+        picker = 'telescope',
+        lsp = {
+          config = {
+            cmd = { 'zk', 'lsp' },
+            name = 'zk',
+          },
+        },
+        auto_attach = {
+          enabled = true,
+          filetypes = { 'markdown' },
+        },
+      }
+
+      -- Create an autocmd group for markdown settings
+      local markdown_group = vim.api.nvim_create_augroup('markdown_settings', { clear = true })
+
+      -- Set markdown-specific options
+      vim.api.nvim_create_autocmd('FileType', {
+        group = markdown_group,
+        pattern = 'markdown',
+        callback = function()
+          -- Buffer-local options
+          vim.opt_local.spell = true
+          vim.opt_local.spelllang = 'en_us'
+          vim.opt_local.tabstop = 2
+          vim.opt_local.shiftwidth = 2
+          vim.opt_local.expandtab = true
+          vim.opt_local.conceallevel = 2
+
+          -- Buffer-local mappings
+          local opts = { buffer = true, silent = true }
+          vim.keymap.set('n', '<leader>mp', ':MarkdownPreview<CR>', opts)
+          vim.keymap.set('n', '<leader>ms', ':MarkdownPreviewStop<CR>', opts)
+          vim.keymap.set('n', '<leader>tm', ':TableModeToggle<CR>', opts)
+          vim.keymap.set('n', '<leader>h1', 'yypVr=', opts)
+          vim.keymap.set('n', '<leader>h2', 'yypVr-', opts)
+        end,
+      })
+    end,
+  },
 }
-
--- Add these plugins to your existing lazy.nvim setup
-require('lazy').setup(markdown_plugins, {})
-
--- Markdown-specific settings
-vim.api.nvim_create_autocmd('FileType', {
-  pattern = 'markdown',
-  callback = function()
-    -- Enable word wrap
-    vim.opt_local.wrap = true
-    vim.opt_local.linebreak = true
-
-    -- Enable spell checking
-    vim.opt_local.spell = true
-    vim.opt_local.spelllang = 'en_us'
-
-    -- Set indentation
-    vim.opt_local.tabstop = 2
-    vim.opt_local.shiftwidth = 2
-    vim.opt_local.expandtab = true
-
-    -- Configure concealing for markdown
-    vim.opt_local.conceallevel = 2
-
-    -- Set textwidth for automatic wrapping
-    vim.opt_local.textwidth = 80
-  end,
-})
-
--- Markdown preview configuration
-vim.g.mkdp_auto_start = 0
-vim.g.mkdp_auto_close = 1
-vim.g.mkdp_refresh_slow = 0
-vim.g.mkdp_command_for_global = 0
-vim.g.mkdp_browser = ''
-vim.g.mkdp_preview_options = {
-  mkit = {},
-  katex = {},
-  uml = {},
-  maid = {},
-  disable_sync_scroll = 0,
-  sync_scroll_type = 'middle',
-}
-
--- Markdown syntax configuration
-vim.g.vim_markdown_folding_disabled = 1
-vim.g.vim_markdown_frontmatter = 1
-vim.g.vim_markdown_conceal = 2
-vim.g.vim_markdown_fenced_languages = {
-  'lua',
-  'python',
-  'javascript',
-  'js=javascript',
-  'typescript',
-  'ts=typescript',
-  'bash',
-  'sh',
-}
-
--- Table mode configuration
-vim.g.table_mode_corner = '|'
-vim.g.table_mode_auto_align = 1
-
--- Key mappings for markdown
-local markdown_mappings = {
-  -- Toggle markdown preview
-  ['<leader>mp'] = ':MarkdownPreview<CR>',
-  ['<leader>ms'] = ':MarkdownPreviewStop<CR>',
-
-  -- Toggle table mode
-  ['<leader>tm'] = ':TableModeToggle<CR>',
-
-  -- Headers
-  ['<leader>h1'] = 'yypVr=', -- Create H1 header
-  ['<leader>h2'] = 'yypVr-', -- Create H2 header
-
-  -- Lists
-  ['<leader>ul'] = 'i- ', -- Unordered list
-  ['<leader>ol'] = 'i1. ', -- Ordered list
-
-  -- Task lists
-  ['<leader>tc'] = 'i- [ ] ', -- Create task checkbox
-}
-
--- Apply markdown-specific keymaps
-vim.api.nvim_create_autocmd('FileType', {
-  pattern = 'markdown',
-  callback = function()
-    for k, v in pairs(markdown_mappings) do
-      vim.keymap.set('n', k, v, { buffer = true, silent = true })
-    end
-  end,
-})
