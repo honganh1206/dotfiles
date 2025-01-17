@@ -72,9 +72,9 @@ end
 local function delete_all_other_buffers()
   for _, buf in ipairs(vim.api.nvim_list_bufs()) do
     if
-      vim.api.nvim_get_option_value('buflisted', { buf = buf })
-      and not vim.api.nvim_get_option_value('modified', { buf = buf })
-      and buf ~= vim.api.nvim_get_current_buf()
+        vim.api.nvim_get_option_value('buflisted', { buf = buf })
+        and not vim.api.nvim_get_option_value('modified', { buf = buf })
+        and buf ~= vim.api.nvim_get_current_buf()
     then
       vim.api.nvim_buf_delete(buf, {})
     end
@@ -127,6 +127,7 @@ map('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 map('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 map('n', '<C-w>m', '<C-w>|<C-w>_', { desc = 'Maximise Window' })
 
+map('n', '<leader>w', ':w<CR>', { noremap = true, silent = true, desc = 'Write current file' })
 -- Resize window using <ctrl> arrow keys
 map('n', '<C-Up>', '<cmd>resize +2<cr>', { desc = 'Increase Window Height' })
 map('n', '<C-Down>', '<cmd>resize -2<cr>', { desc = 'Decrease Window Height' })

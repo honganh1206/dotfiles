@@ -32,7 +32,7 @@ Attach to a session: `tmux attach -s my-session`
 
 [C]reate new window: `prefix + c`
 
-Switching between windows: `prefix + window-num` 
+Switching between windows: `prefix + window-num`
 
 Move to [p]revious window: `prefix + p`
 
@@ -50,4 +50,5 @@ Kill a pane: `prefix + x`
 
 ## Search
 
-`fzf` integration: `Ctrl + s` 
+`fzf` integration: `Ctrl + s`
+
