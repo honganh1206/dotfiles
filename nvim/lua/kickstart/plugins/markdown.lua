@@ -158,22 +158,8 @@ return {
             ---@param title string|?
             ---@return string
             note_id_func = function(title)
-                -- Create note IDs in a Zettelkasten format with a timestamp and a suffix.
-                -- In this case a note with the title 'My new note' will be given an ID that looks
-                -- like '1657296016-my-new-note', and therefore the file name '1657296016-my-new-note.md'
-                local suffix = ""
-                if title ~= nil then
-                    -- If title is given, transform it into valid file name.
-                    suffix = title:gsub(" ", "-"):gsub("[^A-Za-z0-9-]", ""):lower()
-                else
-                    -- If title is nil, just add 4 random uppercase letters to the suffix.
-                    for _ = 1, 4 do
-                        suffix = suffix .. string.char(math.random(65, 90))
-                    end
-                end
-                return tostring(os.time()) .. "-" .. suffix
-            end,
-
+                return title
+            end, --
             -- Optional, customize how note file names are generated given the ID, target directory, and title.
             ---@param spec { id: string, dir: obsidian.Path, title: string|? }
             ---@return string|obsidian.Path The full path to the new note.
@@ -248,6 +234,32 @@ return {
                     return string.format("![%s](%s)", path.name, path)
                 end,
             },
+            -- Optional, by default when you use `:ObsidianFollowLink` on a link to an external
+            -- URL it will be ignored but you can customize this behavior here.
+            ---@param url string
+            follow_url_func = function(url)
+                -- Open the URL in the default web browser.
+                -- vim.fn.jobstart({ "open", url }) -- Mac OS
+                vim.fn.jobstart({ "xdg-open", url }) -- linux
+                -- vim.cmd(':silent exec "!start ' .. url .. '"') -- Windows
+                vim.ui.open(url)                     -- need Neovim 0.10.0+
+            end,
+
+            -- Optional, by default when you use `:ObsidianFollowLink` on a link to an image
+            -- file it will be ignored but you can customize this behavior here.
+            ---@param img string
+            follow_img_func = function(img)
+                -- vim.fn.jobstart { "qlmanage", "-p", img } -- Mac OS quick look preview
+                vim.fn.jobstart({ "xdg-open", img }) -- linux
+                -- vim.cmd(':silent exec "!start ' .. url .. '"') -- Windows
+            end,
+
+            -- Optional, set to true if you use the Obsidian Advanced URI plugin.
+            -- https://github.com/Vinzent03/obsidian-advanced-uri
+            use_advanced_uri = false,
+
+            -- Optional, set to true to force ':ObsidianOpen' to bring the app to the foreground.
+            open_app_foreground = false,
         },
         init = function()
             local wk = require("which-key")
@@ -261,6 +273,109 @@ return {
                     t = { ":ObsidianTags<CR>", "Show Tags" },
                 },
             })
+        end,
+    },
+    {
+        "zk-org/zk-nvim",
+        config = function()
+            require("zk").setup({
+                -- Configure zk directory and file format
+                picker = "telescope", -- use telescope for picking notes
+
+                -- Configure automatic link types
+                automatic_links = true,
+
+                -- Configure daily note directory and format
+                daily_notes = {
+                    folder = "daily",
+                    date_format = "%Y-%m-%d",
+                    template = "daily.md"
+                },
+
+                -- Configure weekly note directory and format
+                weekly_notes = {
+                    folder = "weekly",
+                    date_format = "%Y-W%V",
+                    template = "weekly.md"
+                },
+                lsp = {
+                    -- `config` is passed to `vim.lsp.start_client(config)`
+                    config = {
+                        cmd = { "zk", "lsp" },
+                        name = "zk",
+                        -- on_attach = ...
+                        -- etc, see `:h vim.lsp.start_client()`
+                    },
+
+                    -- automatically attach buffers in a zk notebook that match the given filetypes
+                    auto_attach = {
+                        enabled = true,
+                        filetypes = { "markdown" },
+                    },
+                },
+            })
+
+            -- Register keymaps with which-key
+            local wk = require("which-key")
+            wk.register({
+                ["<leader>z"] = {
+                    name = "Zettelkasten",
+                    -- Notes
+                    n = {
+                        name = "Notes",
+                        n = { "<Cmd>ZkNew { title = vim.fn.input('Title: ') }<CR>", "New Note" },
+                        d = { "<Cmd>ZkNew { dir = 'daily' }<CR>", "New Daily Note" },
+                        w = { "<Cmd>ZkNew { dir = 'weekly' }<CR>", "New Weekly Note" },
+                        t = { "<Cmd>ZkTags<CR>", "Search Tags" },
+                    },
+                    -- Search
+                    f = { "<Cmd>ZkNotes { sort = { 'modified' } }<CR>", "Find Notes" },
+                    s = { ":'<,'>ZkMatch<CR>", "Search Selection", mode = "v" },
+                    l = { "<Cmd>ZkLinks<CR>", "Search Links" },
+                    b = { "<Cmd>ZkBacklinks<CR>", "Search Backlinks" },
+                    -- Insert
+                    i = {
+                        name = "Insert",
+                        l = { "<Cmd>ZkInsertLink<CR>", "Insert Link" },
+                        n = { "<Cmd>ZkInsertNote<CR>", "Insert Note Reference" },
+                    },
+                    -- Open
+                    o = {
+                        name = "Open",
+                        d = { "<Cmd>ZkOpenDaily<CR>", "Open Daily Note" },
+                        w = { "<Cmd>ZkOpenWeekly<CR>", "Open Weekly Note" },
+                    },
+                },
+            })
+
+            -- Add some additional useful commands
+            local zk = require("zk")
+            local commands = {
+                -- Create a new note after asking for its title.
+                ZkNew = function(title)
+                    local title = title or vim.fn.input("Title: ")
+                    if title ~= "" then
+                        zk.new({ title = title })
+                    end
+                end,
+
+                -- Search for notes matching the current visual selection.
+                ZkMatch = function()
+                    local visual_selection = function()
+                        local s_start = vim.fn.getpos("'<")
+                        local s_end = vim.fn.getpos("'>")
+                        local lines = vim.fn.getline(s_start[2], s_end[2])
+                        return table.concat(lines, "\n")
+                    end
+                    local selected_text = visual_selection()
+                    zk.pick_notes({ match = selected_text })
+                end,
+            }
+
+            -- Create user commands
+            for command_name, command_func in pairs(commands) do
+                vim.api.nvim_create_user_command(command_name, command_func, {})
+            end
         end,
     }
 }
