@@ -76,6 +76,8 @@ require('lazy').setup({
   require 'kickstart.plugins.go',
   require 'kickstart.plugins.dashboard',
   require 'kickstart.plugins.markdown',
+  require 'kickstart.plugins.sessions',
+  require 'kickstart.plugins.projects',
 
   ------------------------
   -- Nice-to-have plugins

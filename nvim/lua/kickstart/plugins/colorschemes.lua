@@ -8,46 +8,6 @@ local nordBackground = '#2D303C'
 vim.cmd.hi 'Comment gui=none'
 
 local all_colorschemes = {
-  -- nordbones = {
-  --   'zenbones-theme/zenbones.nvim',
-  --   dependencies = {
-  --     'rktjmp/lush.nvim',
-  --   },
-  --   priority = priority,
-  --   init = function()
-  --     vim.cmd.colorscheme 'nordbones'
-  --     vim.o.background = 'dark' -- or light
-  --     vim.cmd('highlight Normal guibg=' .. nordBackground)
-  --   end,
-  -- },
-  -- nord = {
-  --   'gbprod/nord.nvim',
-  --   priority = priority,
-  --   init = function()
-  --     vim.cmd.colorscheme 'nord'
-  --     -- For vim-fugitive
-  --   end,
-  --   opts = {
-  --     diff = { mode = 'fg' },
-  --     on_highlights = function(highlights, _)
-  --       highlights.Normal.bg = nordBackground
-  --       highlights.DiffAdd.bg = 'NONE'
-  --       highlights.DiffDelete.bg = 'NONE'
-  --     end,
-  --   },
-  -- },
-  -- ['zenbones-dim'] = {
-  --   'zenbones-theme/zenbones.nvim',
-  --   dependencies = {
-  --     'rktjmp/lush.nvim',
-  --   },
-  --   priority = priority,
-  --   init = function()
-  --     vim.cmd.colorscheme 'zenbones'
-  --     vim.o.background = 'light'
-  --   end,
-  -- },
-  -- gruvbox = { "ellisonleao/gruvbox.nvim", priority = priority, config = true }
   gruvbox = {
     -- NOTE: Color Scheme
     'sainnhe/gruvbox-material',

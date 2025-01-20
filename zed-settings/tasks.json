@@ -8,5 +8,21 @@
     "use_new_terminal": false,
     "reveal": "always",
     "hide": "on_success"
+  },
+  {
+    "label": "C/C++: Build & Run Active File",
+    "command": "/usr/bin/gcc-11",
+    "args": [
+      "-Wall",
+      "-fdiagnostics-color=always",
+      "-g",
+      "$ZED_FILE",
+      "-o",
+      "$ZED_DIRNAME/$ZED_STEM",
+      "&&",
+      "$ZED_DIRNAME/$ZED_STEM"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "shell": "system"
   }
 ]

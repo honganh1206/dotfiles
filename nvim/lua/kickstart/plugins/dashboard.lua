@@ -1,9 +1,17 @@
 return {
-{
+  {
     'goolord/alpha-nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
       require('alpha').setup(require('alpha.themes.dashboard').config)
+
+      local builtin = require 'telescope.builtin'
+
+      -- Define some helpful functions for session/project management
+      local function get_session_name()
+        return vim.fn.stdpath('data') .. '/session/last-session.vim'
+      end
+
 
       local dashboard = require 'alpha.themes.dashboard'
       dashboard.section.header.val = {
@@ -32,10 +40,12 @@ return {
         dashboard.button('e', ' 󰝒  New file', ':ene <BAR> startinsert <CR>'),
         dashboard.button('r', ' 󰄉  Recently used files', ':Telescope oldfiles <CR>'),
         dashboard.button('t', ' 󰊄  Find text', ':Telescope live_grep <CR>'),
-        dashboard.button('c', ' 󰒲  Configuration', ':e ~/.config/nvim/init.lua <CR>'),
+        dashboard.button('s', ' 󰦛  Open last session', ':source ' .. get_session_name() .. '<CR>'),
+        dashboard.button('p', ' 󰎟  Browse projects', ':Telescope projects <CR>'),
+        dashboard.button('d', ' 󰗚  Documentation', ':help <CR>'),
+        -- dashboard.button('c', ' 󰒲  Configuration', ':e ~/.config/nvim/init.lua <CR>'),
         dashboard.button('q', ' 󰅚  Quit Neovim', ':qa<CR>'),
       }
-
       -- Send config to alpha
       require('alpha').setup(dashboard.config)
 
