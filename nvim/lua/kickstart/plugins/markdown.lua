@@ -140,6 +140,13 @@ return {
                     },
                 },
             },
+            ui = {
+                enable = true,         -- enable the UI module
+                update_debounce = 200, -- update delay after a text change (in milliseconds)
+                -- Conceal settings
+                conceallevel = 2,      -- 0: disable conceal, 1: hide quote marks, 2: hide full markup
+                concealcursor = "nvc", -- Controls when conceal is shown/hidden
+            },
             -- Optional, set the log level for obsidian.nvim. This is an integer corresponding to one of the log
             -- levels defined by "vim.log.levels.*".
             log_level = vim.log.levels.INFO,
