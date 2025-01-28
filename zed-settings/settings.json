@@ -2,7 +2,7 @@
   "terminal": {
     "dock": "bottom",
     "font_size": 12,
-    "font_family": "JetBrainsMono Nerd Font",
+    "font_family": "BerkeleyMono Nerd Font",
     "line_height": {
       "custom": 1.25
     },
@@ -42,8 +42,8 @@
   "scrollbar": {
     "show": "never"
   },
-  "ui_font_family": "JetBrainsMono Nerd Font Mono",
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_family": "BerkeleyMono Nerd Font",
+  "buffer_font_family": "BerkeleyMono Nerd Font",
   "buffer_line_height": {
     "custom": 1.25
   },
@@ -93,8 +93,12 @@
       "format_on_save": "off",
       "soft_wrap": "preferred_line_length"
     },
+    "HTML": {
+      "format_on_save": "off"
+    },
     "SQL": {
-      "formatter": "prettier"
+      "formatter": "prettier",
+      "format_on_save": "off"
     },
     "JSON": {
       "prettier": {

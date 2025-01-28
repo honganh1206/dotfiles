@@ -1,3 +1,10 @@
+---
+id: (TEMPLATE) Weekly
+aliases: []
+tags:
+  -  #weekly
+---
+
 Tags: #weekly
 
 ## 🗓️ Days in a week
@@ -14,47 +21,50 @@ Tags: #weekly
 
 ## 🧑‍💻 Programming
 
-- Projects
-	- Project Name 1
-		- [ ] Goal 1
-	- Project Name 2
-		- [ ] Goal 1
-- Book Name
-	- [ ] Goal 1
+- Project Name 1
+  - [ ] Goal 1
+- Project Name 2
+  - [ ] Goal 1
 
-## ♟️ Research during free time/breaks
+## Plans for next week
 
-- [  ]
+- first
+- second
+- third
+
+## ♟️ Free time/breaks
+
+- [ ]
 
 ## 📖 Reading
 
-- [ ] 
+- [ ]
 
 ## ✍️ Writing
 
-- [ ] 
+- [ ]
 
 ## 💪 Workout
 
-###  Monday
+### Monday
 
 - [ ] Squats
 - [ ] Pull Ups
 - [ ] Twists
 
-### Tuesday 
+### Tuesday
 
-- [ ] Pushups 
+- [ ] Pushups
 - [ ] Leg Raises
 - [ ] Bridges
 
 ### Wednesday
 
-- [ ] Cardio (4 kms) 
+- [ ] Cardio (4 kms)
 
-### Thursday 
+### Thursday
 
-- [ ] Pushups 
+- [ ] Pushups
 - [ ] Leg Raises
 - [ ] Bridges
 
@@ -67,4 +77,3 @@ Tags: #weekly
 ### Saturday
 
 - [ ] Cardio (5 kms)
-

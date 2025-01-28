@@ -21,14 +21,13 @@ return {
         init = function()
             -- Register keymap group
             local wk = require("which-key")
-            wk.register({
-                ["<leader>m"] = {
-                    name = "Markdown",
-                    p = { ":MarkdownPreview<CR>", "Preview Markdown" },
-                    s = { ":MarkdownPreviewStop<CR>", "Stop Preview" },
-                    t = { ":MarkdownPreviewToggle<CR>", "Toggle Preview" },
-                },
-            })
+            wk.add(
+                {
+                    { "<leader>mp", ":MarkdownPreview<CR>",       desc = "Preview Markdown" },
+                    { "<leader>ms", ":MarkdownPreviewStop<CR>",   desc = "Stop Preview" },
+                    { "<leader>mt", ":MarkdownPreviewToggle<CR>", desc = "Toggle Preview" },
+                }
+            )
         end,
     },
     {
@@ -51,10 +50,10 @@ return {
             }
 
             local wk = require("which-key")
-            wk.register({
-                ["]]"] = { "<cmd>HeaderIncrease<CR>", "Increase Header Level" },
-                ["[["] = { "<cmd>HeaderDecrease<CR>", "Decrease Header Level" },
-                ["]h"] = { "<cmd>Toc<CR>", "Show Table of Contents" },
+            wk.add({
+                { "[[", "<cmd>HeaderDecrease<CR>", desc = "Decrease Header Level" },
+                { "]]", "<cmd>HeaderIncrease<CR>", desc = "Increase Header Level" },
+                { "]h", "<cmd>Toc<CR>",            desc = "Show Table of Contents" },
             })
         end,
     },
@@ -64,10 +63,8 @@ return {
         cmd = "Glow",
         init = function()
             local wk = require("which-key")
-            wk.register({
-                ["<leader>m"] = {
-                    g = { ":Glow<CR>", "Preview with Glow" },
-                },
+            wk.add({
+                { "<leader>mg", ":Glow<CR>", desc = "Preview with Glow" },
             })
         end,
     },
@@ -80,13 +77,11 @@ return {
             vim.g.table_mode_corner = '|'
             vim.g.table_mode_auto_align = 1
             local wk = require("which-key")
-            wk.register({
-                ["<leader>mt"] = {
-                    name = "Table",
-                    m = { ":TableModeToggle<CR>", "Toggle Table Mode" },
-                    r = { ":TableModeRealign<CR>", "Realign Table" },
-                    s = { ":TableSort<CR>", "Sort Table" },
-                },
+            wk.add({
+                { "<leader>mt",  group = "Table" },
+                { "<leader>mtm", ":TableModeToggle<CR>",  desc = "Toggle Table Mode" },
+                { "<leader>mtr", ":TableModeRealign<CR>", desc = "Realign Table" },
+                { "<leader>mts", ":TableSort<CR>",        desc = "Sort Table" },
             })
         end,
     },
@@ -98,11 +93,9 @@ return {
 
         init = function()
             local wk = require("which-key")
-            wk.register({
-                ["<leader>m"] = {
-                    x = { ":ToggleCheckbox<CR>", "Toggle Checkbox" },
-                    n = { ":RenumberList<CR>", "Renumber List" },
-                },
+            wk.add({
+                { "<leader>mn", ":RenumberList<CR>",   desc = "Renumber List" },
+                { "<leader>mx", ":ToggleCheckbox<CR>", desc = "Toggle Checkbox" },
             })
         end,
     },
@@ -270,15 +263,13 @@ return {
         },
         init = function()
             local wk = require("which-key")
-            wk.register({
-                ["<leader>o"] = {
-                    name = "Obsidian",
-                    f = { ":ObsidianFollowLink<CR>", "Follow Link" },
-                    b = { ":ObsidianBacklinks<CR>", "Show Backlinks" },
-                    n = { ":ObsidianNew<CR>", "New Note" },
-                    s = { ":ObsidianSearch<CR>", "Search Notes" },
-                    t = { ":ObsidianTags<CR>", "Show Tags" },
-                },
+            wk.add({
+                { "<leader>o",  group = "Obsidian" },
+                { "<leader>ob", ":ObsidianBacklinks<CR>",  desc = "Show Backlinks" },
+                { "<leader>of", ":ObsidianFollowLink<CR>", desc = "Follow Link" },
+                { "<leader>on", ":ObsidianNew<CR>",        desc = "New Note" },
+                { "<leader>os", ":ObsidianSearch<CR>",     desc = "Search Notes" },
+                { "<leader>ot", ":ObsidianTags<CR>",       desc = "Show Tags" },
             })
         end,
     },
@@ -324,35 +315,23 @@ return {
 
             -- Register keymaps with which-key
             local wk = require("which-key")
-            wk.register({
-                ["<leader>z"] = {
-                    name = "Zettelkasten",
-                    -- Notes
-                    n = {
-                        name = "Notes",
-                        n = { "<Cmd>ZkNew { title = vim.fn.input('Title: ') }<CR>", "New Note" },
-                        d = { "<Cmd>ZkNew { dir = 'daily' }<CR>", "New Daily Note" },
-                        w = { "<Cmd>ZkNew { dir = 'weekly' }<CR>", "New Weekly Note" },
-                        t = { "<Cmd>ZkTags<CR>", "Search Tags" },
-                    },
-                    -- Search
-                    f = { "<Cmd>ZkNotes { sort = { 'modified' } }<CR>", "Find Notes" },
-                    s = { ":'<,'>ZkMatch<CR>", "Search Selection", mode = "v" },
-                    l = { "<Cmd>ZkLinks<CR>", "Search Links" },
-                    b = { "<Cmd>ZkBacklinks<CR>", "Search Backlinks" },
-                    -- Insert
-                    i = {
-                        name = "Insert",
-                        l = { "<Cmd>ZkInsertLink<CR>", "Insert Link" },
-                        n = { "<Cmd>ZkInsertNote<CR>", "Insert Note Reference" },
-                    },
-                    -- Open
-                    o = {
-                        name = "Open",
-                        d = { "<Cmd>ZkOpenDaily<CR>", "Open Daily Note" },
-                        w = { "<Cmd>ZkOpenWeekly<CR>", "Open Weekly Note" },
-                    },
-                },
+            wk.add({
+                { "<leader>z",   group = "Zettelkasten" },
+                { "<leader>zb",  "<Cmd>ZkBacklinks<CR>",                               desc = "Search Backlinks" },
+                { "<leader>zf",  "<Cmd>ZkNotes { sort = { 'modified' } }<CR>",         desc = "Find Notes" },
+                { "<leader>zi",  group = "Insert" },
+                { "<leader>zil", "<Cmd>ZkInsertLink<CR>",                              desc = "Insert Link" },
+                { "<leader>zin", "<Cmd>ZkInsertNote<CR>",                              desc = "Insert Note Reference" },
+                { "<leader>zl",  "<Cmd>ZkLinks<CR>",                                   desc = "Search Links" },
+                { "<leader>zn",  group = "Notes" },
+                { "<leader>znd", "<Cmd>ZkNew { dir = 'daily' }<CR>",                   desc = "New Daily Note" },
+                { "<leader>znn", "<Cmd>ZkNew { title = vim.fn.input('Title: ') }<CR>", desc = "New Note" },
+                { "<leader>znt", "<Cmd>ZkTags<CR>",                                    desc = "Search Tags" },
+                { "<leader>znw", "<Cmd>ZkNew { dir = 'weekly' }<CR>",                  desc = "New Weekly Note" },
+                { "<leader>zo",  group = "Open" },
+                { "<leader>zod", "<Cmd>ZkOpenDaily<CR>",                               desc = "Open Daily Note" },
+                { "<leader>zow", "<Cmd>ZkOpenWeekly<CR>",                              desc = "Open Weekly Note" },
+                { "<leader>zs",  ":'<,'>ZkMatch<CR>",                                  desc = "Search Selection",     mode = "v" },
             })
 
             -- Add some additional useful commands
