@@ -1,12 +1,15 @@
 ---
+id: Vim keys
+aliases: []
 tags:
-  - "#study"
-  - "#review"
-  - "#programming"
-  - "#vim"
+  - #study
+  - #review
+  - #programming
+  - #vim
 cssclasses:
   - center-images
 ---
+
 ## Visual mode
 
 - `V` for line wise selection
@@ -22,3 +25,4 @@ In Vim, you can move the cursor in multiple ways, depending on the distance and 
 
 ## [[Search in Vim]]
 
+Selection highlighting by executing this command: `hi! Visual cterm=reverse gui=reverse`

@@ -74,6 +74,7 @@ require('lazy').setup({
   require 'kickstart.plugins.omnisharp-extended-lsp',
 
   require 'kickstart.plugins.go',
+  require 'kickstart.plugins.c',
   require 'kickstart.plugins.dashboard',
   require 'kickstart.plugins.markdown',
   require 'kickstart.plugins.sessions',
@@ -95,9 +96,9 @@ require('lazy').setup({
 
   -- IDE
 
-  -- require 'kickstart.plugins.debug',
+  require 'kickstart.plugins.debug',
 
-  require 'kickstart.plugins.indent_line',
+ require 'kickstart.plugins.indent_line',
 
   -- require 'kickstart.plugins.lint',
 

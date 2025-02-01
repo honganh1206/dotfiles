@@ -100,7 +100,13 @@ searchdir() {
 # tmux
 alias tma='tmux attach -t'
 alias tmn='tmux new -s'
+alias tms='tmux source ~/.tmux.conf'
 alias tmm='tmux new -s main'
+alias tmr='pgrep -vx tmux > /dev/null && \
+        tmux new -d -s delete-me && \
+        tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh && \
+        tmux kill-session -t delete-me && \
+        tmux attach || tmux attach'
 
 if type nvim &> /dev/null; then
   alias vim="nvim"
@@ -171,3 +177,9 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export ZED_ALLOW_EMULATED_GPU=1
+export COLORTERM=truecolor
+PATH="$PATH":"$HOME/.local/scripts/"
+
+

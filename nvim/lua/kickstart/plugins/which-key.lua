@@ -37,6 +37,7 @@ return {
           { '<leader>t',     group = "[t]able" },
           { "<leader>o",     group = "[o]bsidian" },
           { "<leader>z",     group = "[z]k" },
+          { "<leader>r",     group = "[r]un" },
         },
       },
       replace = {

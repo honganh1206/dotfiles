@@ -23,6 +23,9 @@ return {
 
     -- Add your own debuggers here
     'leoluz/nvim-dap-go',
+
+    -- Add this for better code debugging UI
+    'theHamsta/nvim-dap-virtual-text',
   },
   config = function()
     local dap = require 'dap'
@@ -42,6 +45,7 @@ return {
       ensure_installed = {
         -- Update this to ensure that you have the debuggers for the langs you want
         'delve',
+        'codelldb', -- Add this for C debugging
       },
     }
 
@@ -50,8 +54,8 @@ return {
     vim.keymap.set('n', '<F1>', dap.step_into, { desc = 'Debug: Step Into' })
     vim.keymap.set('n', '<F2>', dap.step_over, { desc = 'Debug: Step Over' })
     vim.keymap.set('n', '<F3>', dap.step_out, { desc = 'Debug: Step Out' })
-    vim.keymap.set('n', '<leader>b', dap.toggle_breakpoint, { desc = 'Debug: Toggle Breakpoint' })
-    vim.keymap.set('n', '<leader>B', function()
+    vim.keymap.set('n', '<leader>db', dap.toggle_breakpoint, { desc = 'Debug: Toggle Breakpoint' })
+    vim.keymap.set('n', '<leader>dB', function()
       dap.set_breakpoint(vim.fn.input 'Breakpoint condition: ')
     end, { desc = 'Debug: Set Breakpoint' })
 
@@ -77,6 +81,61 @@ return {
       },
     }
 
+    -- Configure C/C++ debugging
+    dap.adapters.codelldb = {
+      type = 'server',
+      port = "${port}",
+      executable = {
+        command = vim.fn.stdpath("data") .. '/mason/packages/codelldb/extension/adapter/codelldb',
+        args = { "--port", "${port}" },
+      }
+    }
+
+
+    dap.configurations.c = {
+      {
+        name = "Launch file",
+        type = "codelldb",
+        request = "launch",
+        program = function()
+          -- Get current file path
+          local file = vim.fn.expand('%:p')
+          -- Get file path without extension
+          local program_path = vim.fn.expand('%:p:r')
+
+          -- Check if we're in a C file
+          if vim.fn.expand('%:e') == 'c' then
+            -- Compile the file with debug symbols if it's a .c file
+            local compile_cmd = string.format('gcc -g %s -o %s', file, program_path)
+            vim.fn.system(compile_cmd)
+
+            -- Check if compilation was successful
+            if vim.v.shell_error == 0 then
+              vim.notify("Compilation successful!", vim.log.levels.INFO)
+            else
+              vim.notify("Compilation failed!", vim.log.levels.ERROR)
+              return nil
+            end
+          end
+
+          return program_path
+        end,
+        cwd = '${workspaceFolder}',
+        stopOnEntry = false,
+        args = {},
+        runInTerminal = false,
+      },
+      {
+        name = 'Attach to process',
+        type = 'codelldb',
+        request = 'attach',
+        pid = require('dap.utils').pick_process,
+        args = {},
+      },
+    }
+
+    -- Add configuration for C++
+    dap.configurations.cpp = dap.configurations.c
     -- Toggle to see last session result. Without this, you can't see session output in case of unhandled exception.
     vim.keymap.set('n', '<F7>', dapui.toggle, { desc = 'Debug: See last session result.' })
 
@@ -97,5 +156,20 @@ return {
         build_flags = "",
       },
     }
+
+
+    -- Optional: Setup virtual text for debugging
+    require("nvim-dap-virtual-text").setup({
+      enabled = true,
+      enabled_commands = true,
+      highlight_changed_variables = true,
+      highlight_new_as_changed = false,
+      show_stop_reason = true,
+      commented = false,
+      virt_text_pos = 'eol',
+      all_frames = false,
+      virt_lines = false,
+      virt_text_win_col = nil
+    })
   end,
 }
