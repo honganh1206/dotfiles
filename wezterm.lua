@@ -1,16 +1,5 @@
 local wezterm = require("wezterm")
 
-local launch_menu = {
-	{
-		args = { "btop" },
-	},
-	{
-		label = "Scratchpad",
-		args = { "nvim", "/home/mrnugget/tmp/scratchpad.md" },
-		set_environment_variables = { KITTY_COLORS = "dark" },
-	},
-}
-
 local colors = {
 	foreground = "#fbf1c7",
 	background = "#1d2021",
@@ -55,7 +44,7 @@ local function wayland_enabled()
 	return wayland == "wayland"
 end
 
-local font_size = 11.0
+local font_size = 10.0
 if wayland_enabled() or is_macos then
 	font_size = 12.0
 end
@@ -69,10 +58,9 @@ return {
 	font = wezterm.font("Berkeley Mono Nerd Font"),
 	font_size = font_size,
 
-	launch_menu = launch_menu,
 
 	-- Use this, but then overwrite it basically completely further down
-	color_scheme = "Gruvbox Dark",
+	color_scheme = "GruvboxDarkHard",
 	colors = colors,
 
 	keys = {
@@ -82,4 +70,8 @@ return {
 			action = wezterm.action.ToggleFullScreen,
 		},
 	},
+	-- Window size configuration
+	-- initial_cols = 120,
+	-- initial_rows = 30,
+	-- window_decorations = "NONE", -- This removes title bar and borders
 }

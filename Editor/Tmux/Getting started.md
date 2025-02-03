@@ -1,3 +1,9 @@
+---
+id: Getting started
+aliases: []
+tags: []
+---
+
 Tags: #consume #shell
 
 ## Components
@@ -51,4 +57,3 @@ Kill a pane: `prefix + x`
 ## Search
 
 `fzf` integration: `Ctrl + s`
-

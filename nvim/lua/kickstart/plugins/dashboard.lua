@@ -44,10 +44,9 @@ return {
 				[[||      .=='    _-'    `-_  `='    _-'   `-_    `='  _-'   `-_  /|  \/  |   ||]],
 				[[||   .=='    _-'          '-__\._-'         '-_./__-'         `' |. /|  |   ||]],
 				[[||.=='    _-'                                                     `' |  /==.||]],
-				[[=='    _-'                                                            \/   `==]],
+				[[=='    _-'                        N E O V I M                         \/   `==]],
 				[[\   _-'                                                                `-_   /]],
-				[[ `''                                                                      ``' ]],
-			}
+				[[ `''                                                                      ``' ]], }
 			dashboard.section.buttons.val = {
 				dashboard.button('f', ' 󰈞  Find file', ':Telescope find_files <CR>'),
 				dashboard.button('e', ' 󰝒  New file', ':ene <BAR> startinsert <CR>'),
