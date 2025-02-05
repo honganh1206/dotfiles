@@ -1,6 +1,6 @@
 {
   "terminal": {
-    "dock": "bottom",
+    "dock": "right",
     "font_size": 12,
     "font_family": "BerkeleyMono Nerd Font",
     "line_height": {
@@ -20,7 +20,7 @@
     "enabled": false,
     "enable_preview_from_code_navigation": false
   },
-  "use_autoclose": false,
+  "use_autoclose": true,
   "auto_update": false,
   "wrap_guides": [80],
 

@@ -19,18 +19,24 @@ Tags: #weekly
 | Saturday  | Book    |               |                    |
 | Sunday    | Project |               |                    |
 
-## 🧑‍💻 Programming
+## IMPORTANT - MUST BE DONE THIS WEEK 🚨
 
-- Project Name 1
-  - [ ] Goal 1
-- Project Name 2
-  - [ ] Goal 1
+- [ ] first
+- [ ] second
+- [ ] third
 
 ## Plans for next week
 
 - first
 - second
 - third
+
+## 💻 Programming
+
+- Project Name 1
+  - [ ] Goal 1
+- Project Name 2
+  - [ ] Goal 1
 
 ## ♟️ Free time/breaks
 

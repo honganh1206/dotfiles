@@ -272,96 +272,97 @@ return {
                 { "<leader>ot", ":ObsidianTags<CR>",       desc = "Show Tags" },
             })
         end,
-    },
-    {
-        "zk-org/zk-nvim",
-        config = function()
-            require("zk").setup({
-                -- Configure zk directory and file format
-                picker = "telescope", -- use telescope for picking notes
-
-                -- Configure automatic link types
-                automatic_links = true,
-
-                -- Configure daily note directory and format
-                daily_notes = {
-                    folder = "daily",
-                    date_format = "%Y-%m-%d",
-                    template = "daily.md"
-                },
-
-                -- Configure weekly note directory and format
-                weekly_notes = {
-                    folder = "weekly",
-                    date_format = "%Y-W%V",
-                    template = "weekly.md"
-                },
-                lsp = {
-                    -- `config` is passed to `vim.lsp.start_client(config)`
-                    config = {
-                        cmd = { "zk", "lsp" },
-                        name = "zk",
-                        -- on_attach = ...
-                        -- etc, see `:h vim.lsp.start_client()`
-                    },
-
-                    -- automatically attach buffers in a zk notebook that match the given filetypes
-                    auto_attach = {
-                        enabled = true,
-                        filetypes = { "markdown" },
-                    },
-                },
-            })
-
-            -- Register keymaps with which-key
-            local wk = require("which-key")
-            wk.add({
-                { "<leader>z",   group = "Zettelkasten" },
-                { "<leader>zb",  "<Cmd>ZkBacklinks<CR>",                               desc = "Search Backlinks" },
-                { "<leader>zf",  "<Cmd>ZkNotes { sort = { 'modified' } }<CR>",         desc = "Find Notes" },
-                { "<leader>zi",  group = "Insert" },
-                { "<leader>zil", "<Cmd>ZkInsertLink<CR>",                              desc = "Insert Link" },
-                { "<leader>zin", "<Cmd>ZkInsertNote<CR>",                              desc = "Insert Note Reference" },
-                { "<leader>zl",  "<Cmd>ZkLinks<CR>",                                   desc = "Search Links" },
-                { "<leader>zn",  group = "Notes" },
-                { "<leader>znd", "<Cmd>ZkNew { dir = 'daily' }<CR>",                   desc = "New Daily Note" },
-                { "<leader>znn", "<Cmd>ZkNew { title = vim.fn.input('Title: ') }<CR>", desc = "New Note" },
-                { "<leader>znt", "<Cmd>ZkTags<CR>",                                    desc = "Search Tags" },
-                { "<leader>znw", "<Cmd>ZkNew { dir = 'weekly' }<CR>",                  desc = "New Weekly Note" },
-                { "<leader>zo",  group = "Open" },
-                { "<leader>zod", "<Cmd>ZkOpenDaily<CR>",                               desc = "Open Daily Note" },
-                { "<leader>zow", "<Cmd>ZkOpenWeekly<CR>",                              desc = "Open Weekly Note" },
-                { "<leader>zs",  ":'<,'>ZkMatch<CR>",                                  desc = "Search Selection",     mode = "v" },
-            })
-
-            -- Add some additional useful commands
-            local zk = require("zk")
-            local commands = {
-                -- Create a new note after asking for its title.
-                ZkNew = function(title)
-                    local title = title or vim.fn.input("Title: ")
-                    if title ~= "" then
-                        zk.new({ title = title })
-                    end
-                end,
-
-                -- Search for notes matching the current visual selection.
-                ZkMatch = function()
-                    local visual_selection = function()
-                        local s_start = vim.fn.getpos("'<")
-                        local s_end = vim.fn.getpos("'>")
-                        local lines = vim.fn.getline(s_start[2], s_end[2])
-                        return table.concat(lines, "\n")
-                    end
-                    local selected_text = visual_selection()
-                    zk.pick_notes({ match = selected_text })
-                end,
-            }
-
-            -- Create user commands
-            for command_name, command_func in pairs(commands) do
-                vim.api.nvim_create_user_command(command_name, command_func, {})
-            end
-        end,
     }
+    -- ,
+    -- {
+    --     "zk-org/zk-nvim",
+    --     config = function()
+    --         require("zk").setup({
+    --             -- Configure zk directory and file format
+    --             picker = "telescope", -- use telescope for picking notes
+    --
+    --             -- Configure automatic link types
+    --             automatic_links = true,
+    --
+    --             -- Configure daily note directory and format
+    --             daily_notes = {
+    --                 folder = "daily",
+    --                 date_format = "%Y-%m-%d",
+    --                 template = "daily.md"
+    --             },
+    --
+    --             -- Configure weekly note directory and format
+    --             weekly_notes = {
+    --                 folder = "weekly",
+    --                 date_format = "%Y-W%V",
+    --                 template = "weekly.md"
+    --             },
+    --             lsp = {
+    --                 -- `config` is passed to `vim.lsp.start_client(config)`
+    --                 config = {
+    --                     cmd = { "zk", "lsp" },
+    --                     name = "zk",
+    --                     -- on_attach = ...
+    --                     -- etc, see `:h vim.lsp.start_client()`
+    --                 },
+    --
+    --                 -- automatically attach buffers in a zk notebook that match the given filetypes
+    --                 auto_attach = {
+    --                     enabled = true,
+    --                     filetypes = { "markdown" },
+    --                 },
+    --             },
+    --         })
+    --
+    --         -- Register keymaps with which-key
+    --         local wk = require("which-key")
+    --         wk.add({
+    --             { "<leader>z",   group = "Zettelkasten" },
+    --             { "<leader>zb",  "<Cmd>ZkBacklinks<CR>",                               desc = "Search Backlinks" },
+    --             { "<leader>zf",  "<Cmd>ZkNotes { sort = { 'modified' } }<CR>",         desc = "Find Notes" },
+    --             { "<leader>zi",  group = "Insert" },
+    --             { "<leader>zil", "<Cmd>ZkInsertLink<CR>",                              desc = "Insert Link" },
+    --             { "<leader>zin", "<Cmd>ZkInsertNote<CR>",                              desc = "Insert Note Reference" },
+    --             { "<leader>zl",  "<Cmd>ZkLinks<CR>",                                   desc = "Search Links" },
+    --             { "<leader>zn",  group = "Notes" },
+    --             { "<leader>znd", "<Cmd>ZkNew { dir = 'daily' }<CR>",                   desc = "New Daily Note" },
+    --             { "<leader>znn", "<Cmd>ZkNew { title = vim.fn.input('Title: ') }<CR>", desc = "New Note" },
+    --             { "<leader>znt", "<Cmd>ZkTags<CR>",                                    desc = "Search Tags" },
+    --             { "<leader>znw", "<Cmd>ZkNew { dir = 'weekly' }<CR>",                  desc = "New Weekly Note" },
+    --             { "<leader>zo",  group = "Open" },
+    --             { "<leader>zod", "<Cmd>ZkOpenDaily<CR>",                               desc = "Open Daily Note" },
+    --             { "<leader>zow", "<Cmd>ZkOpenWeekly<CR>",                              desc = "Open Weekly Note" },
+    --             { "<leader>zs",  ":'<,'>ZkMatch<CR>",                                  desc = "Search Selection",     mode = "v" },
+    --         })
+    --
+    --         -- Add some additional useful commands
+    --         local zk = require("zk")
+    --         local commands = {
+    --             -- Create a new note after asking for its title.
+    --             ZkNew = function(title)
+    --                 local title = title or vim.fn.input("Title: ")
+    --                 if title ~= "" then
+    --                     zk.new({ title = title })
+    --                 end
+    --             end,
+    --
+    --             -- Search for notes matching the current visual selection.
+    --             ZkMatch = function()
+    --                 local visual_selection = function()
+    --                     local s_start = vim.fn.getpos("'<")
+    --                     local s_end = vim.fn.getpos("'>")
+    --                     local lines = vim.fn.getline(s_start[2], s_end[2])
+    --                     return table.concat(lines, "\n")
+    --                 end
+    --                 local selected_text = visual_selection()
+    --                 zk.pick_notes({ match = selected_text })
+    --             end,
+    --         }
+    --
+    --         -- Create user commands
+    --         for command_name, command_func in pairs(commands) do
+    --             vim.api.nvim_create_user_command(command_name, command_func, {})
+    --         end
+    --     end,
+    -- }
 }
