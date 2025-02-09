@@ -2,7 +2,7 @@
 id: (TEMPLATE) Weekly
 aliases: []
 tags:
-  -  #weekly
+  - #weekly
 ---
 
 Tags: #weekly

@@ -45,6 +45,7 @@ local function wayland_enabled()
 end
 
 local font_size = 10.0
+local line_height = 1.25
 if wayland_enabled() or is_macos then
 	font_size = 12.0
 end
@@ -57,6 +58,7 @@ return {
 
 	font = wezterm.font("Berkeley Mono Nerd Font"),
 	font_size = font_size,
+	line_height = line_height,
 
 
 	-- Use this, but then overwrite it basically completely further down
