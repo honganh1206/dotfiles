@@ -181,5 +181,20 @@ export NVM_DIR="$HOME/.nvm"
 export ZED_ALLOW_EMULATED_GPU=1
 export COLORTERM=truecolor
 PATH="$PATH":"$HOME/.local/scripts/"
+export LLM_KEY=NONE
 
-
+# export PATH=$PATH:/path/to/ninja
+# PDF viewing aliases
+ # alias zat='zathura'
+# alias zatr='zathura --mode reverse'  # Open in reverse mode
+# alias zatf='zathura --mode fullscreen'  # Open in fullscreen
+# # Function to open PDF with zathura and remember last position
+# pdf() {
+#     if [[ -f "$1" ]]; then
+#         nohup zathura "$1" >/dev/null 2>&1 &
+#     else
+#         echo "File not found: $1"
+#     fi
+# }
+export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+export PATH=$PATH:$JAVA_HOME/bin
