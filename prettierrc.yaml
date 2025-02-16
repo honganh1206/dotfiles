@@ -1,0 +1,24 @@
+# Default to no wrapping
+printWidth: 80
+proseWrap: 'preserve'
+
+# Standard formatting options
+singleQuote: true
+trailingComma: 'es5'
+tabWidth: 2
+useTabs: false
+semi: true
+quoteProps: 'as-needed'
+bracketSpacing: true
+bracketSameLine: false
+arrowParens: 'always'
+endOfLine: 'lf'
+
+# Specifically target markdown files for wrapping
+overrides:
+  - files:
+      - '*.md'
+      - '*.markdown'
+    options:
+      proseWrap: 'always'
+      printWidth: 80
