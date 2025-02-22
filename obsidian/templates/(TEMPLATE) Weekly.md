@@ -2,7 +2,7 @@
 id: (TEMPLATE) Weekly
 aliases: []
 tags:
-  - #weekly
+  -  #weekly
 ---
 
 Tags: #weekly
@@ -33,10 +33,15 @@ Tags: #weekly
 
 ## 💻 Programming
 
-- Project Name 1
-  - [ ] Goal 1
-- Project Name 2
-  - [ ] Goal 1
+Project Name 1
+
+- [ ] Goal 1
+
+---
+
+Project Name 2
+
+- [ ] Goal 1
 
 ## ♟️ Free time/breaks
 

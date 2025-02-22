@@ -9,10 +9,27 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git zsh-autosuggestions asdf)
-
+plugins=(git zsh-autosuggestions)
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
+##########
+# HISTORY
+##########
 
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=50000
+SAVEHIST=50000
+
+setopt INC_APPEND_HISTORY     # Immediately append to history file.
+setopt EXTENDED_HISTORY       # Record timestamp in history.
+setopt HIST_EXPIRE_DUPS_FIRST # Expire duplicate entries first when trimming history.
+setopt HIST_IGNORE_DUPS       # Dont record an entry that was just recorded again.
+setopt HIST_IGNORE_ALL_DUPS   # Delete old recorded entry if new entry is a duplicate.
+setopt HIST_FIND_NO_DUPS      # Do not display a line previously found.
+setopt HIST_IGNORE_SPACE      # Dont record an entry starting with a space.
+setopt HIST_SAVE_NO_DUPS      # Dont write duplicate entries in the history file.
+setopt SHARE_HISTORY          # Share history between all sessions.
+unsetopt HIST_VERIFY          # Execute commands using history (e.g.: using !$) immediately
 
 #########
 # Aliases
@@ -126,6 +143,16 @@ for dump in ~/.zcompdump(N.mh+24); do
 done
 compinit -C
 
+# unsetopt menucomplete
+unsetopt flowcontrol
+setopt auto_menu
+setopt complete_in_word
+setopt always_to_end
+setopt auto_pushd
+
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+# UTILITIES
+
 mkdircd() {
   mkdir -p $1 && cd $1
 }
@@ -198,3 +225,11 @@ export LLM_KEY=NONE
 # }
 export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
 export PATH=$PATH:$JAVA_HOME/bin
+
+# Encore
+export ENCORE_INSTALL="/home/honganh/.encore"
+export PATH="$ENCORE_INSTALL/bin:$PATH"
+
+# Encore dev
+export ENCORE_RUNTIMES_PATH="/home/honganh/projects/encore/runtimes/"
+export ENCORE_GOROOT="/home/honganh/.encore/encore-go"
