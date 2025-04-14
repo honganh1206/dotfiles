@@ -36,7 +36,7 @@ unsetopt HIST_VERIFY          # Execute commands using history (e.g.: using !$) 
 #########
 
 # Edit/Source bash config
-alias ez='vim ~/.zshrc'
+alias ez='nvim ~/.zshrc'
 alias sz='source ~/.zshrc'
 # Git
 alias gst='git status'
@@ -47,6 +47,7 @@ alias gcmai='git checkout main'
 alias gcmas='git checkout master'
 alias gd='git diff'
 alias gdc='git diff --cached'
+alias lg= 'lazygit ./'
 
 # Branch checkout with fuzzy search (Ensure fzf is installed)
 # [f]uzzy check[o]ut
@@ -233,3 +234,24 @@ export PATH="$ENCORE_INSTALL/bin:$PATH"
 # Encore dev
 export ENCORE_RUNTIMES_PATH="/home/honganh/projects/encore/runtimes/"
 export ENCORE_GOROOT="/home/honganh/.encore/encore-go"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# Load env vars from .env at home
+export $(grep -v '^#' ~/.env | xargs)
+
+# Claude engineer
+# Follow the installation here: https://github.com/Doriandarko/claude-engineer and if readme.md instead of README.md -> change it
+ce() {
+    local prev_dir=$(pwd)  # Store the current directory
+    cd ~/claude-engineer || return
+    case "$1" in
+        cli)
+            uv run ce3.py
+            ;;
+        web|""|*)
+            uv run app.py
+            ;;
+    esac
+    cd "$prev_dir"  # Return to the original directory
+}
+

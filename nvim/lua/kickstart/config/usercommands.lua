@@ -29,7 +29,9 @@ local function openTerminal(orientation)
 end
 
 local function hideTerminal()
-  cmd 'hide'
+  if vim.fn.winnr('$') > 1 then -- Check if there's more than one window
+    cmd 'hide'
+  end
 end
 
 local function toggleTerm(orientation)

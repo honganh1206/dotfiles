@@ -10,3 +10,4 @@ vim.cmd('hi! Visual cterm=reverse gui=reverse')
 -- Set line number
 vim.opt.number = true
 vim.opt.relativenumber = true
+-- vim.opt.textwidth = 80

@@ -210,7 +210,7 @@ return {
 
             -- Optional, boolean or a function that takes a filename and returns a boolean.
             -- `true` indicates that you don't want obsidian.nvim to manage frontmatter.
-            disable_frontmatter = true,
+            disable_frontmatter = false,
             picker = {
                 -- Set your preferred picker. Can be one of 'telescope.nvim', 'fzf-lua', or 'mini.pick'.
                 name = "telescope.nvim",

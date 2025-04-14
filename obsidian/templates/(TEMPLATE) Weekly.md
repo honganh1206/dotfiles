@@ -19,72 +19,52 @@ Tags: #weekly
 | Saturday  | Book    |               |                    |
 | Sunday    | Project |               |                    |
 
-## IMPORTANT - MUST BE DONE THIS WEEK 🚨
+## 🚨 MUST BE DONE THIS WEEK 
 
 - [ ] first
 - [ ] second
 - [ ] third
 
-## Plans for next week
+## 📋 Plans for next week
 
 - first
 - second
 - third
 
-## 💻 Programming
+## 💻 Work & Study
 
 Project Name 1
-
 - [ ] Goal 1
-
----
-
 Project Name 2
-
 - [ ] Goal 1
 
-## ♟️ Free time/breaks
+## 📖 Writing
 
-- [ ]
+- [ ] Activity 1
 
-## 📖 Reading
+## 📦 For later
 
-- [ ]
-
-## ✍️ Writing
-
-- [ ]
+-
 
 ## 💪 Workout
 
 ### Monday
-
 - [ ] Squats
-- [ ] Pull Ups
+- [ ] Pull-up
 - [ ] Twists
-
 ### Tuesday
-
-- [ ] Pushups
+- [ ] Push-up
 - [ ] Leg Raises
 - [ ] Bridges
-
 ### Wednesday
-
-- [ ] Cardio (4 kms)
-
+- [ ] Cardio (3 km)
 ### Thursday
-
-- [ ] Pushups
+- [ ] Push-up
 - [ ] Leg Raises
 - [ ] Bridges
-
 ### Friday
-
 - [ ] Squats
-- [ ] Pull Ups
+- [ ] Pull-up
 - [ ] Twists
-
 ### Saturday
-
-- [ ] Cardio (5 kms)
+- [ ] Cardio (5 km)
