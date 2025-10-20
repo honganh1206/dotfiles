@@ -1,145 +1,73 @@
-local function local_llm_streaming_handler(chunk, line, assistant_output, bufnr, winid, F)
-  if not chunk then
-    return assistant_output
-  end
-  local tail = chunk:sub(-1, -1)
-  if tail:sub(1, 1) ~= "}" then
-    line = line .. chunk
-  else
-    line = line .. chunk
-    local status, data = pcall(vim.fn.json_decode, line)
-    if not status or not data.message.content then
-      return assistant_output
-    end
-    assistant_output = assistant_output .. data.message.content
-    F.WriteContent(bufnr, winid, data.message.content)
-    line = ""
-  end
-  return assistant_output
-end
-
-local function local_llm_parse_handler(chunk)
-  local assistant_output = chunk.message.content
-  return assistant_output
-end
-
 return {
-  {
-    "Kurama622/llm.nvim",
-    dependencies = { "nvim-lua/plenary.nvim", "MunifTanjim/nui.nvim" },
-    cmd = { "LLMSessionToggle", "LLMSelectedTextHandler", "LLMAppHandler" },
-    config = function()
-      local tools = require("llm.common.tools")
-      require("llm").setup({
-        url = "http://localhost:11434/api/chat", -- your url
-        model = "deepseek-r1:1.5b",
-        api_type = "ollama",
+	{
+		"sourcegraph/amp.nvim",
+		branch = "main",
+		lazy = false,
+		opts = { auto_start = true, log_level = "info" },
+		config = function()
+			require('amp').setup({ auto_start = true, log_level = "info" })
+			-- Send a quick message to the agent
+			vim.api.nvim_create_user_command("AmpSend", function(opts)
+				local message = opts.args
+				if message == "" then
+					print("Please provide a message to send")
+					return
+				end
 
-        streaming_handler = local_llm_streaming_handler,
-        app_handler = {
-          -- WordTranslate = {
-          --   handler = tools.flexi_handler,
-          --   prompt = "Translate the following text to Chinese, please only return the translation",
-          --   opts = {
-          --     parse_handler = local_llm_parse_handler,
-          --     exit_on_move = true,
-          --     enter_flexible_window = false,
-          --   },
-          -- },
-          OptimizeCode = {
-            handler = tools.side_by_side_handler,
-            opts = {
-              streaming_handler = local_llm_streaming_handler,
-            },
-          },
-          TestCode = {
-            handler = tools.side_by_side_handler,
-            prompt = [[ Write some test cases for the following code, only return the test cases.
-            Give the code content directly, do not use code blocks or other tags to wrap it. ]],
-            opts = {
-              streaming_handler = local_llm_streaming_handler,
-              right = {
-                title = " Test Cases ",
-              },
-            },
-          },
-          -- OptimCompare = {
-          --   handler = tools.action_handler,
-          --   opts = {
-          --     url = "https://models.inference.ai.azure.com/chat/completions",
-          --     model = "gpt-4o",
-          --     api_type = "openai",
-          --   },
-          -- },
-          CodeExplain = {
-            handler = tools.flexi_handler,
-            prompt = "Explain the following code, please only return the explanation",
-            opts = {
-              parse_handler = local_llm_parse_handler,
-              enter_flexible_window = true,
-            },
-          },
-        },
-        style = "right",
-        max_tokens = 1024,
-        save_session = true,
-        max_history = 15,
-        history_path = "/tmp/history", -- where to save history
-        temperature = 0.3,
-        top_p = 0.7,
+				local amp_message = require("amp.message")
+				amp_message.send_message(message)
+			end, {
+				nargs = "*",
+				desc = "Send a message to Amp",
+			})
 
-        spinner = {
-          text = {
-            "󰧞󰧞",
-            "󰧞󰧞",
-            "󰧞󰧞",
-            "󰧞󰧞",
-          },
-          hl = "Title",
-        },
+			-- Send entire buffer contents
+			vim.api.nvim_create_user_command("AmpSendBuffer", function(opts)
+				local buf = vim.api.nvim_get_current_buf()
+				local lines = vim.api.nvim_buf_get_lines(buf, 0, -1, false)
+				local content = table.concat(lines, "\n")
 
-        display = {
-          diff = {
-            layout = "vertical",    -- vertical|horizontal split for default provider
-            opts = { "internal", "filler", "closeoff", "algorithm:patience", "followwrap", "linematch:120" },
-            provider = "mini_diff", -- default|mini_diff
-          },
-        },
+				local amp_message = require("amp.message")
+				amp_message.send_message(content)
+			end, {
+				nargs = "?",
+				desc = "Send current buffer contents to Amp",
+			})
 
-        -- stylua: ignore
-        keys = {
-          -- The keyboard mapping for the input window.
-          ["Input:Cancel"]      = { mode = "n", key = "<C-c>" },
-          ["Input:Submit"]      = { mode = "n", key = "<cr>" },
-          ["Input:Resend"]      = { mode = "n", key = "<C-r>" },
+			-- Add selected text directly to prompt
+			vim.api.nvim_create_user_command("AmpPromptSelection", function(opts)
+				local lines = vim.api.nvim_buf_get_lines(0, opts.line1 - 1, opts.line2, false)
+				local text = table.concat(lines, "\n")
 
-          -- only works when "save_session = true"
-          ["Input:HistoryNext"] = { mode = "n", key = "<C-j>" },
-          ["Input:HistoryPrev"] = { mode = "n", key = "<C-k>" },
+				local amp_message = require("amp.message")
+				amp_message.send_to_prompt(text)
+			end, {
+				range = true,
+				desc = "Add selected text to Amp prompt",
+			})
 
-          -- The keyboard mapping for the output window in "split" style.
-          ["Output:Ask"]        = { mode = "n", key = "i" },
-          ["Output:Cancel"]     = { mode = "n", key = "<C-c>" },
-          ["Output:Resend"]     = { mode = "n", key = "<C-r>" },
+			-- Add file+selection reference to prompt
+			vim.api.nvim_create_user_command("AmpPromptRef", function(opts)
+				local bufname = vim.api.nvim_buf_get_name(0)
+				if bufname == "" then
+					print("Current buffer has no filename")
+					return
+				end
 
-          -- The keyboard mapping for the output and input windows in "float" style.
-          ["Session:Toggle"]    = { mode = "n", key = "<leader>ac" },
-          ["Session:Close"]     = { mode = "n", key = "<esc>" },
-        },
-      })
-    end,
-    keys = {
-      { "<leader>av", mode = "v", "<cmd>LLMSelectedTextHandler<cr>" },
-      { "<leader>ax", mode = "x", "<cmd>LLMSelectedTextHandler<cr>" },
-      { "<leader>ac", mode = "n", "<cmd>LLMSessionToggle<cr>" },
-      -- { "<leader>ts", mode = "x", "<cmd>LLMAppHandler WordTranslate<cr>" },
-      { "<leader>ae", mode = "v", "<cmd>LLMAppHandler CodeExplain<cr>" },
-      -- { "<leader>at", mode = "n", "<cmd>LLMAppHandler Translate<cr>" },
-      { "<leader>tc", mode = "x", "<cmd>LLMAppHandler TestCode<cr>" },
-      -- { "<leader>ao", mode = "x", "<cmd>LLMAppHandler OptimCompare<cr>" },
-      -- { "<leader>au", mode = "n", "<cmd>LLMAppHandler UserInfo<cr>" },
-      -- { "<leader>ag", mode = "n", "<cmd>LLMAppHandler CommitMsg<cr>" },
-      { "<leader>ao", mode = "x", "<cmd>LLMAppHandler OptimizeCode<cr>" },
-    },
-  }
+				local relative_path = vim.fn.fnamemodify(bufname, ":.")
+				local ref = "@" .. relative_path
+				if opts.line1 ~= opts.line2 then
+					ref = ref .. "#L" .. opts.line1 .. "-" .. opts.line2
+				elseif opts.line1 > 1 then
+					ref = ref .. "#L" .. opts.line1
+				end
+
+				local amp_message = require("amp.message")
+				amp_message.send_to_prompt(ref)
+			end, {
+				range = true,
+				desc = "Add file reference (with selection) to Amp prompt",
+			})
+		end
+	},
 }

@@ -7,19 +7,7 @@ tags:
 
 Tags: #weekly
 
-## 🗓️ Days in a week
-
-| Days      | Study   | Get up early? | Gym in the morning |
-| --------- | ------- | ------------- | ------------------ |
-| Monday    | Book    |               |                    |
-| Tuesday   | Project |               |                    |
-| Wednesday | Book    |               |                    |
-| Thursday  | Project |               |                    |
-| Friday    | Rest    |               |                    |
-| Saturday  | Book    |               |                    |
-| Sunday    | Project |               |                    |
-
-## 🚨 MUST BE DONE THIS WEEK 
+## 🚨 MUST BE DONE THIS WEEK
 
 - [ ] first
 - [ ] second
@@ -33,9 +21,16 @@ Tags: #weekly
 
 ## 💻 Work & Study
 
-Project Name 1
+Project Name 1 - Priority: 3
+
 - [ ] Goal 1
-Project Name 2
+      Project Name 2 - Priority: 2
+- [ ] Goal 1
+
+## 💻 Vibe coding
+
+Project Name 1 - Priority: 3
+
 - [ ] Goal 1
 
 ## 📖 Writing
@@ -46,25 +41,3 @@ Project Name 2
 
 -
 
-## 💪 Workout
-
-### Monday
-- [ ] Squats
-- [ ] Pull-up
-- [ ] Twists
-### Tuesday
-- [ ] Push-up
-- [ ] Leg Raises
-- [ ] Bridges
-### Wednesday
-- [ ] Cardio (3 km)
-### Thursday
-- [ ] Push-up
-- [ ] Leg Raises
-- [ ] Bridges
-### Friday
-- [ ] Squats
-- [ ] Pull-up
-- [ ] Twists
-### Saturday
-- [ ] Cardio (5 km)

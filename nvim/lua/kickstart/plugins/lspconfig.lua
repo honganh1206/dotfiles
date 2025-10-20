@@ -5,11 +5,11 @@ local servers = {
   'cssls',
   'omnisharp',
   'gopls',
-  -- 'clangd',
+  'clangd',
 }
 
 local formatters = {
-  'stylua', -- Used to format Lua code
+  'stylua',   -- Used to format Lua code
   'prettierd',
   'csharpier',
 }
@@ -19,12 +19,12 @@ vim.list_extend(ensure_installed, servers)
 vim.list_extend(ensure_installed, formatters)
 
 return {
-  { -- LSP Configuration & Plugins
+  {   -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     event = { 'BufReadPost', 'BufNewFile', 'BufWritePre' },
     dependencies = {
       -- Automatically install LSPs and related tools to stdpath for Neovim
-      { 'williamboman/mason.nvim',           config = true }, -- NOTE: Must be loaded before dependants
+      { 'williamboman/mason.nvim',           config = true },       -- NOTE: Must be loaded before dependants
       'williamboman/mason-lspconfig.nvim',
 
       -- Useful status updates for LSP.
@@ -46,7 +46,7 @@ return {
         -- provide the inlay hints.
         inlay_hints = {
           enabled = true,
-          exclude = { 'vue' }, -- filetypes for which you don't want to enable inlay hints
+          exclude = { 'vue' },           -- filetypes for which you don't want to enable inlay hints
         },
         -- Enable this to enable the builtin LSP code lenses on Neovim >= 0.10.0
         -- Be aware that you also will need to properly configure your LSP server to
@@ -108,7 +108,8 @@ return {
           -- In this case, we create a function that lets us more easily define mappings specific
           -- for LSP related items. It sets the mode, buffer and description for us each time.
           local map = function(keys, func, desc, opts)
-            vim.keymap.set(opts and opts.modes or 'n', keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
+            vim.keymap.set(opts and opts.modes or 'n', keys, func,
+              { buffer = event.buf, desc = 'LSP: ' .. desc })
           end
 
           -- Jump to the definition of the word under your cursor.
@@ -180,7 +181,8 @@ return {
           -- When you move your cursor, the highlights will be cleared (the second autocommand).
           local client = vim.lsp.get_client_by_id(event.data.client_id)
           if client and client.server_capabilities.documentHighlightProvider then
-            local highlight_augroup = vim.api.nvim_create_augroup('kickstart-lsp-highlight', { clear = false })
+            local highlight_augroup = vim.api.nvim_create_augroup('kickstart-lsp-highlight',
+              { clear = false })
             vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
               buffer = event.buf,
               group = highlight_augroup,
@@ -202,9 +204,9 @@ return {
             })
           end
 
-          -- if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint and not vim.lsp.inlay_hint.is_enabled() then
-          --   vim.lsp.inlay_hint.enable()
-          -- end
+          if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint and not vim.lsp.inlay_hint.is_enabled() then
+            vim.lsp.inlay_hint.enable()
+          end
         end,
       })
 
@@ -273,12 +275,12 @@ return {
           }
         end,
         ['lua_ls'] = require('kickstart.plugins.lsp.lua_ls').setup,
-        ['vtsls'] = require('kickstart.plugins.lsp.vtsls').setup, -- typescript
+        ['vtsls'] = require('kickstart.plugins.lsp.vtsls').setup,         -- typescript
         ['html'] = require('kickstart.plugins.lsp.html').setup,
         ['cssls'] = require('kickstart.plugins.lsp.cssls').setup,
         ['omnisharp'] = require('kickstart.plugins.lsp.omnisharp').setup,
         ['gopls'] = require('kickstart.plugins.lsp.gopls').setup,
-        -- ['clangd'] = require('kickstart.plugins.lsp.clangd').setup,
+        ['clangd'] = require('kickstart.plugins.lsp.clangd').setup,
       }
     end,
   },
