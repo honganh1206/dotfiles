@@ -25,7 +25,6 @@ return {
         {
           mode = { 'n', 'v' },
           { '<leader><tab>', group = 'tab' },
-          { '<leader>a',     group = '[a]i' },
           { '<leader>b',     group = '[b]uffer' },
           { '<leader>c',     group = '[c]ode' },
           { '<leader>e',     group = 'Tree [e]xplorer' },

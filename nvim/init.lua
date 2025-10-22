@@ -11,3 +11,5 @@ vim.cmd('hi! Visual cterm=reverse gui=reverse')
 vim.opt.number = true
 vim.opt.relativenumber = true
 -- vim.opt.textwidth = 80
+vim.opt.termguicolors = true
+require("bufferline").setup {}

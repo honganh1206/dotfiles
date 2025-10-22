@@ -6,10 +6,11 @@ local servers = {
   'omnisharp',
   'gopls',
   'clangd',
+  'sqls',
 }
 
 local formatters = {
-  'stylua',   -- Used to format Lua code
+  'stylua', -- Used to format Lua code
   'prettierd',
   'csharpier',
 }
@@ -19,12 +20,12 @@ vim.list_extend(ensure_installed, servers)
 vim.list_extend(ensure_installed, formatters)
 
 return {
-  {   -- LSP Configuration & Plugins
+  { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     event = { 'BufReadPost', 'BufNewFile', 'BufWritePre' },
     dependencies = {
       -- Automatically install LSPs and related tools to stdpath for Neovim
-      { 'williamboman/mason.nvim',           config = true },       -- NOTE: Must be loaded before dependants
+      { 'williamboman/mason.nvim',           config = true }, -- NOTE: Must be loaded before dependants
       'williamboman/mason-lspconfig.nvim',
 
       -- Useful status updates for LSP.
@@ -46,7 +47,7 @@ return {
         -- provide the inlay hints.
         inlay_hints = {
           enabled = true,
-          exclude = { 'vue' },           -- filetypes for which you don't want to enable inlay hints
+          exclude = { 'vue' }, -- filetypes for which you don't want to enable inlay hints
         },
         -- Enable this to enable the builtin LSP code lenses on Neovim >= 0.10.0
         -- Be aware that you also will need to properly configure your LSP server to
@@ -275,12 +276,13 @@ return {
           }
         end,
         ['lua_ls'] = require('kickstart.plugins.lsp.lua_ls').setup,
-        ['vtsls'] = require('kickstart.plugins.lsp.vtsls').setup,         -- typescript
+        ['vtsls'] = require('kickstart.plugins.lsp.vtsls').setup, -- typescript
         ['html'] = require('kickstart.plugins.lsp.html').setup,
         ['cssls'] = require('kickstart.plugins.lsp.cssls').setup,
         ['omnisharp'] = require('kickstart.plugins.lsp.omnisharp').setup,
         ['gopls'] = require('kickstart.plugins.lsp.gopls').setup,
         ['clangd'] = require('kickstart.plugins.lsp.clangd').setup,
+        ['sqls'] = require('kickstart.plugins.lsp.sqls').setup,
       }
     end,
   },

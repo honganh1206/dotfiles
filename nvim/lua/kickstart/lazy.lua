@@ -51,6 +51,8 @@ require('lazy').setup({
 
     require 'kickstart.plugins.lualine',
 
+    require 'kickstart.plugins.bufferline',
+
     require 'kickstart.plugins.which-key',
 
     -- Git
@@ -106,6 +108,7 @@ require('lazy').setup({
     require 'kickstart.plugins.autopairs',
 
     require 'kickstart.plugins.autotag',
+    require 'kickstart.plugins.harpoon',
 
     -- require 'kickstart.plugins.rainbow-parentheses',
 
