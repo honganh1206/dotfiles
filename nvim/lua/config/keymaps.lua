@@ -12,3 +12,6 @@ end, { noremap = true, silent = true, desc = "Document [s]ymbols" })
 
 -- Search buffers with <space>bb
 vim.keymap.set("n", "<leader>bb", "<cmd>FzfLua buffers<cr>", { noremap = true, silent = true, desc = "Search [b]uffers" })
+
+-- Toggle terminal vertical with <C-\>
+vim.keymap.set({ "n", "t" }, "<C-\\>", "<cmd>TermToggleVertical<cr>", { desc = "Toggle Terminal Vertical", silent = true })

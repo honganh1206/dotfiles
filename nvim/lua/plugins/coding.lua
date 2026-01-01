@@ -171,7 +171,7 @@ return {
 
   -- Mason configuration for formatters/linters
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         -- Formatters

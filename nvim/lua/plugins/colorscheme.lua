@@ -100,17 +100,4 @@ return {
     },
   },
 
-  -- Terminal configuration - move to right side
-  {
-    "snacks.nvim",
-    opts = {
-      terminal = {
-        win = {
-          width = 0.4,
-          height = 1,
-          position = "right",
-        },
-      },
-    },
-  },
 }
