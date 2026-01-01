@@ -41,6 +41,7 @@ return {
         c = prettier_formatters,
         css = prettier_formatters,
         go = { 'goimports', 'gofumpt' },
+        rust = { 'rustfmt' },
         graphql = prettier_formatters,
         handlebars = prettier_formatters,
         html = prettier_formatters,

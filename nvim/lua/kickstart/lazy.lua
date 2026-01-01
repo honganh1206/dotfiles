@@ -73,7 +73,6 @@ require('lazy').setup({
 
     require 'kickstart.plugins.treesitter',
 
-    require 'kickstart.plugins.omnisharp-extended-lsp',
 
     -- require 'kickstart.plugins.go',
     require 'kickstart.plugins.term',

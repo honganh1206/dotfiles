@@ -1,15 +1,2 @@
-require 'kickstart'
-
--- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 sw=2 et
-
-vim.o.conceallevel = 2
--- Selection highlight
-vim.cmd('hi! Visual cterm=reverse gui=reverse')
-
--- Set line number
-vim.opt.number = true
-vim.opt.relativenumber = true
--- vim.opt.textwidth = 80
-vim.opt.termguicolors = true
-require("bufferline").setup {}
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")

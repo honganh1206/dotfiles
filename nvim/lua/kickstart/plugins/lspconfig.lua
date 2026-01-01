@@ -7,6 +7,7 @@ local servers = {
   'gopls',
   'clangd',
   'sqls',
+  'rust_analyzer',
 }
 
 local formatters = {
@@ -25,20 +26,17 @@ return {
     event = { 'BufReadPost', 'BufNewFile', 'BufWritePre' },
     dependencies = {
       -- Automatically install LSPs and related tools to stdpath for Neovim
-      { 'williamboman/mason.nvim',           config = true }, -- NOTE: Must be loaded before dependants
+      { 'williamboman/mason.nvim', config = true }, -- NOTE: Must be loaded before dependants
       'williamboman/mason-lspconfig.nvim',
 
       -- Useful status updates for LSP.
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim',                 event = 'LspAttach', opts = {} },
+      { 'j-hui/fidget.nvim',       event = 'LspAttach', opts = {} },
 
       -- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
       -- used for completion, annotations and signatures of Neovim apis
       -- TODO: remove or migrate to lazydev
-      { 'folke/neodev.nvim',                 opts = {} },
-
-      -- csharp
-      { 'Hoffs/omnisharp-extended-lsp.nvim', lazy = true },
+      { 'folke/neodev.nvim',       opts = {} },
     },
     opts = function()
       return {
@@ -283,6 +281,7 @@ return {
         ['gopls'] = require('kickstart.plugins.lsp.gopls').setup,
         ['clangd'] = require('kickstart.plugins.lsp.clangd').setup,
         ['sqls'] = require('kickstart.plugins.lsp.sqls').setup,
+        ['rust_analyzer'] = require('kickstart.plugins.lsp.rust_analyzer').setup,
       }
     end,
   },

@@ -168,9 +168,11 @@ map('n', '<leader>gl', '<cmd>:0GcLog<cr>', { desc = 'Open file [l]og' })
 map('n', '<leader>gL', '<cmd>:tab Git log<cr>', { desc = 'Open repository [L]og' })
 
 -- Terminal
-map({ 'n', 't' }, '<C-\\>', '<cmd>lua toggle_vertical_term()<cr>', { desc = 'Toggle Terminal Vertical', silent = true })
-map({ 'n', 't' }, '<C-_>', '<cmd>lua toggle_horizontal_term()<cr>',
-  { desc = 'Toggle Terminal Horizontal', silent = true })
+map({ 'n', 't' }, '<C-\\>', '<cmd>TermToggleVertical<cr>', { desc = 'Toggle Terminal Vertical', silent = true })
+map({ 'n', 't' }, '<C-/>', '<cmd>TermToggleHorizontal<cr>', { desc = 'Toggle Terminal Horizontal', silent = true })
+-- map({ 'n', 't' }, '<C-\\>', '<cmd>lua toggle_vertical_term()<cr>', { desc = 'Toggle Terminal Vertical', silent = true })
+-- map({ 'n', 't' }, '<C-_>', '<cmd>lua toggle_horizontal_term()<cr>',
+--   { desc = 'Toggle Terminal Horizontal', silent = true })
 
 -- Tabs
 map('n', '<leader><tab>o', '<cmd>tabonly<cr>', { desc = 'Close [o]ther Tabs' })
