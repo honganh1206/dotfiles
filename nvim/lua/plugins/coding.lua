@@ -114,7 +114,7 @@ return {
     opts = {
       formatters_by_ft = {
         lua = { "stylua" },
-        python = { "black", "isort" },
+        python = { "isort" },
         javascript = { "prettier" },
         typescript = { "prettier" },
         javascriptreact = { "prettier" },
@@ -128,10 +128,7 @@ return {
         go = { "goimports", "gofmt" },
         rust = { "rustfmt" },
       },
-      format_on_save = {
-        timeout_ms = 500,
-        lsp_fallback = true,
-      },
+      format_on_save = false,
     },
   },
 

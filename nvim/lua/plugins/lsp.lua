@@ -39,6 +39,14 @@ return {
             },
           },
         },
+        -- C
+        clangd = {
+          cmd = { "clangd", "--background-index", "--clang-tidy", "--header-insertion=iwyu" },
+          init_options = {
+            clangdOnSave = true,
+            semanticHighlighting = true,
+          },
+        },
       },
     },
   },
@@ -52,6 +60,7 @@ return {
         "typescript-language-server",
         "gopls",
         "rust-analyzer",
+        "clangd",
         -- formatters/linters
         "stylua",
         "shfmt",
