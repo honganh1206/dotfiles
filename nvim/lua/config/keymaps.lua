@@ -27,17 +27,19 @@ vim.keymap.set("n", "<leader>cs", function()
 end, { noremap = true, silent = true, desc = "Document [s]ymbols" })
 
 -- Symbol outline
+-- NOTE: This overrides LazyVim filesystem tree by using neo-tree instead.
 -- vim.keymap.set("n", "<leader>cO", function()
 --   require("neo-tree.command").execute({ source = "document_symbols", toggle = true })
 -- end, { desc = "Document Symbols [O]utline" })
 
 -- Search buffers with <space>bb
-vim.keymap.set(
-  "n",
-  "<leader>bb",
-  "<cmd>FzfLua buffers<cr>",
-  { noremap = true, silent = true, desc = "Search [b]uffers" }
-)
+-- NOTE: LazyVim already has built-in buffer listing, so no need.
+-- vim.keymap.set(
+--   "n",
+--   "<leader>bb",
+--   "<cmd>FzfLua buffers<cr>",
+--   { noremap = true, silent = true, desc = "Search [b]uffers" }
+-- )
 
 -- Toggle terminal vertical with <C-\>
 vim.keymap.set(
