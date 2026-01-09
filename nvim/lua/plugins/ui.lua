@@ -30,6 +30,7 @@ return {
       terminal = { enabled = false },
       scroll = { enabled = false },
       indent = { enabled = false },
+      explorer = { enabled = false },
     },
   },
   {
