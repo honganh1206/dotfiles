@@ -57,3 +57,6 @@ vim.keymap.set("n", "<C-w>m", "<C-w>|<C-w>_", { desc = "Maximise Window" })
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+
+-- Replace word under cursor: press c*, type replacement, then . to repeat / n to skip
+vim.keymap.set("n", "c*", "*``cgn", { desc = "Change next occurrence of word" })

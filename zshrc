@@ -47,7 +47,8 @@ alias gcmai='git checkout main'
 alias gcmas='git checkout master'
 alias gd='git diff'
 alias gdc='git diff --cached'
-alias lg= 'lazygit ./'
+alias lg='lazygit'
+alias ld='lazydocker'
 
 # Branch checkout with fuzzy search (Ensure fzf is installed)
 # [f]uzzy check[o]ut
@@ -84,8 +85,8 @@ vf() {
   nvim "$(fzf)"
 }
 
-# Use find + fzf + batcat to give a quickk preview of files in the dir in search
-searchdir() {
+# Use find + fzf + batcat to give a quick preview of files in the dir in search
+sd() {
     # Default to current directory if no argument provided
     local dir="${1:-.}"
     local ext="${2:-}"
@@ -196,8 +197,6 @@ simple_prompt() {
 }
 
 # zprof
-
-. "$HOME/.atuin/bin/env"
 if type atuin &> /dev/null; then
   eval "$(atuin init zsh)"
 fi
@@ -255,3 +254,73 @@ ce() {
     cd "$prev_dir"  # Return to the original directory
 }
 
+# ENV
+case $OSTYPE in
+  linux*)
+    local envfile="${HOME}/.zsh.d/env.Linux.sh"
+    [[ -e ${envfile} ]] && source ${envfile}
+  ;;
+  darwin*)
+    local envfile="${HOME}/.zsh.d/env.Darwin.sh"
+    [[ -e ${envfile} ]] && source ${envfile}
+  ;;
+esac
+
+# opencode
+export PATH=/home/honganh/.opencode/bin:$PATH
+
+[[ -s "/home/honganh/.gvm/scripts/gvm" ]] && source "/home/honganh/.gvm/scripts/gvm"
+
+# zoxide
+eval "$(zoxide init zsh)"
+
+# bun completions
+[ -s "/home/honganh/.bun/_bun" ] && source "/home/honganh/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# OpenMPI
+# export PATH=$PATH:$HOME/opt/openmpi/bin
+export LD_LIBRARY_PATH=~/.local/bin/
+
+# Cross-compile GCC for OSDev
+# export PATH="$HOME/opt/cross/bin:$PATH"
+# alias ccgcc='$HOME/opt/cross/bin/$TARGET-gcc --version'
+
+. "$HOME/.atuin/bin/env"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/honganh/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/honganh/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/honganh/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/honganh/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export CARGO_TARGET_DIR=~/cargo-target
+
+# >>> MCP Agent Mail bd path /home/honganh/.local/bin
+if [[ ":$PATH:" != *":/home/honganh/.local/bin:"* ]]; then
+  export PATH="/home/honganh/.local/bin:$PATH"
+fi
+# <<< MCP Agent Mail bd path
+
+# >>> MCP Agent Mail alias
+alias am='cd "/home/honganh/projects/clearly/mcp_agent_mail" && scripts/run_server_with_token.sh'
+# <<< MCP Agent Mail alias
+
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
+
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export IBUS_ENABLE_SYNC_MODE=1

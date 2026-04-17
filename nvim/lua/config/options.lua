@@ -36,6 +36,10 @@ vim.opt.clipboard = "unnamedplus"
 -- Enable break indent
 vim.opt.breakindent = true
 
+-- Enable line wrap
+vim.opt.wrap = true
+vim.opt.linebreak = true
+
 -- Display tabs as n characters
 vim.opt.tabstop = 4
 
@@ -89,3 +93,5 @@ vim.o.conceallevel = 2
 -- Selection highlight
 
 vim.opt.termguicolors = true
+
+vim.g.autoformat = false

@@ -1,0 +1,84 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 12,
+  "margin-left": 12,
+  "margin-right": 12,
+  "modules-left": ["sway/workspaces", "sway/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "pulseaudio", "battery", "group/hardware", "ibus"],
+
+  "sway/window": {
+    "format": "{title}",
+    "max-length": 48
+  },
+
+  "clock": {
+    "format": "{:%a, %b %d   %H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y %H:%M}",
+    "interval": 60
+  },
+
+  "font": "Berkeley Mono 13",
+  "separator": " | ",
+
+  "tray-position": "right",
+  "icon-theme": "Papirus-Dark",
+
+  "tray": {
+    "icon-size": 24,
+    "spacing": 0
+    },
+
+  "pulseaudio": {
+    "on-click": "pavucontrol",
+    "tooltip": false
+  },
+  "battery": {
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "|{capacity}%{icon}|",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    // "format-icons": ["", "", "", "", ""]
+  },
+
+"group/hardware": {
+    "orientation": "horizontal",
+    "modules": ["cpu", "memory", "disk", "temperature"]
+},
+"cpu": {
+    "interval": 10,
+    "format": "CPU: {usage}%|",
+    "tooltip": true
+},
+
+"memory": {
+    "interval": 30,
+    "format": "RAM: {used:0.1f}G/{total:0.1f}G ({percentage}%)|",
+    "format-alt": "SWAP: {swapUsed:0.1f}G"
+},
+
+"disk": {
+    "interval": 30,
+    "path": "/", // Or /home, etc.
+    "format": "Disk: {percentage_used}%|",
+    "tooltip-format": "{used} / {total} ({free} free)"
+},
+
+"temperature": {
+    "critical-threshold": 80,
+    "format": "Temp: {temperatureC}°C",
+    // "format-icons": ["", "", ""]
+},
+"ibus": {
+  "format": "{engine}",
+  "format-engines": {
+    "xkb:us::eng": "EN",
+    "Bamboo": "VI"
+  }
+}
+}

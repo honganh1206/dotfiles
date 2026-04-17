@@ -1,0 +1,38 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 12,
+  "margin-left": 12,
+  "margin-right": 12,
+  "modules-left": ["sway/workspaces", "sway/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "pulseaudio"],
+
+  "sway/window": {
+    "format": "{title}",
+    "max-length": 48
+  },
+
+  "clock": {
+    "format": "{:%a, %b %d   %H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y %H:%M}",
+    "interval": 60
+  },
+
+  "font": "Ioskeley Mono 13",
+  "separator": " | ",
+
+  "tray-position": "right",
+  "icon-theme": "Papirus-Dark",
+
+  "tray": {
+    "icon-size": 24,
+    "spacing": 0
+    },
+
+  "pulseaudio": {
+    "on-click": "pavucontrol",
+    "tooltip": false
+  }
+
+}
