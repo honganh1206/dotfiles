@@ -122,6 +122,7 @@ return {
         "vimdoc",
         "xml",
         "yaml",
+        "helm",
       },
       auto_install = true,
     },

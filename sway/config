@@ -1,4 +1,4 @@
-exec ibus-daemon -drx
+exec --no-startup-id fcitx5 -d
 # =============================
 
 # BASIC SWAY CONFIG (MINIMAL)
@@ -73,10 +73,10 @@ bindsym Alt+Shift+Tab focus prev
 
 # Move windows
 
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+# bindsym $mod+Shift+h move left
+# bindsym $mod+Shift+j move down
+# bindsym $mod+Shift+k move up
+# bindsym $mod+Shift+l move right
 
 # Layout
 
@@ -101,7 +101,8 @@ bindsym $mod+r mode "resize"
 
 # Lock screen & Suspend
 # Lock + suspend
-bindsym $mod+Shift+s exec "swaylock -f -c 000000"
+bindsym $mod+Shift+l exec "swaylock -f -c 000000"
+bindsym $mod+Shift+s exec "swaylock -f -c 000000 & sleep 1 && systemctl suspend""
 
 # Auto idle behavior
 exec_always swayidle -w \
@@ -128,14 +129,8 @@ bindsym $mod+Shift+3 move container to workspace $ws3
 bindsym $mod+Shift+4 move container to workspace $ws3
 bindsym $mod+Tab workspace back_and_forth
 
-# Full screen
-bindsym Print exec grim ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png
-
 # Area select
-bindsym Shift+Print exec grim -g "$(slurp)" ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png
-
-# Clipboard
-bindsym Ctrl+Print exec grim -g "$(slurp)" - | wl-copy
+bindsym $mod+Shift+p exec grim -g "$(slurp)" - | tee ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png | wl-copy
 
 # =============================
 
