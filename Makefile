@@ -48,5 +48,10 @@ $(HOME)/.config/zed/keymap.json:
 zed: $(HOME)/.config/zed/keymap.json $(HOME)/.config/zed/settings.json
 
 # imwheel: $(HOME)/.imwheelrc
+#
+$(HOME)/.config/nvim:
+	ln -sf $(DOTFILE_PATH)/nvim $(HOME)/.config/nvim
 
-all: git psql zsh tmux kitty imwheel wezterm ghostty atuin zed
+nvim: $(HOME)/.config/nvim
+
+all: git psql zsh tmux kitty imwheel wezterm ghostty atuin zed nvim
