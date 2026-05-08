@@ -31,6 +31,8 @@ return {
       scroll = { enabled = false },
       indent = { enabled = false },
       explorer = { enabled = false },
+      notifier = { enabled = false },
+      bufdelete = { enabled = false },
     },
   },
   {

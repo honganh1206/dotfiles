@@ -130,4 +130,43 @@ return {
     "nvim-neo-tree/neo-tree.nvim",
     enabled = false,
   },
+  {
+    "nvim-mini/mini.notify",
+    event = "VeryLazy",
+    opts = {
+      window = {
+        config = { border = "rounded" },
+        winblend = 0,
+      },
+    },
+    config = function(_, opts)
+      local notify = require("mini.notify")
+      notify.setup(opts)
+      vim.notify = notify.make_notify()
+    end,
+  },
+  {
+    "nvim-mini/mini.bufremove",
+    keys = {
+      {
+        "<leader>bd",
+        function()
+          require("mini.bufremove").delete(0, false)
+        end,
+        desc = "Delete Buffer",
+      },
+      {
+        "<leader>bo",
+        function()
+          local cur = vim.api.nvim_get_current_buf()
+          for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+            if buf ~= cur and vim.api.nvim_buf_is_loaded(buf) then
+              require("mini.bufremove").delete(buf, false)
+            end
+          end
+        end,
+        desc = "Delete Other Buffers",
+      },
+    },
+  },
 }
