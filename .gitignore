@@ -1,0 +1,4 @@
+# Runtime/dependency data for the dev-browser skill.
+agents/skills/dev-browser/node_modules/
+agents/skills/dev-browser/profiles/
+agents/skills/dev-browser/tmp/

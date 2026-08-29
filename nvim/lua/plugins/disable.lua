@@ -13,7 +13,7 @@ return {
       explorer = { enabled = false },
       picker = {
         sources = {
-          explorer = { enabled = false },
+          explorer = { enabled = true },
         },
       },
     },

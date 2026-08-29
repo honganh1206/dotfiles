@@ -54,4 +54,15 @@ $(HOME)/.config/nvim:
 
 nvim: $(HOME)/.config/nvim
 
+$(HOME)/.pi/agent/extensions:
+	mkdir -p $(HOME)/.pi/agent
+	ln -sfn $(DOTFILE_PATH)/pi/agent/extensions $@
+
+$(HOME)/.agents/skills:
+	mkdir -p $(HOME)/.agents
+	ln -sfn $(DOTFILE_PATH)/agents/skills $@
+
+.PHONY: agents
+agents: $(HOME)/.pi/agent/extensions $(HOME)/.agents/skills
+
 all: git psql zsh tmux kitty imwheel wezterm ghostty atuin zed nvim
