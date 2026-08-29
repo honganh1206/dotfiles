@@ -1,1 +1,0 @@
-- [Create a bot to get books from Zlib](https://inforuckus.com/how-to-create-z-library-telegram-bot/)
