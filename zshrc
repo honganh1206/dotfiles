@@ -69,10 +69,12 @@ alias cdr='cd $(git rev-parse --show-toplevel)' # cd to git root
 alias got='go test ./...'
 
 # golang
-export GOROOT="/usr/local/go"
-export GOPATH="$HOME/.go"
-export GOBIN="$GOPATH/bin"
-export PATH="$PATH:$GOROOT/bin:$GOBIN"
+# export GOROOT="/usr/local/go"
+# export GOPATH="$HOME/.go"
+# export GOBIN="$GOPATH/bin"
+# export PATH="$PATH:$GOROOT/bin:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
+
 
 # fzf
 if type fzf &> /dev/null && type rg &> /dev/null; then
@@ -306,7 +308,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export CARGO_TARGET_DIR=~/cargo-target
 
 # >>> MCP Agent Mail bd path /home/honganh/.local/bin
 if [[ ":$PATH:" != *":/home/honganh/.local/bin:"* ]]; then
@@ -324,3 +325,7 @@ export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export IBUS_ENABLE_SYNC_MODE=1
+
+
+# Pi
+export PATH="/home/honganh/.local/share/pi-node/node-v22.23.2-linux-x64/bin:$PATH"

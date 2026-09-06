@@ -2,3 +2,6 @@
 agents/skills/dev-browser/node_modules/
 agents/skills/dev-browser/profiles/
 agents/skills/dev-browser/tmp/
+
+# Extension dependencies are restored from their committed lockfiles.
+pi/agent/extensions/*/node_modules/

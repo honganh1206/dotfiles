@@ -6,6 +6,10 @@ $(HOME)/.%: %
 
 git: $(HOME)/.gitconfig $(HOME)/.githelpers $(HOME)/.gitignore
 # psql: $(HOME)/.psqlrc
+$(HOME)/.zshrc: zshrc
+	ln -sfn $(abspath $<) $@
+
+.PHONY: zsh
 zsh: $(HOME)/.zshrc $(HOME)/.zsh.d
 #
 # $(HOME)/bin/tmux-sessionizer:
